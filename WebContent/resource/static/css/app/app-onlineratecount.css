@@ -1,0 +1,290 @@
+.onlineratecount-main-div
+{
+    width: 800px;
+    height: 370px;
+    position: relative;
+    margin: 10px;
+}
+.onlineratecount-tab-div
+{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 200px;
+    height: 30px;
+    background: #fff;
+}
+.onlineratecount-tab-right-div
+{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    width: 600px;
+    height: 31px;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #E8E8E8;
+}
+.onlineratecount-content-download-div
+{
+    width: 799px;
+    height: 100%;
+    position: relative;
+    top: 30px;
+    border: 1px solid #E8E8E8;
+    border-top: 0px;
+}
+.onlineratecount-download-tab-div
+{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #E8E8E8;
+    border-right: 0px;
+    cursor: pointer;
+}
+.onlineratecount-upload-tab-div
+{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 100px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #E8E8E8;
+    cursor: pointer;
+}
+
+.onlineratecount-tab-background
+{
+    background: #F2F2F2;
+}
+
+.onlineratecount-border-bottom-type
+{
+    border-bottom: 0px;
+}
+.onlineratecount-hidden
+{
+    display: none;
+}
+.onlineratecount-top-div
+{
+    width: 790px;
+    height: 50px;
+    background: #fff;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: top;
+    top: 5px;
+}
+.onlineratecount-operator-div
+{
+    position: absolute;
+    width: 300px;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: bottom;
+    top: 0px;
+}
+
+.onlineratecount-apply-time-div
+{
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    height: 25px;
+    background: #fff;
+    top: 0px;
+    line-height: 50px;
+    vertical-align: bottom;
+}
+.onlineratecount-table-container
+{
+    height: 250px;
+    background: #fff;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px; /*border:1px solid #E8E8E8;*/
+}
+.onlineratecount-dotted-div
+{
+    height: 0px;
+    border-top: 1px dashed gray;
+    margin: 8px;
+}
+.onlineratecount-download-opr-div
+{
+    width: 790px;
+    height: 40px;
+    background: #fff;
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.onlineratecount-oper-download
+{
+    position: absolute;
+    width: 300px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.onlineratecount-download-container
+{
+    margin: 5px;
+    border: 1px solid #E8E8E8;
+    height: 190px;
+}
+.onlineratecount-content-upoload-div
+{
+    width: 799px;
+    height: 570px;
+    position: relative;
+    top: 30px;
+    border: 1px solid #E8E8E8;
+    border-top: 0px;
+}
+.onlineratecount-upload-div
+{
+    margin-right: 0px;
+    margin-left: 0px;
+    height: 60px;
+    position: relative;
+    padding: 10px 5px 5px 5px;
+}
+.onlineratecount-upload-oper-div
+{
+    width: 790px;
+    height: 35px;
+    left: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.onlineratecount-cancel-upload-btn-div
+{
+    left: 620px;
+}
+.onlineratecount-result-msg-div
+{
+    position: relative;
+    margin: 5px;
+    height: 200px;
+    border: 1px solid #E8E8E8;
+}
+
+
+.onlineratecount-list-table-container-div
+{
+    position: relative;
+    top: 10px;
+    height: 250px;
+    margin: 0px;
+    background: #fff;
+    border: 1px solid #E8E8E8;
+}
+
+.onlineratecount-commom-container-table-div
+{
+    position: relative;
+    margin: auto;
+    padding: 0px;
+    height: 250px;
+    background: #EEEEEE;
+    top: 0px;
+}
+.onlineratecount-commom-main-table
+{
+    position: relative;
+}
+.onlineratecount-commom-table-header
+{
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #EEEEEE;
+    text-align: center;
+    background: #E2FEFE;
+    height: 50px;
+}
+.onlineratecount-commom-table-header td
+{
+    border: 0px solid #E8E8E8;
+}
+.onlineratecount-commom-table-content-div
+{
+    position: relative;
+    width: 100%;
+    background: #fff;
+    height: 221px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.onlineratecount-commom-table-main-content-table
+{
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #EEEEEE;
+    border-top: 0px;
+    text-align: center;
+}
+.onlineratecount-commom-table-main-content-table td
+{
+    border: 1px solid #E8E8E8;
+    border-left: 0px;
+    border-right: 0px;
+}
+.onlineratecount-commom-table-main-content-table tr
+{
+    height: 25px;
+    cursor: pointer;
+}
+.onlineratecount-commom-table-main-content-table tr:hover
+{
+    background: #EEEEEE;
+}
+.onlineratecount-commom-table-main-content-table tr:nth-child(even)
+{
+    background: #E2FEFE;
+}
+.width-px-40
+{
+    width: 40px;
+}
+.width-px-60
+{
+    width: 60px;
+}
+.width-px-90
+{
+    width: 90px;
+}
+.width-px-140
+{
+    width: 140px;
+}
+.width-px-210
+{
+    width: 210px;
+}
+.div-height-px-180
+{
+    height: 180px;
+}
+.div-height-px-155
+{
+    height: 155px;
+}
+

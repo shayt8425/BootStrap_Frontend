@@ -1,0 +1,74 @@
+body{
+	background-color:#ebebeb !important;
+}
+#main{
+	width:70%;
+	left:15%;
+	padding:0 10px 0 10px;
+	background-color:#fff;
+	position:absolute;
+	top:0;
+	bottom:0;
+}
+a:link {   
+    /* color:#11a9cc !important; */
+    text-decoration: none !important;   
+}   
+a:visited {   
+	/* color:#11a9cc !important; */
+    text-decoration: none !important;   
+}   
+a:hover {
+	/* color:#11a9cc !important; */
+    text-decoration: none !important;   
+}
+.time{
+	margin-left:30px;
+}
+#dateControl .input-group{float:left;}
+table{
+	width:100%;
+}
+.common_form{
+	margin:10px 0 10px 0;
+}
+#main-content{
+	overflow-y:auto;
+}
+#page{
+	float:right;
+}
+#page .pagination{
+	margin-top:10px;
+}
+.box1{
+	color: #3e80db;
+	border: 1px solid #204d74;
+	background-color:#fff;
+	padding: 5px;
+	border-radius: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 12%;
+	font-size: 14px;
+	float: left;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+.box2{
+	color: #3e80db;
+	border: 1px solid #204d74;
+	background-color:#fff;
+	padding: 5px;
+	border-radius: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 12%;
+	font-size: 14px;
+	float: left;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	height:60px;
+}

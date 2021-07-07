@@ -1,0 +1,673 @@
+﻿/*******曲线新添加的css*********/
+.moveShowDiv
+{
+    width: 507px;
+    height: 422px;
+    position: relative;
+}
+.moveTopShowDiv
+{
+    width: 507px;
+    height: 46px;
+    border: 1px solid #808080;
+    border-bottom: 0px;
+    position: relative;
+    border-right: 0px;
+}
+.moveTopShowDiv img.moveTopShowImg
+{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.moveSatus
+{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 1;
+}
+.sdStatus
+{
+    width: 40px;
+    height: 41px;
+    position: absolute;
+    top: 1px;
+    left: 44px;
+    z-index: 1;
+}
+.sdYTarget
+{
+    width: 36px;
+    height: 9px;
+    display: block;
+    float: left;
+    margin-top: 1px;
+    visibility: hidden;
+}
+.sdVisible
+{
+    visibility: hidden;
+}
+
+
+.moveSatus img
+{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.moveSpeed, .moveRestrictSpeed, .moveDistance, .moveSignDistance, .moveTime
+{
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    top: 2px;
+    left: 103px;
+    z-index: 1;
+    color: #54cb00;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    overflow: hidden;
+    font-weight: 900;
+    font-family: arial;
+    font-size: 22px;
+    color: rgb(23, 241, 23);
+}
+.moveRestrictSpeed
+{
+    left: 168px;
+    color: #e60012;
+}
+.moveDistance
+{
+    left: 233px;
+    color: #f3ae00;
+    width: 65px;
+}
+
+.moveSignDistance
+{
+    left: 328px;
+    width: 70px;
+}
+.moveSD_S
+{
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    color: White;
+    font-size: 12px;
+    text-align: center;
+}
+.moveSD_D
+{
+    width: 67px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    margin-top: 3px;
+    color: #f3ae00;
+    text-align: center;
+}
+.moveTime
+{
+    left: 413px;
+    width: 90px;
+    color: #f3ae00;
+    font-size: 12px;
+    text-align: center;
+}
+.moveDate
+{
+    height: 20px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.moveTimeDiv
+{
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.moveBottomShowDiv
+{
+    width: 460px;
+    height: 374px;
+    border: 1px solid white;
+    border-top: 0px;
+    position: relative;
+}
+.moveBottomShowDiv img
+{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.moveRightBox
+{
+    width: 47px;
+    height: 350px;
+    position: absolute;
+    right: 1px;
+    top: 47px;
+    background-color: #4D4D4D;
+}
+.moveRB_Box
+{
+    width: 38px;
+    height: 26px;
+    margin-left: 5px;
+    float: left;
+    text-align: center;
+    background-color: Black;
+    color: #808080;
+    line-height: 26px;
+    border-bottom: 1px solid #808080;
+}
+.mar
+{
+    margin-top: 3px;
+}
+.moveBight
+{
+    background-color: #62CC1B;
+    color: White;
+}
+.moveShowEngine
+{
+    width: 195px;
+    height: 150px;
+    border: 1px solid #808080;
+    background-color: #2059B9;
+    position: absolute;
+    right: 51px;
+    top: 51px;
+    z-index: 9px;
+    display: none;
+}
+.moveItem
+{
+    height: 20px;
+    line-height: 20px;
+}
+.moveItem .itemName, .moveItem .itemValue
+{
+    float: left;
+    width: 97px;
+    color: White;
+}
+
+.moveItem .itemName
+{
+    text-align: left;
+    text-indent: 10px;
+}
+.moveItem .itemValue
+{
+    text-align: center;
+}
+.movegk
+{
+    width: 130px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.movegk_f, .movegk_nz, .movegk_qy
+{
+    width: 40px;
+    height: 20px;
+    float: left;
+    margin-left: 1px;
+    line-height: 20px;
+    border: 1px solid black;
+}
+.movegk_f
+{
+    background-color: #64CFFA;
+}
+.movegk_nz
+{
+    background-color: #191919;
+}
+.movegk_qy
+{
+    background-color: #DD0004;
+}
+.movesd_div1, .movesd_div2, .movesd_div3
+{
+    float: left;
+    width: 30px;
+    margin-left: 10px;
+}
+.movesd_div2
+{
+    color: #62CC1B;
+}
+.moveMiddleLine
+{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    border-left: 1px solid Yellow;
+    width: 1px;
+    z-index: 99;
+    height: 100%;
+    /*cursor: w-resize;*/
+}
+
+.moveTurnSpeedNum
+{
+    height: 150px;
+    width: 20px;
+    position: absolute;
+    left: 427px;
+    top: 9px;
+    z-index: 999;
+}
+
+
+
+.moveSpeedNum
+{
+    height: 150px;
+    width: 20px;
+    position: absolute;
+    left: 23px;
+    top: 9px;
+    z-index: 999;
+}
+.moveSN_N
+{
+    border-top: 1px;
+    height: 25px;
+    text-align: right;
+    line-height: 25px;
+   
+}
+.moveBottomSpeed
+{
+    height: 170px;
+    width: 100%;
+    position: relative;
+}
+.maxSpeed
+{
+    height: 1px;
+    border-top: 1px solid red;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 184px;
+}
+.currentSpeed
+{
+    height: 1px;
+    border-top: 1px solid green;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 186px;
+}
+.minSpeed
+{
+    height: 1px;
+    border-top: 1px solid Yellow;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 184px;
+}
+.movePipePressure
+{
+    height: 70px;
+    position: relative;
+    width: 100%;
+}
+.moveLineSection
+{
+    height: 30px;
+    position: relative;
+}
+.movebight
+{
+    height: 30px;
+    position: relative;
+}
+
+.moveWaybridge
+{
+    height: 30px;
+    position: relative;
+}
+.moveWayLabel
+{
+    height: 20px;
+    position: relative;
+    width: 372px;
+}
+.moveHisControl
+{
+    height: 24px;
+    position: relative;
+    width: 100%;
+    background-color: #4D4D4D;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.moveDrawSpeed
+{
+	
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    width: 175px;
+    height: 7px;
+    background-color: White;
+    border-radius: 5px;
+}
+.moveDragLine
+{
+    height: 7px;
+    width: 0px;
+    background-color: #F9A805;
+    border-radius: 5px;
+}
+.moveDragLine
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.moveDrawImgDiv
+{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 0px;
+    margin-left: -10px;
+    cursor: pointer;
+    z-index:99;
+}
+.moveControlSpeedBtn
+{
+    width: 105px;
+    height: 21px;
+    position: absolute;
+    left: 190px;
+    top: 2px;
+}
+.moveControlSpeedBtn img
+{
+    display: block;
+    float: left;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.moveVideotapeSpeed
+{
+    width: 100px;
+    position: absolute;
+    left: 300px;
+    height: 24px;
+    line-height: 24px;
+    top: 0px;
+}
+
+
+.moveMoveCountSpeed
+{
+    width: 100px;
+    position: absolute;
+    left: 355px;
+    height: 24px;
+    line-height: 24px;
+    top: 0px;
+}
+.curveSelectSation{
+	
+	width: 41px;
+    position: absolute;
+    left: 453px;
+    height: 21px;
+    line-height: 21px;
+    top: 0px;
+}
+
+.curveSelectSation .selectSationDiv{
+	 position: absolute;
+	 top:-115px;
+	 width:100px;
+	 height:85px;
+	 left:0px;
+	 background-color:white;
+	 z-index:9999;
+	 border:1px solid #9D9D9D;
+	 padding:10px;
+	
+}
+.selectSationBtn{
+	
+	
+	
+}
+
+.selectSationDiv {
+ display:none;	
+}
+
+.selectSationDiv div{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	
+
+}
+.selectSationInput{
+	display:block;
+	margin:0px;
+	padding:0px;
+	width:95px;
+	height:20px;
+	
+}
+.selectSationBtn{
+	display:block;
+
+	padding:0px;
+	text-decoration:none;
+	width: 71px;
+    height: 22px;
+    line-height: 22px;
+	background:url('../../../img/app/button_top.png');
+	color:white;
+	text-align: center;
+    margin:0 auto;
+}
+.selectSationBtn:hover{
+	background:url('../../../img/app/button_down.png')
+}
+.daoshanjiao{
+   display:block;
+   position:absolute;
+   left:13px;
+   bottom:-8px;
+
+}
+
+.VideotapeSpeedNum
+{
+    color: White;
+}
+.moveCountNum
+{
+    color: White;
+}
+
+
+.moveWayNum
+{
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    height: 20px;
+    margin-left: -24px;
+}
+.moveWayNum .moveHLine
+{
+    height: 3px;
+    width: 1px;
+    border-left: 1px solid white;
+    margin: 0 auto;
+}
+.moveWayNum .moveWayN_Num
+{
+    color: #00b6ec;
+}
+
+.moveHrs
+{
+    height: 1px;
+    border-top: 1px solid blue;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 184px;
+}
+
+.moveHrs1
+{
+    height: 1px;
+    border-top: 1px solid Orange;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 184px;
+}
+
+
+
+.currentTrain
+{
+    position: absolute;
+    bottom: 0px;
+    left: 140px;
+    width: 40px;
+    height: 7px;
+    background-color: #F97CF1;
+    z-index:99999;
+}
+.carHead
+{
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    right: -7px;
+    top: 0px;
+}
+
+.movePPNum
+{
+    height: 70px;
+    width: 20px;
+    position: absolute;
+    left: 23px;
+    top: 172px;
+    z-index: 999;
+}
+.movePPNum .movePP_num
+{
+    height: 20px;
+    line-height: 20px;
+}
+
+.moveWayLabelDiv
+{
+    position: absolute;
+    bottom: 0px;
+    left: 80px;
+    height: 30px;
+    width: 1px;
+    border-left: 1px solid #9D9D9D;
+}
+.moveWayLabelDiv .moveC
+{
+    position: absolute;
+    top: -7px;
+    left: -1px;
+    width: 5px;
+}
+
+.moveWayLabelDiv .moveC .moveCWhite
+{
+    position: absolute;
+    top: 4px;
+    left: -1px;
+    width: 5px; 
+}
+
+.moveWayLabelDiv .signalNum
+{
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    width: 18px;
+    color: White;
+    text-align: center;
+}
+
+
+
+.movePGreen
+{
+  color: #54cb00;
+}
+.movePGray
+{
+    color: Gray;
+}
+
+
+.moveBottomContainDiv
+{
+    height: 350px;
+    width: 372px;
+    position: relative;
+    margin-left: 53px;
+    overflow: hidden;
+   /* cursor: move;*/
+}
+
+.moveErrorPage
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+.moveErrorPage
+{
+    text-align: center;
+    color: Red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+}

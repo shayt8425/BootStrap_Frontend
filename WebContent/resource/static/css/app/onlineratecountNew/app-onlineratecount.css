@@ -1,0 +1,403 @@
+.onlineratecount-MainDiv{
+	width:100%;
+	height:100%;
+}
+
+.onlineratecount-leftDiv{
+	width:67%;
+	height:100%;
+	position: absolute;
+	margin: 5px;
+}
+
+.onlineratecount-leftDiv-headTabDiv{
+	width: 100%;
+	height: 60px;
+	/*top: 5px;*/
+	position: absolute;
+	/*left: 5px;*/
+}
+
+.onlineratecount-leftDiv-headTab{
+	width:100%;
+	height:100%;
+	border-collapse:collapse;
+	border:1px solid rgb(232, 232, 232);
+}
+.onlineratecount-leftDiv-headTab tr {
+	height: 25px;
+	line-height: 25px;
+}
+
+.onlineratecount-leftDiv-headTab tr:hover{
+	background: rgb(232, 232, 232);
+}
+.onlineratecount-leftDiv-headTab tr td{
+	border:1px solid rgb(232, 232, 232);
+	text-align: center;
+}
+
+.onlineratecount-leftDiv-inUseDiv{
+	width: 100%;
+	max-height: 50%;
+	top: 80px;
+	position: absolute;
+	/* left: 5px; */
+}
+
+.onlineratecount-leftDiv-inUseDiv-titleInfoDiv{
+	height: 25px;
+	line-height: 25px;
+}
+
+.onlineratecount-leftDiv-inUseDiv-titleInfoLabel{
+	
+}
+
+.onlineratecount-leftDiv-inUseDiv-titleInfo-kind1{
+	display: inline-block;
+}
+
+.onlineratecount-leftDiv-inUseDiv-titleInfo-kind2{
+	display: inline-block;
+}
+
+.onlineratecount-leftDiv-inUseDiv-TabDiv{
+	/* height: 80%; */
+	position: absolute;
+	width: 100%;
+}
+
+.onlineratecount-leftDiv-inUseDiv-Tab1Div{
+	width:100%;
+	/*height:80%;*/
+	border: 1px solid rgb(232, 232, 232);
+	position:relative;
+	top:20px;
+}
+
+.onlineratecount-leftDiv-inUseTab{
+	width:100%;
+	/*height:100%;*/
+	border-collapse:collapse;
+	border:1px solid rgb(232, 232, 232);
+}
+.onlineratecount-leftDiv-inUseTab tr{
+	height: 25px;
+	line-height: 25px;
+}
+
+.onlineratecount-leftDiv-inUseTab tr:hover{
+	background: rgb(232, 232, 232);
+}
+.onlineratecount-leftDiv-inUseTab tr td{
+	border:1px solid rgb(232, 232, 232);
+	text-align: center;
+}
+
+.onlineratecount-leftDiv-inUseDiv-Tab2Div{
+	width: 100%;
+	height: 25px;
+	/* line-height: 30px; */
+	top: 10px;
+	position: relative;
+	margin: 1px;
+}
+
+
+.onlineratecount-leftDiv-inUseTabCount{
+	width:100%;
+	/*height:100%;*/
+	border-collapse:collapse;
+	border:1px solid rgb(232, 232, 232);
+}
+
+.onlineratecount-leftDiv-inUseTabCount tr td{
+	border:1px solid rgb(232, 232, 232);
+	text-align: center;
+}
+
+.onlineratecount-leftDiv-inUseTabCount tr {
+	height: 25px;
+	line-height: 25px;
+}
+
+.onlineratecount-leftDiv-inUseTabCount tr:hover{
+	background: rgb(232, 232, 232);
+}
+
+.onlineratecount-leftDiv-KeepDiv{
+	width: 100%;
+	/*height: 30%;*/
+	top: 70%;
+	position: absolute;
+	/*left: 5px;*/
+}
+
+.onlineratecount-leftDiv-KeepDiv-titleInfoDiv{
+	height: 25px;
+	line-height: 25px;
+}
+
+.onlineratecount-leftDiv-KeepDiv-titleInfoLabel{
+	
+}
+
+.onlineratecount-leftDiv-KeepDiv-TabDiv{
+    /*height: 80%;*/
+	position: absolute;
+	width: 100%;
+}
+
+.onlineratecount-leftDiv-KeepDiv-Tab1Div{
+	width:100%;
+	/*height:80%;*/
+	border: 1px solid rgb(232, 232, 232);
+	position:relative;
+	top:20px;
+}
+
+.onlineratecount-leftDiv-KeepTab{
+	width:100%;
+	/*height:100%;*/
+	border-collapse:collapse;
+	border:1px solid rgb(232, 232, 232);
+}
+
+
+.onlineratecount-leftDiv-KeepTab tr {
+	height: 25px;
+	line-height: 25px;
+}
+
+.onlineratecount-leftDiv-KeepTab tr:hover{
+	background: rgb(232, 232, 232);
+}
+
+.onlineratecount-leftDiv-KeepTab tr td{
+	border:1px solid rgb(232, 232, 232);
+	text-align: center;
+}
+
+.onlineratecount-leftDiv-KeepDiv-Tab2Div{
+	width: 100%;
+	height: 25px;
+	top: 10px;
+	position: relative;
+	margin: 1px;
+}
+
+.onlineratecount-leftDiv-KeepTabCount{
+	width:100%;
+	/*height:100%;*/
+	border-collapse:collapse;
+	border:1px solid rgb(232, 232, 232);
+}
+
+.onlineratecount-leftDiv-KeepTabCount tr {
+	height: 25px;
+	line-height: 25px;
+}
+
+.onlineratecount-leftDiv-KeepTabCount tr:hover{
+	background: rgb(232, 232, 232);
+}
+
+
+.onlineratecount-leftDiv-KeepTabCount tr td{
+	border:1px solid rgb(232, 232, 232);
+	text-align: center;
+}
+
+/*其它  */
+.onlineratecount-leftDiv-otherDiv{
+	width: 100%;
+	/*height: 30%;*/
+	top: 90%;
+	position: absolute;
+	/*left: 5px;*/
+}
+
+.onlineratecount-leftDiv-otherDiv-titleInfoDiv{
+	height: 25px;
+	line-height: 25px;
+}
+
+.onlineratecount-leftDiv-otherDiv-titleInfoLabel{
+	
+}
+
+.onlineratecount-leftDiv-otherDiv-TabDiv{
+    /*height: 80%;*/
+	position: absolute;
+	width: 100%;
+}
+
+.onlineratecount-leftDiv-otherDiv-Tab1Div{
+	width:100%;
+	/*height:80%;*/
+	border: 1px solid rgb(232, 232, 232);
+	position:relative;
+	top:20px;
+}
+
+.onlineratecount-leftDiv-otherTab{
+	width:100%;
+	/*height:100%;*/
+	border-collapse:collapse;
+	border:1px solid rgb(232, 232, 232);
+}
+
+
+.onlineratecount-leftDiv-otherTab tr {
+	height: 25px;
+	line-height: 25px;
+}
+
+.onlineratecount-leftDiv-otherTab tr:hover{
+	background: rgb(232, 232, 232);
+}
+
+.onlineratecount-leftDiv-otherTab tr td{
+	border:1px solid rgb(232, 232, 232);
+	text-align: center;
+}
+
+.onlineratecount-leftDiv-otherDiv-Tab2Div{
+	width: 100%;
+	height: 25px;
+	top: 10px;
+	position: relative;
+	margin: 1px;
+}
+
+.onlineratecount-leftDiv-otherTabCount{
+	width:100%;
+	/*height:100%;*/
+	border-collapse:collapse;
+	border:1px solid rgb(232, 232, 232);
+}
+
+.onlineratecount-leftDiv-otherTabCount tr {
+	height: 25px;
+	line-height: 25px;
+}
+
+.onlineratecount-leftDiv-otherTabCount tr:hover{
+	background: rgb(232, 232, 232);
+}
+
+
+.onlineratecount-leftDiv-otherTabCount tr td{
+	border:1px solid rgb(232, 232, 232);
+	text-align: center;
+}
+
+
+/**********************************************/
+.onlineratecount-rightDiv{
+	width: 31%;
+	height: 100%;
+	position: absolute;
+	margin: 5px;
+	right: 0px;
+}
+.onlineratecount-rightDiv-searchInput{
+	position: relative;
+}
+
+.onlineratecount-rightDiv-countDiv{
+	/*height: 60px;*/
+	position: relative;
+}
+
+.onlineratecount-rightDiv-countDivItem{
+	height: 30px;
+	line-height: 30px;
+}
+
+.onlineratecount-rightDiv-resultDiv{
+	width: 100%;
+	height: 78%;	
+}
+
+.onlineratecount-rightDiv-resultTabDiv{
+	position: relative;
+}
+
+.onlineratecount-rightDiv-resultTab{
+	width:100%;
+	/*height:100%;*/
+	border-collapse:collapse;
+	border:1px solid rgb(232, 232, 232);
+}
+
+.onlineratecount-rightDiv-resultTab tr td{
+	border:1px solid rgb(232, 232, 232);
+	text-align: center;
+}
+
+.onlineratecount-rightDiv-resultTab tr{
+	height: 25px;
+	line-height: 25px;
+}
+
+
+
+.onlineratecount-rightDiv-cartogramBtn{
+	
+}
+
+
+.tabTdWidth{
+	/* width:7.7%; */
+	width:9%;
+}
+
+.onlineratecount thead td
+{
+    cursor: pointer;
+	background: url('../../../img/app/list_title_bg.png');
+	border: 1px solid rgb(182, 182, 182);
+	font-weight: bold;
+}
+
+
+
+.text_decoration1 ,.text_decoration2{
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.backgroundImg{
+	background-image:url('../../img/app/button_down.png');
+}
+
+.backgroundImg:hover{
+	background-image:url('../../img/app/button_down.png');
+	
+}
+
+#onlineratecount-rightBottom-button{
+	width: 110px;
+	background-image:url('../../../img/app/button_down1.png');
+}
+
+
+#onlineratecount-rightBottom-button:hover{
+	width: 110px;
+	background-image:url('../../../img/app/button_top1.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+

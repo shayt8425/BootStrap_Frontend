@@ -1,0 +1,292 @@
+.app_realtime_move_div
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: 8px;
+}
+.webkit_app_realtime_move_div
+{
+    width: 500px;
+    height: 375px;
+    -webkit-transform: scale(0.8);
+    margin-left: -12.5%;
+    margin-top: -10%;
+}
+
+.app_realtime_move_main
+{
+    width: 98%;
+    height: 98%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.app_realtime_move_header_tab
+{
+    border-collapse: collapse;
+    position: absolute;
+    width: 98%;
+    height: 12%;
+    border-spacing: 0px;
+    text-align: center;
+    border-color: #7d7d7d;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.move_tab_lit
+{
+    line-height: 50%;
+    border-color: #7d7d7d;
+    border-left-style: solid;
+    border-width: 1px;
+    width: 6%;
+}
+.move_tab_lit_bottom
+{
+    border-bottom-style: solid;
+}
+.move_tab_name
+{
+    border-left-color: #7d7d7d;
+    border-left-style: solid;
+    border-left-width: 1px;
+    letter-spacing: 1px;
+    font-size: 8px;
+    width: 5%;
+}
+.move_tab_name_1
+{
+    border-left-color: #7d7d7d;
+    border-left-style: solid;
+    border-left-width: 1px;
+    letter-spacing: 1px;
+    font-size: 8px;
+    width: 6%;
+}
+.move_tab_light
+{
+    width: 8%;
+    background-color: Gray;
+}
+.move_tab_light
+{
+    padding: 0px;
+}
+.move_tab_light_div
+{
+}
+.move_tab_light_div img
+{
+    width: 90%;
+    height: 90%;
+}
+.move_tab_Num
+{
+    width: 10%;
+}
+.move_tab_text
+{
+    width: 12%;
+}
+.move_tab_date
+{
+    width: 18%;
+}
+.move_tab_Text_div
+{
+    background-color: Gray;
+    font-weight: 900;
+    font-family: arial;
+}
+.font_green
+{
+    font-size: 22px;
+    color: rgb(23, 241, 23);
+}
+.font_red
+{
+    font-size: 22px;
+    color: Red;
+}
+.font_yellow
+{
+    font-size: 22px;
+    color: Yellow;
+}
+.font_yellow_1
+{
+    color: Yellow;
+}
+.font_white_1
+{
+    color: White;
+}
+.font_yellow_2
+{
+    line-height: 200%;
+    color: Yellow;
+}
+.app_realtime_move_right
+{
+    position: absolute;
+    right: 1%;
+    top: 13.5%;
+    width: 7.5%;
+    height: 85.6%;
+    background-color: rgb(204, 204, 204);
+}
+.app_realtime_move_right_tab
+{
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    border-spacing: 0px;
+    text-align: center;
+    color: #5F5F5F;
+}
+.app_realtime_move_right_tab td
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #5F5F5F;
+}
+.right_td_green
+{
+    background-color: rgb(0, 245, 255);
+}
+.app_realtime_move_center
+{
+    position: absolute;
+    background-color: Black;
+    top: 13.5%;
+    left: 1%;
+    width: 90.5%;
+    height: 85.6%;
+}
+.center_back_div_1
+{
+    font-size: 8px;
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-color: #7d7d7d;
+    border-bottom-width: 2px;
+}
+.center_back_div_2
+{
+    position: absolute;
+    height: 14%;
+    width: 100%;
+    top: 55%;
+    border-bottom-style: solid;
+    border-bottom-color: #7d7d7d;
+    border-bottom-width: 1px;
+}
+.center_back_div_3
+{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 69%;
+    border-bottom-style: solid;
+    border-bottom-color: #7d7d7d;
+    border-bottom-width: 1px;
+}
+.center_back_div_4
+{
+    position: absolute;
+    height: 9%;
+    width: 100%;
+    top: 79%;
+    border-bottom-style: solid;
+    border-bottom-color: #7d7d7d;
+    border-bottom-width: 1px;
+}
+.center_back_div_5
+{
+    position: absolute;
+    height: 6%;
+    width: 100%;
+    top: 88%;
+    border-bottom-style: solid;
+    border-bottom-color: #7d7d7d;
+    border-bottom-width: 1px;
+}
+.center_back_div_6
+{
+    position: absolute;
+    height: 5.7%;
+    width: 100%;
+    top: 94%;
+    background-color: rgb(209, 209, 209);
+    border-bottom-style: solid;
+    border-bottom-color: #7d7d7d;
+    border-bottom-width: 1px;
+    border-left-style: solid;
+    border-left-color: #7d7d7d;
+    border-left-width: 1px;
+}
+.font_move_1
+{
+    position: absolute;
+    margin-top: 1%;
+}
+.hrdashed
+{
+    color: #414141;
+    border-style: dashed;
+    margin: 0px;
+    position: absolute;
+    right: 0;
+}
+
+.center_div_1
+{
+    font-size: 8px;
+    position: absolute;
+    height: 55%;
+    width: 100%;
+}
+.center_div_2
+{
+    position: absolute;
+    height: 14%;
+    width: 100%;
+    top: 55%;
+}
+.center_div_3
+{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 69%;
+}
+.center_div_4
+{
+    position: absolute;
+    height: 9%;
+    width: 100%;
+    top: 79%;
+}
+.center_div_5
+{
+    position: absolute;
+    height: 6%;
+    width: 100%;
+    top: 88%;
+}
+.centerk_div_6
+{
+    position: absolute;
+    height: 6%;
+    width: 100%;
+    top: 94%;
+}
+.kd_div
+{
+    color: #7d7d7d;
+    position: absolute;
+    text-align: right;
+}

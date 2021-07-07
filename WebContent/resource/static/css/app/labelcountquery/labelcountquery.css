@@ -1,0 +1,340 @@
+﻿#labelM
+{
+    padding: 0px;
+    margin: 0px;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+}
+.label_main
+{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: 15px;
+}
+.label-table tbody tr
+{
+    line-height: 15px;
+}
+.label_char
+{
+    width: 420px;
+    height: 255px;
+    position: absolute;
+    bottom: 35px;
+}
+
+.label_horizontal_line
+{
+    width: 1px;
+    height: 230px;
+    background-color: black;
+    left: 30px;
+    position: absolute;
+    top: 25px;
+}
+.label_vertical_line
+{
+    width: 360px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 30px;
+    top: 255px;
+    z-index: 9999;
+}
+.label_train
+{
+    width: 370px;
+    height: 260px;
+    background-color: white;
+    position: absolute;
+    left: 31px;
+    bottom: 0px;
+    top: 1px;
+}
+.label_passenger_train_main
+{
+    width: 50px;
+    height: 270px;
+    background-color: white;
+    bottom: 5px;
+    left: 20px;
+    position: absolute;
+    top: 5px;
+}
+.label_passenger_train
+{
+    width: 50px; /*height: 250px;*/
+    background-color: rgb(43, 228, 198);
+    bottom: 20px; /*left: 40px;*/
+    position: absolute;
+}
+.label_goods_train_main
+{
+    width: 50px;
+    height: 270px;
+    background-color: white;
+    bottom: 5px;
+    left: 100px;
+    position: absolute;
+    top: 5px;
+}
+.label_goods_train
+{
+    width: 50px; /*height: 250px;*/
+    background-color: rgb(250, 111, 111);
+    position: absolute;
+    bottom: 20px; /*left: 150px;*/
+}
+.label_power_train_main
+{
+    width: 50px;
+    height: 270px;
+    background-color: white;
+    bottom: 5px;
+    left: 180px;
+    position: absolute;
+    top: 5px;
+}
+.label_power_train
+{
+    width: 50px; /*height: 250px;*/
+    background-color: rgb(124, 208, 241);
+    position: absolute;
+    bottom: 20px; /*left: 260px;*/
+}
+.label_high_train_main
+{
+    width: 50px;
+    height: 270px;
+    background-color: white;
+    bottom: 5px;
+    left: 260px;
+    position: absolute;
+    top: 5px;
+}
+.label_high_train
+{
+    width: 50px; /*height: 250px;*/
+    background-color: rgb(253, 193, 87);
+    position: absolute;
+    bottom: 20px; /*left: 370px;*/
+}
+.label_passenger_train_count
+{
+    width: 50px;
+    left: 15px;
+    position: absolute;
+}
+.label_passenger_train_type
+{
+    width: 50px;
+    bottom: 0px;
+    position: absolute;
+    left: 15px;
+}
+.label_goods_train_count
+{
+    width: 50px;
+    left: 15px;
+    position: absolute;
+}
+.label_goods_train_type
+{
+    width: 50px;
+    bottom: 0px;
+    position: absolute;
+    left: 15px;
+}
+.label_power_train_count
+{
+    width: 50px;
+    left: 15px;
+    position: absolute;
+}
+.label_power_train_type
+{
+    width: 50px;
+    bottom: 0px;
+    position: absolute;
+    left: 15px;
+}
+.label_high_train_count
+{
+    width: 50px;
+    left: 15px;
+    position: absolute;
+}
+.label_high_train_type
+{
+    width: 50px;
+    bottom: 0px;
+    position: absolute;
+    left: 15px;
+}
+.hiddenDiv
+{
+    display: none;
+}
+
+
+/*---------头部--------------------------*/
+
+.label_title
+{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 200px;
+    height: 30px;
+    background: #fff;
+}
+.label-basic-tab-div
+{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.label-tab-border-radius-left
+{
+    border-radius: 8px 0px 0px 0px;
+}
+.label-info-tab-div
+{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 60px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.label-img-tab-div
+{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 120px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.label-border-right
+{
+    border-right: 1px solid #ccc;
+}
+.label-tab-border-radius-right
+{
+    border-radius: 0px 8px 0px 0px;
+}
+
+.label-border-bottom-type
+{
+    border-bottom: 0px;
+}
+.label-border-top-click
+{
+    border-top: 1px solid #ccc;
+    background-color: #FFA900;
+    color: white;
+}
+.label-border-left
+{
+    border-left: 1px solid #ccc;
+}
+.label-tab-background
+{
+    background: #E9E9E9;
+}
+
+.hiddenDiv
+{
+    display: none;
+}
+/*-----------------右边div--------------------------*/
+.label_info
+{
+    width: 650px;
+    position: absolute;
+    height: 320px;
+    top: 70px;
+    left: 20px; /*background-color: rgb(228, 228, 228);*/
+}
+.tableInfo
+{
+    /*top: 50px; */
+    position: absolute; /* left: 17px; */ /* margin: 3px 10px 0px 10px; */
+    height: 310px;
+    width: 600px;
+    overflow-y: auto;
+}
+.tableInfoHeader
+{
+    /*top: 50px;*/
+    position: absolute;
+    left: 17px;
+    margin: 3px 10px 0px 10px;
+    height: 300px;
+    width: 600px;
+}
+.tableInfo_td
+{
+    width: 10px;
+}
+.tableInfoHeader_td
+{
+    width: 10px;
+}
+.tableInfo_td_long
+{
+    width: 30px;
+}
+.tableInfoHeader_td_long
+{
+    width: 30px;
+}
+/*------------------------------*/
+
+.DivImg
+{
+    width: 655px;
+    height: 277px;
+}
+.imgShow
+{
+    width: 680px;
+    height: 360px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    right: 5px;
+    border: 1px solid #ccc;
+}
+.label_img
+{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 40px;
+}
+.turntransfer
+{
+    position: absolute;
+    width: 170px;
+    height: 25px;
+    line-height: 20px;
+    top: 330px;
+    right: -300px;
+    z-index: 999999999;
+}

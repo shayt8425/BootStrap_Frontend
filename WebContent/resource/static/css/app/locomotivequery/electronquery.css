@@ -1,0 +1,94 @@
+.tab-start {
+	position: relative;
+	width: 10%;
+	height: 30px;
+	left: 0px;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	top: 1px;
+	display: inline-block;
+}
+.tab-end-div {
+	left: 50%;
+	position: absolute;
+	width: 20%;
+	height: 31.5px;
+	/* left: 180px; */
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	display: inline-block;
+	border-bottom: 0px;
+
+}
+
+.tab-start-head {
+	left: 10%;
+	position: absolute;
+	width: 20%;
+	height: 31.5px;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	display: inline-block;
+	border-bottom: 0px;
+	/* left: 0px; */
+
+}
+
+.tab-middle {
+	left: 30%;
+	position: absolute;
+	width: 20%;
+	height: 31.5px;
+	/* left: 60px; */
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	display: inline-block;
+	border-bottom: 0px;
+}
+
+.tab-middle-end {
+	left: 50%;
+	position: absolute;
+	width: 20%;
+	height: 31.5px;
+	/* left: 60px; */
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	/*display: inline-block;*/
+	border-bottom: 0px;
+}
+
+.tab-div1-new {
+	left: 0px;
+	position: absolute;
+	top: 5px;
+	width: 40%;
+	height: 30px;
+	background: #fff;
+}
+
+.content-locospread-electronDiv{
+	width: 100%;
+	height: 95%;
+}
+
+.content-locospread-electron-c{
+	position: relative;
+	/*position: absolute;*/
+	width: 100%;
+	overflow: auto;
+	height: 96%;
+}

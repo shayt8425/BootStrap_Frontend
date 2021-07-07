@@ -1,0 +1,571 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>工业传动</title>
+<link href="resource/plug/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="resource/plug/bootstrap-table/bootstrap-table.css" />
+<link rel="stylesheet" href="resource/plug/toastr/toastr.min.css" />
+<link rel="stylesheet" href="resource/css/frontcommon.css" />
+
+<script type="text/javascript" src="resource/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="resource/plug/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="resource/plug/bootstrap-table/bootstrap-table.js"></script>
+<script type="text/javascript" src="resource/plug/bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script type="text/javascript" src="resource/plug/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="resource/plug/zTree_v3/js/jquery.ztree.all.min.js"></script>
+<script type="text/javascript" src="resource/plug/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="resource/plug/uploadify-3.2.1/jquery.uploadify.min.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapTree.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapMessage.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapFormItem.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapTable.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapDialog.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapTooltip.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapMenu.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-Parser.js"></script>
+<script type="text/javascript" src="resource/js/echarts_4.1.0.js"></script>
+<script type="text/javascript" src="resource/js/workspace_websocket.js"></script>
+<script type="text/javascript" src="resource/js/workspace_echarts.js"></script>
+<!-- 高德地图 -->
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=33e348fe06b53acd39ee976cda540e80"></script>
+<style type="text/css">
+.amap-logo {display: none !important;} 
+.amap-copyright {bottom:-100px;display: none;}  
+.title{line-height:40px;background: #fff;border-bottom: solid #eaedf5 1px;padding-left: 10px;}
+.data_item{width:calc((100% - 20px)/2);height:calc((100% - 40px)/4);float:left;margin: 0 0 10px 10px;background: #e7f2f9;position: relative;color:#666;padding: 3px 0 0 10px;}
+.key{font-size:12px;}
+.value{color:#1789d1;width:17%;font-weight: 700}
+.row_{line-height:16px}
+.row_ span{display: inline-block;/* overflow: hidden */}
+/* .tableContainer{min-height: 496px;} */
+.fixed-table-container table {width: 100%;table-layout: fixed;}
+ /*风场详细信息样式*/
+.tip{
+	width:200px;
+	height:104px;
+	display:none;
+	background-color:#31a0e7;
+	color:#fff;
+	line-height:25px;
+	border-radius:3px;
+	z-index: 100;
+	opacity:0.9;
+	padding-left: 10px;
+	pointer-events: none;
+}
+.l{float: left;}
+.r{margin-left: 100px;}
+
+.data_title{font-size: 14px;font-weight:700;height:30%;display:flex;align-items:center;}
+.data_value{font-size:12px;height:60%;}
+.row_{height: 30%;    margin: 10px 0px;display:flex;align-items:center;}
+/*.row_>span{font-size: 1.2vw;}*/
+.fixed-table-container{border-width:0 !important;}
+::-webkit-scrollbar{width:0px;}
+</style>
+</head>
+<body style="background:#F2F4F8;overflow: auto;">
+<div id="tooltip" class="tip"></div>
+<!-- 顶部悬浮多选栏 -->
+<div style="position:fixed;height:40px;line-height:40px;top:0px;left:0px;z-index:10;background: #F2F4F8;width:100%;">
+	<div style="float:left;margin:0 35px 0 5px;">行业选择:</div>
+	<div class="common_form_" style="float:left">
+		<FormItem id="checkbox" name="industryType" type="checkbox" readonly="true" datas=":chekbox_data" change=":selectType"></FormItem>
+	</div>
+</div>
+<!-- 
+<div style="position:fixed;height:10px;top:50px;left:0px;z-index:10;background: #F2F4F8;width:100%;"></div>
+ -->
+<!-- 主体 -->
+<div style="width:calc(100% - 1px);margin:50px 0px 0px 0px">
+	<div class="row1" style="height:calc(100vh - 111px);">
+		<!-- 全局地图 -->
+		<div style="width:57.6%;height:100%;background:#fff;float:left;border:solid #ccc 1px;">
+			<div class="title">全局地图</div>
+			<div id="gdmap" style="height:calc(100% - 41px)"></div>
+		</div>
+		<!-- 行业核心数据 -->
+		<div style="width:calc(42.4% - 10px);height:100%;background:#fff;float:left;margin-left:10px;">
+			<div class="title">行业核心数据</div>
+			<div class="data_area" style="padding:10px 10px 0 0;height:calc(100% - 41px)">
+				<div id="bg-fd" class="data_item" style="background: url(resource/images/workspace/bg-fd.png); background-size:100% 100%;">
+					<div class="data_title">风电</div>
+					<div class="data_value">
+						<div class="row_">
+							<span id="windDeviceNums" class="value" style="width:40%">125</span>
+							<span id="powerCount" class="value" style="">263</span>
+						</div>
+						<div class="row_">
+							<span class="key" style="width:40%">装机(台)</span>
+							<span class="key" style="">累计发电量(kWh)</span>
+						</div>
+					</div>
+				</div>
+				<div id="bg-kk" class="data_item" style="background: url(resource/images/workspace/bg-kk.png); background-size:100% 100%;">
+					<div class="data_title">
+						矿卡
+					</div>
+					<div class="data_value">
+						<div class="row_">
+							<span id="" class="value" style="width:40%">1</span>
+							<span id="" class="value" style="">1052</span>
+						</div>
+						<div class="row_">
+							<span class="key" style="width:40%">车辆数(台) </span>
+							<span class="key" style="">总里程(公里)</span>
+						</div>
+					</div>
+				</div>
+				<div id="bg-tlgd" class="data_item" style="background: url(resource/images/workspace/bg-tlgd.png); background-size:100% 100%;">
+					<div class="data_title">
+						铁路供电
+					</div>
+					<div class="data_value">
+						<div class="row_">
+							<span id="overProjectNums" class="value" style="width:40%">125</span>
+							<span id="days" class="value" style="">263</span>
+						</div>
+						<div class="row_">
+							<span class="key" style="width:40%">项目(个)</span>
+							<span class="key" style="">运行(天)</span>
+						</div>
+					</div>
+				</div>
+				<div id="bg-zgycd" class="data_item" style="background: url(resource/images/workspace/bg-zgycd.png); background-size:100% 100%;">
+					<div class="data_title">
+						中高压变频
+					</div>
+					<div class="data_value">
+						<div class="row_">
+							<span id="" class="value" style="width:40%">5</span>
+							<span id="" class="value" style="">126300</span>
+						</div>
+						<div class="row_">
+							<span class="key" style="width:40%">项目(个)</span>
+							<span class="key" style="">累计节能(kWh)</span>
+						</div>
+					</div>
+				</div>
+				<div id="bg-nlhk" class="data_item" style="background: url(resource/images/workspace/bg-nlhk.png); background-size:100% 100%;">
+					<div class="data_title">
+						能量回馈
+					</div>
+					<div class="data_value">
+						<div class="row_">
+							<span id="" class="value" style="width:40%">0</span>
+							<span id="" class="value" style="">0</span>
+						</div>
+						<div class="row_">
+							<span class="key" style="width:40%">项目(个)</span>
+							<span class="key" style="">回馈电量(kWh)</span>
+						</div>
+					</div>
+				</div>
+				<div id="bg-kt" class="data_item" style="background: url(resource/images/workspace/bg-kt.png); background-size:100% 100%;">
+					<div class="data_title">
+						空调
+					</div>
+					<div class="data_value">
+						<div class="row_">
+							<span id="" class="value" style="width:40%">310</span>
+							<span id="" class="value" style="">372583</span>
+						</div>
+						<div class="row_">
+							<span class="key" style="width:40%">设备(台)</span>
+							<span class="key" style="">节能(kWh)</span>
+						</div>
+					</div>
+				</div>
+				<div id="bg-gf" class="data_item" style="background: url(resource/images/workspace/bg-gf.png); background-size:100% 100%;">
+					<div class="data_title">
+						光伏
+					</div>
+					<div class="data_value">
+						<div class="row_">
+							<span id="" class="value" style="width:40%">0</span>
+							<span id="" class="value" style="">0</span>
+						</div>
+						<div class="row_">
+							<span class="key" style="width:40%">装机(台)</span>
+							<span class="key" style="">发电量(kWh)</span>
+						</div>
+					</div>
+				</div>
+				<div  id="bg-dznl" class="data_item" style="background: url(resource/images/workspace/bg-dznl.png); background-size:100% 100%;">
+					<div class="data_title" >
+						电能质量
+					</div>
+					<div class="data_value">
+						<div class="row_">
+							<span id="" class="value" style="width:40%">2</span>
+							<span id="" class="value" style="">25</span>
+						</div>
+						<div class="row_">
+							<span class="key" style="width:40%">项目(个)</span>
+							<span class="key" style="">安全运行(天) </span>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 故障告警列表 -->
+	<div class="row2" style="margin-top:10px;">
+		<div style="width:calc(35% - 10px);float:left;background: #fff">
+			<div class="title">本月告警处理统计</div>
+			<div>
+				<div class="graphContainer" id="error_graph" style="width:100%;margin:0 auto" ></div>
+			</div>
+		</div>
+		<div style="width:calc(65%);float:right;background: #fff;">
+			<div class="title" style="position: relative;">
+				<span>实时告警&emsp;</span> 
+				<span>共&nbsp;</span><span id="error_num" style="color:red">0</span>&nbsp;条
+					<!-- <span id="error_num" style="width:14px;height:14px;background:red;color:#fff;border-radius:50%;position: absolute;top:7px;line-height: 14px;text-align: center;left:66px;font-size:12px">0</span> --> 
+				</div>
+			<div class="tableContainer">
+				<table id="table1" pageSize="8" onClickRow=":openDetail" queryParams=":getTableParams" detailView="false"  url="faultAlarm/pageList.json"   columns=":columns_fault" height="288"></table>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<!-- 工单进度列表 -->
+	<div class="row3" style="margin-top:10px;">
+		<div style="width:calc(35% - 10px);float:left;background: #fff">
+			<div class="title">工单进度统计</div>
+			<div>
+				<div class="graphContainer" id="order_graph"  style="width:100%;margin:0 auto" ></div>
+			</div>
+		</div>
+		<div style="width:calc(65%);float:right;background: #fff;">
+			<div class="title">工单进度列表</div>
+			<div class="tableContainer">
+				<table id="table2" pageSize="13" detailView="false"   url="faultAlarm/pageList.json"   columns=":columns_order"  height="288"></table>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+</div>
+<script>
+
+
+if(top.document.body.clientWidth>1400){
+	//$('.tableContainer').css('min-height','315px');、parseInt($('.graphContainer').css('width').split('px')[0])+23
+	$('.graphContainer').css('height',"288px");
+	//$('.data_title').css('line-height','74px');
+	$('#table1').attr('pageSize','8');
+	$('#table2').attr('pageSize','8');
+	//右边数据背景图比例调整
+	$('.data_item').each(function(){
+		var id = $(this).attr('id');
+		$(this).css({'background':'url(resource/images/workspace/'+ id + '-b.png)','background-size':'100% 100%','padding': '7px 0 0 26px'})
+	});
+	$(".data_value").css({"font-size":"36px","height":"60%","margin-top":"27px"});
+	$(".data_title").css({"font-size":"36px"});
+	$(".value").css({"font-size":"36px","font-weight":"700"});
+	$(".key").css({"font-size":"24px"});
+}else{
+	//$('.tableContainer').css('min-height','315px');
+	//$('.graphContainer').css('height',parseInt($('.graphContainer').css('width').split('px')[0])+50);
+	$('.graphContainer').css('height',"288px");
+	$('#table1').attr('pageSize','8');
+	$('#table2').attr('pageSize','8');
+	//右边数据背景图比例调整
+	$('.data_item').each(function(){
+		var id = $(this).attr('id');
+		$(this).css({'background':'url(resource/images/workspace/'+ id + '.png)','background-size':'100% 100%','padding': '3px 0 0 10px'})
+	});
+	$(".data_value").css({"font-size":"12px","height":"60%","margin-top":"0px"});
+	$(".data_title").css({"font-size":"14px","font-weight":"700"});
+	$(".value").css({"font-size":"14px","font-weight":"700"});
+	$(".key").css({"font-size":"12px"});
+	
+}
+
+
+var days = parseInt((new Date().getTime() - new Date("2018-5-1 00:00:00").getTime()) / 86400000);
+$('#days').html(days);
+//故障详情
+//序号、行业类型、设备名称、故障时间、故障名称、故障等级、故障状态、详情
+var columns_fault = [{
+	title: '序号',//标题  可不加
+	formatter: function (value, row, index) {
+		return index+1;
+	},
+	align: 'center',
+	width:50
+	
+},{
+    title: '行业类型',
+    field: 'industryTypeName',
+    align: 'center',
+    valign: 'middle',
+    width:100
+}, {
+	title: '设备编号',
+    field: 'deviceName',
+    align: 'center',
+    width:100
+}, {
+	title: '故障时间',
+    field: 'startTime',
+    align: 'center',
+    width:150
+}, {
+	title: '等级',
+	field: 'faultLev',
+    align: 'center',
+    width:50
+},{
+	title: '故障名称',
+	field: 'faultContent',
+    align: 'left'
+}];
+//工单进度
+//序号、标题、任务类型、处理时间、处理人、状态、详情
+var columns_order = [{
+	title: '序号',//标题  可不加
+	formatter: function (value, row, index) {
+		return index+1;
+	},
+	align: 'center',
+	width:50
+},{
+    title: '标题',
+    field: 'industryTypeName',
+    align: 'center',
+    valign: 'middle',
+    width:100
+}, {
+	title: '任务类型',
+    field: 'deviceName',
+    align: 'center',
+    width:100
+}, {
+	title: '处理时间',
+    field: 'startTime',
+    align: 'center',
+    width:150
+}, {
+	title: '处理人',
+	field: 'faultLev',
+    align: 'center',
+    width:100
+},{
+	title: '详情',
+	field: 'faultContent',
+    align: 'left'
+}];
+
+/**地图多选框配置**/
+var chekbox_data = [{value:'3',label:'风电'},
+                    {value:'5',label:'矿卡'},
+                    {value:'8',label:'铁路供电'},
+                    {value:'2',label:'空调'},
+                    {value:'4',label:'光伏'},
+                    {value:'6',label:'中高压变频'},
+                    {value:'9',label:'能量回馈'},
+                    {value:'7',label:'电能质量'}
+                    ];
+
+
+window.tableHeight = document.getElementsByClassName("tableContainer")[0].clientHeight;
+window.form = $(".common_form_").formParser()[0];
+window.table1 = $("#table1").tableParser()[0];
+window.table2 = $("#table2").tableParser()[0];
+var map = new AMap.Map('gdmap',{
+    zoom: 4, //设置地图的缩放级别
+    center:[105.07,37.88],
+    features : ['bg', 'point','road']
+});
+form.getFormItemById('checkbox').setValue('2,3,4,5,6,7,8,9'); 
+//console.log(top.userSessionBean)
+var markers = getMarkers();
+function selectType(oldValue, newValue){
+	var types = newValue.split(",");
+	showMapDatas(types);
+	table1.searchByParams();
+	fillEcharts(newValue);
+	$.ajax({
+		url:'faultAlarm/list.json',
+		data:{industryType:newValue},
+		async:true,
+		type:'post',
+		dataType:'json',
+		success:function(data){
+			$('#error_num').html(data.length);
+		}
+	});
+}
+
+function showMapDatas(types){
+	map.clearMap();
+	for(var i in markers){
+		for(var j in types){
+			if(markers[i]['info']['productSerial'] == types[j]){
+				map.add(markers[i]);
+				break;
+			}
+		}
+	}
+	
+}
+/**
+ * 显示标点信息
+ * @param marker
+ * @param e
+ */
+function showInfo(marker,e){
+	var mousePos = e.pixel;
+    var  xOffset = 45;
+    var  yOffset = 0;
+    $("#tooltip").css("display","block").css("position","absolute").css("top",(mousePos.y - yOffset) + "px").css("left",(mousePos.x + xOffset) + "px");
+    var html = [];
+    html.push("<div class='l'>行业类型：</div><div class='r'>");
+    html.push(marker.info.serialName+"</div>");
+    html.push("<div class='l'>项目名称：</div><div class='r'>");
+    html.push(marker.info.projectName+"</div>");
+    html.push("<div class='l'>项目位置：</div><div class='r'>");
+    html.push(marker.info.provinceName+"</div>");
+    html.push("<div class='l'>设备数量：</div><div class='r'>");
+    html.push(marker.info.realDeviceNum+"台</div>");
+    $("#tooltip").append(html.join(""));
+}
+function hideInfo(marker,e){
+	 $("#tooltip").empty();
+     $("#tooltip").css("display","none");
+}
+
+function getMarkers(){
+	var markers = [];
+	
+	var customerId = '';
+	//超级管理员
+	/*
+	if(top['userSessionBean']['userBean']['userType'] == 0){
+		customerId = '';
+	}else{
+		customerId = top.userSessionBean.userBean.userId;
+	}
+	*/
+	$.ajax({
+		url:'project/list.json',
+		data:{customerId:customerId},
+		async:false,
+		type:'post',
+		dataType:'json',
+		success:function(data){
+			var windProjectNums = 0;
+			var mv = 0;
+			var overProjectNums = 0;
+			var list = data['result'];
+			for(i in list){
+				//风场数据
+				if(list[i]['productSerial']==3){
+					windProjectNums++;
+					mv = parseInt(mv) + parseInt(list[i].captive);
+				}
+				if(list[i]['productSerial']==8){
+					overProjectNums++;
+				}
+				
+				var center = list[i]['center'];
+				var j = center.split(',')[0];
+				var w = center.split(',')[1];
+				var point = new AMap.LngLat(j,w);
+				var offset = new AMap.Pixel(-16,-16);
+				var icon = new AMap.Icon({image:"resource/images/workspace/"+list[i]['productSerial']+".png"});
+				var marker = new AMap.Marker({position:point, icon: icon,offset:offset});
+				//把项目信息保存到标点中，方便hover事件
+				marker.info = list[i];
+				marker.on("mouseover",function(e){ 
+					showInfo(this,e);
+				});  
+				marker.on("mouseout", function(e){   
+					hideInfo(this,e);
+				}); 
+				marker.on("click", function(e){  
+					hideInfo(this,e);
+					if(this.info.productSerial==2){
+						top.document.getElementById('air').click();	
+					}
+					
+				});
+				markers.push(marker);
+			}
+			$('#overProjectNums').html(overProjectNums);
+			$('#windProjectNums').html(windProjectNums);
+			$('#mv').html(mv);
+		}
+	});
+	return markers;
+}
+
+function getTableParams(params){
+	//定制后台参数
+	var p = window.form.getFormData();
+	p.endTime = '';
+	params.jsonParam = JSON.stringify(p);
+	return params;
+}
+var modelEcharts = echarts.init(document.getElementById("error_graph"));
+var order_graph = echarts.init(document.getElementById("order_graph"));
+var dealedNum = 0;
+var finishedNum = 0;
+var dealingNum = 0;
+var allNum = 0;
+var newData;
+function fillEcharts(types){
+	$.ajax({
+		url:'faultAlarm/list.json',
+		data:{industryType:types,startTime: new Date(),endTime: new Date()},
+		async:false,
+		type:'post',
+		dataType:'json',
+		success:function(data){
+			dealedNum = 0;
+			finishedNum = 0;
+			dealingNum = 0;
+			for(var i in data){
+				if(data[i]['endTime']){
+					dealedNum++;
+				}else{
+					dealingNum++;
+				}
+			}
+			allNum = dealedNum + dealingNum+dealedNum;
+			newData = [{name:"已处理数",value:dealedNum},{name:"进行中",value:dealingNum},{name:"已完成数",value:dealedNum}]
+			modelEcharts.setOption(pieOption);
+			modelEcharts.setOption({title:{subtext:'\t\t\t\t\t\t\t\t\t'+allNum+'台'},series:[{data:newData}]});
+			order_graph.setOption(pieOption);
+			
+		}
+	});
+}
+function openDetail(row){
+    console.log(row);
+	var width = top.document.documentElement.clientWidth-350;
+		var height = top.document.documentElement.clientHeight-50;
+	var dialog = top.FrontCommon.showDialog({
+		title:'故障详情',
+		width:width,
+		height:height,
+		content:FrontCommon.contextPath+'/faultinfo.html',
+		success:function(){
+	    this.getFrameWin().initModify(row); 
+		
+		},
+		buttons:[{icon:'power-off',text:'关闭',type:'default',click:function(){
+			top.FrontCommon.closeDialog(dialog);
+		}}]
+	}); 
+}
+</script>
+
+</body>
+</html>

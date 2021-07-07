@@ -1,0 +1,83 @@
+.eelectronraildepotPoint-detail-editDiv-tab01 tr{
+	height:28px;
+}
+
+
+.eelectronraildepotPoint-detail-editDiv-tab01{
+	/* margin:15px;  */
+	margin-left: 46px;
+}
+
+.eelectronraildepotPoint-detail-editDiv-tab02{
+	margin-left: 35px;
+}
+
+.eelectronraildepotPoint-detail-showDiv-tab01{
+	margin:15px;
+	margin-left: 46px;
+}
+
+.eelectronraildepotPoint-detail-showDiv-tab01 tr{
+	height:28px;
+}
+	
+.electronraildepotPoint-detail-title{
+	background:#444C60;
+	position: absolute;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+/*     left: 20px; */
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;	
+    color: #fff;
+}
+.electronraildepotPoint-showOutDiv{
+	margin-top:30px;
+}
+.electronraildepotPoint-editOutDiv{
+	margin-top:30px;
+	color:#444C60;
+}	
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th {
+	text-align: right;
+}
+
+.eelectronraildepotPoint-lineSelect {
+	width: 90%;
+    height: 70%;
+    position: absolute;
+    display: none;
+    left: 55%;
+    top: 70%;
+    background-color: #FFFFFF;
+    z-index: 9999999999;
+    overflow: auto;
+}
+
+
+.paragraphSelect-table {
+    width: 100%;
+    height: 100%;
+}
+
+.paragraphSelect-table tr {
+    background: rgb(221, 220, 220);
+}
+
+.paragraphSelect-table tr td {
+    width: 30.34%;
+    height: 30.34%;
+    text-align: center;
+    border: 1px solid rgb(200, 199, 199);
+}
+
+.txt-impt {
+    color: #C00;
+}

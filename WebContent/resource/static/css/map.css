@@ -1,0 +1,9 @@
+/* 侧边选项卡 */
+.wdgtabs{ margin-top:-130px; z-index:2;top:50%; left:0 }
+.wdgtabs a{ text-decoration:none; display:block; width:30px; height:130px; background-image:url('../img/wdgtabs_1.png'); background-repeat:no-repeat; background-size:100% 100%; transition:opacity .5s }
+.wdgtabs a:hover{ opacity:.8 }
+.wdgtabs span{ display:block; margin:0 auto; padding:33px 0; width:15px; line-height:16px }
+.wdgtabs .actived{ background-image:url('../img/wdgtabs_2.png') }
+.color3 {
+    color: #fff;
+}

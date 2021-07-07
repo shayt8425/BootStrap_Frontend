@@ -1,0 +1,33 @@
+.x-dropdown{
+	width: auto;
+	position: absolute;
+	overflow: auto;
+	z-index:1000;
+	border: 1px #cccccc solid;
+	background: #ffffff;
+}
+
+.x-dropdown-container{
+	width: auto;
+	padding: 0px 0px;
+}
+
+.x-dropdown-item{
+	padding: 5px 5px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #333333;
+	font-family: monospace;
+}
+
+.x-dropdown-item-hover{
+	background-color: #cccccc;
+}
+
+.x-dropdown-item-active{
+	background-color: #cccccc;
+}
+
+.x-dropdown-hidden{
+	display: none;
+}

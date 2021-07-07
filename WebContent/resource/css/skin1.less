@@ -1,0 +1,279 @@
+// Color variables 
+@white: #ffffff; // 
+@lightblue: #5cacee; // @lightblue
+@sky: #3366ff; // @sky
+@darkblue: #3333cc; // @darkblue
+@lightred: #d9534f; // @lightred
+@gray: #909090; // @gray
+@black:#000000;
+
+
+@header_bgcolor:#078DCE;//顶部背景
+@left_bg_color:#1A1D23; //左侧菜单栏背景
+@left_bg_color_second:lighten(#1A1D23, 10%);//左侧二级菜单栏背景
+@left_menu_active:#3E76AD; //左侧菜单当前栏状态
+@left_menu_hover: lighten(#3E76AD, 10%);//左侧菜单鼠标悬停状态
+@left_menu_border_color_light: lighten(#1A1D23, 10%);//菜单栏分割线
+@left_menu_border_color_dark: darken(#1A1D23, 10%);//菜单栏分割线
+@base_toolbar_bg:rgba(0, 0, 0, 0.5); //右上角工具条背景
+@nav_tab_bg: #F0F0F0;//tab标签页背景
+@tabs_menu_hover:#3E76AD; //tab标签页当前状态
+@shadow:rgba(0, 0, 0, 0.2);//阴影颜色
+@smfont:12px;
+@import "color_bg_border.less";
+
+/*skin */
+html,body{ font-family: "microsoft yahei" !important;height: 100%;}
+.pos-r{position: relative;}
+.pos-a{position: absolute;}
+.pos-f{position: fixed;}
+.container-fluid{height: 100%;}
+.row {margin-right: -5px;margin-left: -5px;}
+.panel{margin-bottom: 0px;}
+.height100percent{height: 100%;}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {padding-right: 5px;padding-left: 5px;height: 100%;}
+
+::-webkit-scrollbar {width: 6px;}
+::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); background: rgba(255,255,255,0.8);border-radius: 0px;}
+::-webkit-scrollbar-thumb {border-radius: 0px;background:@lightblue;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); }
+
+.shadow{-webkit-box-shadow: 1px 3px 5px @shadow;-moz-box-shadow: 1px 3px 5px @shadow;box-shadow: 1px 3px 5px @shadow;}
+hr{margin-top: 10px;margin-bottom: 10px;}
+#base-header {background:url(../images/header_bg.png) left top no-repeat @header_bgcolor; border-bottom-color:@black; 
+	#base-logo {color: @white; }
+	#base-top{
+		ul{ 
+			li { 
+				a { color: @white; font-weight: bold; font-size: @smfont;	
+					.icon{ width: 24px; height: 24px; vertical-align: middle;}
+					span{ vertical-align: middle;}
+					&:hover{ background:url(../images/topicon_hover.png) center center no-repeat  ; //darken(@header_bgcolor, 30%)
+					}
+				}
+			}
+		}
+	}
+	#base-toolbar { background: @base_toolbar_bg; border-radius: 0px 0px 5px 5px; font-size: @smfont;
+		.dropdown-toggle{color: @white;
+				&:hover{background: lighten(@base_toolbar_bg, 10%);border-radius: 0px 0px 5px 5px; }
+				&:focus{}
+			}
+		.base-toolbar-item {color:@white;border-radius: 0px 0px 5px 5px;
+			&:hover {background: @white;color: @lightblue;}
+			}
+		}
+	}
+#base-left {background: @left_bg_color;
+#base_left_top {
+	.base-top-menu {color: @white;
+		&:hover {color:@lightred;}
+			}
+		}
+	}
+#base-right {background: @white;}
+
+.base-top-menu-current {color:@left_menu_active;}
+
+#base-left-ul {
+	li {border-top: 1px solid @left_menu_border_color_light;border-bottom: 1px solid @left_menu_border_color_dark;color: @white;
+			div {
+					&:hover {background: @left_menu_hover;}
+				}
+			ul { background: @left_bg_color_second;
+				li {color: @white;
+					&:hover {background: @left_menu_hover;}
+					}
+				}
+		&:first-child{ border-top:none;}
+		&:last-child{border-bottom:none;}
+		}
+}
+#base-left-ul-cache {border-top: 1px solid @left_menu_border_color_light;border-bottom: 1px solid @left_menu_border_color_dark;color: @white;
+	div {
+		&:hover {background: @left_menu_hover;}
+		}
+	ul {
+		li {color: @white;
+			&:hover {background: @left_menu_hover;}
+			}
+		}
+	}
+.base-second-menu-current {background: @left_menu_active;}
+.base-third-menu-current {background: @left_menu_active;}
+.colse-tab-btn {
+	&:hover {}
+	}
+
+#base-tabs-ul { background: @nav_tab_bg;  overflow: hidden; padding-top: 5px;border-bottom: 3px solid @white; box-shadow:inset 0px -1px 3px @shadow;
+	li{
+		&.active{
+			a{border-top:3px solid @sky; box-shadow: 0px 0px 5px @shadow;
+				&:hover{background: @white; color: @black}
+			}
+		}
+	}
+	a { border-top:3px solid @nav_tab_bg;
+		&:hover{background: @tabs_menu_hover; color: @white;}
+		&:focus {}
+	}
+}
+//loading
+.base-loading {background: @white;}
+
+//按钮工具栏 
+.base-navbar {opacity:0.9;}
+
+//搜索表单栏
+.base-search {}
+
+//隐藏的搜索表单栏
+.base-search-hide {}
+
+//列表的toolbar
+.base-datatable-toolbar {
+	button {}
+}
+
+// pin
+.base-pin {background:@white;color:@lightblue;opacity:0.7;//box-shadow:2px 2px 5px @gray;
+	span {opacity:0.7;
+		&:hover {background: @white;opacity:0.9;}
+		}
+	&:hover {opacity:0.9;}
+}
+
+//收缩菜单后，缓存三级菜单的div class
+.base-cache-third-menu {background: @lightblue;box-shadow:2px 2px 5px @gray;
+	ul {}
+}
+
+//panel css
+.base-panel {}
+
+//附件列表样式
+.attach_btn {}
+.attach_img {}
+
+//校验表单样式 
+/*(jquery.validationEngine.js) 这里的样式留空，并没实际意义 只是为了校验表单做的div样式，方便js找到此div然后加上has-error样式*/
+.validate-group {}
+
+//更多
+.more { position: absolute;right: 10px;top: 16px; z-index: 100;}
+
+//通知公告
+.notice { position: relative;
+	strong{display: inline-block; position: absolute;left: 10px; top: 16px ; z-index: 2;}
+	ul{ position: relative;z-index: 1; list-style: none; display: inline-block;vertical-align: middle; margin: 0px;padding: 0px 50px 0px 70px ; height: 20px; overflow: hidden;}
+}
+
+.panel-default{ .shadow; 
+	.panel-heading{ border:none;border-bottom: 3px solid @gray; padding: 6px 10px;
+		a{.white;
+			&:hover{.yellow}
+		}
+		.panel-caption{font-weight: bold;  }
+		.panel-buttons{ float: right; i{ font-size: 14px;} }
+	}
+	.panel-body{transition: all 0.3s; height: auto;}
+}
+
+//文章列表
+.articlelist{padding: 0px 0px 0px 20px; margin-bottom: 0px; 
+	li{position: relative; line-height: 2; font-size: @smfont;border-bottom: 1px dashed white;.bordered-lightgray;
+		span.date{ position: absolute;right: 10px; top: 0px;}
+	}
+}
+
+//团队交流
+.comment{font-size: @smfont; position: relative; border-bottom: 1px dashed @gray;.bordered-gray; padding-bottom: 10px;padding-top: 10px;
+	.icon{width: 36px; height: 36px; vertical-align: top; position: absolute;top: 5px; left: 5px;
+		&+a{position: absolute;right: 0px; top: 5px; outline: none;}
+	}
+	.comment-body{  vertical-align: top; padding-left: 45px;  
+		.comment-text{
+			.comment-header{ padding-bottom: 5px;
+				a{ font-size: @smfont;
+					&:hover{}
+				}
+				span{font-size: @smfont;.lightgray;padding-left: 10px;}
+			}
+		}
+		.comment-footer{text-align: right;}
+	}
+}
+.comment-reply{.bordered-solid;.bordered-1; background-color: lighten(@lightblue,32%);border-color: lighten(@lightblue,28%) !important; border-radius: 5px;margin-left: 40px; margin-top: 10px;}
+
+//弹窗
+.modal{
+	.modal-dialog{
+		.modal-content{
+			.modal-header{ padding: 10px; border-radius: 5px 5px 0px 0px;
+				.modal-title{ font-size: 14px;}
+			}
+			.modal-body{}
+			.modal-footer{padding: 10px;}
+		}
+	}
+}
+
+//fieldset
+ fieldset{ border:1px solid @lightblue;padding:0px 10px 10px 10px; margin-bottom: 10px;
+ 	legend{border-bottom:none; width: auto; font-size: 14px; margin-bottom: 0px; font-weight: bold;padding: 0px 10px; color:@lightblue}
+          }       
+//表单用
+.form-group{margin-bottom: 10px ;}
+
+//checkbox radio样式
+
+.radio, .checkbox {position: relative;display: block;min-height: 20px;margin-top: 10px;margin-bottom: 10px;
+	label{padding-left: 0px;margin-bottom: 0;font-weight: 400;cursor: pointer; padding-right: 20px;}
+}
+input[type=checkbox]{opacity: 0;position: absolute;left: -9990px; margin-left: 0px; z-index: 12;width: 18px;height: 18px;cursor: pointer;
+	&+span.text{color: @gray;
+		&:before{font-family: fontAwesome;font-weight: bold;font-size: 13px;color: #333;content: " ";background-color: #fafafa;border: 1px solid #c8c8c8;box-shadow: 0 1px 2px rgba(0,0,0,.05);border-radius: 0;display: inline-block;text-align: center;vertical-align: middle;height: 18px;line-height: 16px;min-width: 18px;margin-right: 5px;margin-bottom: 2px;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-o-transition: all .3s ease;transition: all .3s ease;}
+	}
+}
+input[type=checkbox]:checked{outline: none!important;
+	&+span.text{
+		&:before{ 
+			font-family: fontAwesome;font-weight: bold;font-size: 13px;content: "\f00c";box-shadow: 0 1px 2px rgba(0,0,0,.05);border-radius: 0;display: inline-block;text-align: center;vertical-align: middle;height: 18px;line-height: 16px;min-width: 18px;margin-right: 5px;margin-bottom: 2px;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-o-transition: all .3s ease;transition: all .3s ease;
+		}
+	}
+}
+input[type=radio]{opacity: 0;position: absolute;left: -9990px; margin-left: 0px; z-index: 12;width: 18px;height: 18px;cursor: pointer;
+	&+span.text{color: @gray;
+		&:before{font-family: fontAwesome;font-weight: bold;font-size: 13px;color: #333;content: " ";background-color: #fafafa;border: 1px solid #c8c8c8;box-shadow: 0 1px 2px rgba(0,0,0,.05);border-radius: 10px;display: inline-block;text-align: center;vertical-align: middle;height: 18px;min-width: 18px;margin-right: 5px;margin-bottom: 2px;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-o-transition: all .3s ease;transition: all .3s ease;}
+	}
+}
+input[type=radio]:checked {outline: none!important;
+	&+span.text{
+		&:before{ 
+			font-family: fontAwesome;font-weight: bold;font-size: 13px;content: "\f111";box-shadow: 0 1px 2px rgba(0,0,0,.05);border-radius: 10px;display: inline-block;text-align: center;vertical-align: middle;height: 18px;min-width: 18px;margin-right: 5px;margin-bottom: 2px;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-o-transition: all .3s ease;transition: all .3s ease;
+		}
+	}
+}
+
+.checkbox_blue{
+	input[type=checkbox]:checked{
+	&+span.text{color: @lightblue !important;
+		&:before{ color: @lightblue !important;background-color: white;border: 1px solid @lightblue;}
+	}
+	}
+	input[type=radio]:checked {outline: none!important;
+	&+span.text{color: @lightblue !important;
+		&:before{ color: @lightblue !important;background-color: white;border: 1px solid @lightblue;}
+	}
+	}
+			}
+
+//更多搜索条件
+.moreSearch{display: none;.shadow;
+	.pos-a;top: 35px;left: 0px;width:300px; z-index: 10;.bg-white;.bordered-1;.bordered-gray;.padding10;
+	table{margin-bottom: 0px;
+	td{.noborder  !important; vertical-align: middle !important;padding: 5px !important;}
+	}
+	.form-control{float: none;}
+}
+
+//alert <div class="alert noborder bg-info bordered-left-5 bordered-sky white padding10">是放水电费水电费水电费</div>

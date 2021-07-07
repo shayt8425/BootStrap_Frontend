@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" href="../resource/plug/bootstrap-3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../resource/css/resume.css" />
+<script type="text/javascript" src="../resource/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../resource/js/resume.js"></script>
+<title>设备履历实例</title>
+<style type="text/css">
+
+    	
+</style>
+</head>
+<body>
+	<p>1、引入</p>
+	<p>resource/plug/bootstrap-3.3.7/css/bootstrap.min.css</p>
+	<p>resource/css/resume.css</p>
+	<p>resource/js/jquery-3.2.1.min.js</p>
+	<p>resource/js/resume.js</p>
+	
+	<br>
+	
+	<p>2、复制下面的html文本</p>
+	
+	<br>
+	
+	<p>3、drawResume("DZKG_QT_001")方法，参数为设备编号device_no</p>
+	
+	
+	
+	
+	<!-- 设备履历 -->
+  	<div class="whiteDiv" style="height: 512px;width: 100%;margin-top:10px">
+	  	<div style="height:10px;background: #F2F4F8"></div>
+	  	<div style="height:41px;line-height:41px;width: 100%;border-bottom: 1px solid #eaedf5;padding-left: 10px;">
+	  		<span class="bigTitle">设备运行履历</span>
+	  		<div style="height: 24px;width: 70px;line-height: 24px;text-align: center;border: 1px solid #2a94e8;font-size: 14px;color: #2a94e8;margin: 8.5px 10px;float: right;cursor: pointer;">加载更多</div>
+	  	</div>
+	  	<!-- 设备履历表格 -->
+	  	<div id="record" class="" style="height: calc(100% - 41px);width: 100%;padding: 30px 24px;overflow: auto;">
+	  	</div>
+  	</div>
+	<script>
+		drawResume("DZKG_QT_001");
+	</script>
+</body>
+</html>

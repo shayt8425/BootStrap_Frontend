@@ -1,0 +1,124 @@
+.electronraildepot-MainDiv{
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+
+.electronraildepot-searchDiv{
+	position: absolute;
+	width: 100%;
+	height: 55px;
+	padding-top: 15px;
+}
+
+.electronraildepot-listDiv{
+	position: absolute;
+	width:100%;
+	height:346px;
+	top:72px;
+	border: 1px solid rgb(234, 230, 230);
+}
+
+.electronraildepot-buttonDiv{
+	position: absolute;
+	width:100%;
+	height:40px;
+	top:430px;
+}
+.electronraildepot-conditions{
+	height: 165px;
+	width: 100%;
+	position: absolute;
+	border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.electronraildepot-conditions-height{
+	height:30px;
+	line-height: 30px;
+}
+
+.electronraildepot-conditions-item{
+	width: 100%;
+	height: 35px;
+	position: relative;
+	text-align: center;
+}
+.electronraildepot-conditions-item-name{
+	
+	height: 35px;
+	line-height: 35px;
+	text-align: right;
+	display: inline-block;
+	position: relative;
+	font-weight: bold;
+}
+.electronraildepot-conditions-item-input{
+	
+	height: 35px;
+	line-height: 35px;
+	text-align: left;
+	display: inline-block;
+	position: relative;
+}
+
+.electronraildepot-button2{
+	right: 150px;
+	position: absolute;
+	top: 10px;
+}
+.electronraildepot-button3{
+	right: 30px;
+	position: absolute;
+	top: 10px;
+}
+
+.eelectronraildepotPoint-detailMainDiv{
+	width:100%;
+	height:100%;
+}
+
+.eelectronraildepotPoint-editOutDiv{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.eelectronraildepotPoint-detail-editDiv-tab{
+	position: absolute;
+	padding: 15px;
+	width: 270px;
+	height: 140px;
+}
+.eelectronraildepotPoint-showOutDiv{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.eelectronraildepotPoint-detail-showDiv-tab{
+	position: absolute;
+	padding: 15px;
+	width: 270px;
+	height: 140px;
+}
+.eelectronraildepot_rightHandDiv {
+	background: pink;
+	width: 100px;
+	height: 100px;
+}
+.menu{
+	width: 100px;
+	height: 100px;
+}
+.table.eelectronraildepotPoint-detail-editDiv-tab tr{
+	height:25px;
+}
+
+.electronraildepot-button4 {
+    right: 25px;
+    position: absolute;
+    top: 10px;
+}
+#depotSelect{
+	display: inline-block;
+}

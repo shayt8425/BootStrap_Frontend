@@ -1,0 +1,269 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>滚动翻页表格演示</title>
+    <meta http-equiv="Cache-Control" content="no-cache">
+	<script type="text/javascript" src="../resource/js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="../resource/plug/bootstrap-3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../resource/plug/bootstrap-table/bootstrap-table.css" />
+	<link rel="stylesheet" href="../resource/plug/zTree_v3/css/zTreeStyle/zTreeStyle.css" />
+	<link rel="stylesheet" href="../resource/plug/toastr/toastr.min.css" />
+	<link rel="stylesheet" href="../resource/plug/uploadify-3.2.1/uploadify.css" />
+	<link rel="stylesheet" href="../resource/css/frontcommon.css" />
+	<script type="text/javascript" src="../resource/plug/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../resource/plug/bootstrap-table/bootstrap-table.js"></script>
+	<script type="text/javascript" src="../resource/plug/bootstrap-table/bootstrap-table-zh-CN.js"></script>
+	<script type="text/javascript" src="../resource/plug/My97DatePicker/WdatePicker.js"></script>
+	<script type="text/javascript" src="../resource/plug/zTree_v3/js/jquery.ztree.all.min.js"></script>
+	<script type="text/javascript" src="../resource/plug/toastr/toastr.min.js"></script>
+	<script type="text/javascript" src="../resource/plug/uploadify-3.2.1/jquery.uploadify.min.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapTree.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapMessage.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapFormItem.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapTable.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapDialog.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapTooltip.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapMenu.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-Parser.js"></script>
+	<style type="text/css">
+		.fixed-table-container table {
+		    width: 100%;
+		}
+		.uploadify,.uploadify-queue{
+			margin: 0px;
+		}
+	</style>
+</head>
+<body>
+<div style="margin:5px;float:left;width:250px;border: 1px solid #eee;border-radius: 2px;" id="firstDiv">
+  	<ul class="ztree" style="width:100%;overflow:auto">
+  		<tree url="test1.json" treeSetting=":systemControlConfig.myTreeSetting"></tree>
+  	</ul>
+</div>
+<div style="float:left;margin:0px 0px 5px 0px;width:calc(100% - 266px)" id="secondDiv">
+	<div style="padding:0px 5px;">
+  	<div class="common_form" style="border-bottom: 1px solid #eee;">
+	    <table>
+	    	<tr>
+	    		<td class="fc_label" style="padding-left:0px;"><font style="color:red">*</font>邮箱地址：</td>
+	    		<td><FormItem id="username" name="username" width="120" required="true" text="邮箱地址" messagePattern="" validateType="pattern" pattern="^[\w_-]{1,}@[\w]{1,}\.[\w]{1,4}$" type="text"></FormItem></td>
+	    		<td class="fc_label">&nbsp;&nbsp;<font style="color:red">*</font>存储地址：</td>
+				<td>
+					<FormItem id="name5" name="name5" width="150" text="存储地址" validateType="custom" customValidate=":function(val){return true}" required="true" type="tree" jsonFormatOut="true" treeSetting=":systemControlConfig.name5TreeSetting"
+					 nodes=":systemControlConfig.name5Nodes"></FormItem>
+				</td>
+				<td style="padding-left:10px;display:none;"><input type="file" id="uploadImg" /></td>
+	    		<td style="padding-left:10px;">
+	    			<button type="button" class="btn btn-xs btn-primary" onclick="queryData()">
+				       	查询
+				    </button>
+				    <button type="button" class="btn btn-xs btn-default" onclick="window.form1.clear()">
+				       	重置
+				    </button>
+	    		</td>
+	    	</tr>
+	    </table>
+    </div>
+  </div>
+  	<div class="container" id="tableContainer" style="margin-top:5px;">
+		<table id="testTable" onLoadSuccess=":function(){if(window.myTable){
+			window.deviceData = $(window.myTable.tableObj).bootstrapTable('getData');console.log(window.deviceData);
+			
+			setTimeout(function(){
+				if(window.deviceData&&window.deviceData.length>0){
+					window.deviceData[0].name = '测试一下';
+				}
+				
+				window.myTable.initBody(true);
+			},5000);
+			
+		}}" scrollPagination="false" detailView="true" queryParams=":getTableParams" onRightClickRow=":systemControlConfig.tableRightClick" url="test4.json"  height=":tableHeight" columns=":systemControlConfig.columns"></table>
+	</div>
+  </div>
+<script type="text/javascript">
+function delProduct(){
+	top.FrontCommon.confirm("您确定要删除吗？","删除确认",function(confirm){
+		alert(confirm)
+	})
+}
+
+function getTableParams(params){
+	//定制后台参数
+	params.jsonParams = JSON.stringify(window.form1.getFormData());
+	return params;
+}
+
+
+
+//表格操作栏按钮配置
+var operatorObj = {
+	operateFormatter:function(value, row, index) {//初始操作栏的按钮
+	    return [
+	            '<a class="like" href="javascript:void(0)" title="Like">',
+	            '<i class="glyphicon glyphicon-heart"></i> 赞一个',
+	            '</a>',
+	            '<a class="remove" href="javascript:void(0)" title="Remove">',
+	            '<i class="glyphicon glyphicon-remove"></i> 删除',
+	            '</a>',
+	            '<a class="remove" href="javascript:void(0)" title="Remove">',
+	            '<i class="glyphicon glyphicon-list-alt"></i> 其他',
+	            '</a>'
+	        ].join('');
+	},operateEvents:{
+	    'click .like': function (e, value, row, index) {
+	        FrontCommon.error('You click like action, row: ' + JSON.stringify(row));
+	        e.stopPropagation();
+	    },
+	    'click .remove': function (e, value, row, index) {
+	    	FrontCommon.error('You click remove action, row: ' + JSON.stringify(row));
+	    	e.stopPropagation();
+	    }
+	}
+}
+
+/**
+ * 系统控件配置对象
+ */
+var systemControlConfig = {
+	tableRightClick:function(event,rowData,$elem){//表格右键点击事件
+		var tableMenu = FrontCommon.showMenu({width:150,x:event.clientX,y:event.clientY,
+		menus:[{icon:'plus',text:'新增机构',click:function(){
+			alert(rowData.name);
+		}},{
+			icon:'edit',text:'修改机构',click:function(){
+				
+			}
+		},{
+			icon:'remove',text:'删除机构',click:function(){
+				
+			}
+		}]});
+	},columns:[[{
+	     field: 'state',
+	     checkbox: true,
+	     rowspan: 2,
+	     align: 'center',
+	     valign: 'middle'
+	}, {
+	    title: '商品编号',
+	    field: 'id',
+	    rowspan: 2,
+	    align: 'left',
+	    valign: 'middle',
+	    sortable: true,
+	    width: "100px"
+	}, {
+	    title: '商品详情',
+	    colspan: 5,
+	    align: 'left'
+	}],[{
+	    field: 'name',
+	    title: '商品名称',
+	    sortable: true,
+	    align: 'left'
+	}, {
+	    field: 'price',
+	    title: '商品价格',
+	    sortable: true,
+	    align: 'left'
+	}, {
+	    field: 'bbb',
+	    title: '商品价格2',
+	    sortable: true,
+	    align: 'left'
+	}, {
+	    field: 'ccc',
+	    title: '商品价格3',
+	    sortable: true,
+	    align: 'left'
+	}, {
+	    field: 'operate',
+	    title: '相关操作',
+	    width: "200px",
+	    align: 'center',
+	    events: operatorObj.operateEvents,
+	    formatter: operatorObj.operateFormatter
+	}]],myTreeSetting:{callback:{onClick:function(event, treeId, treeNode, clickFlag){
+		},onRightClick:function(event, treeId, treeNode){//右键弹出菜单例子
+			if(treeNode){
+				(function(treeNode, event){
+					var testMenu = FrontCommon.showMenu({width:150,menus:[{icon:'plus',text:'新增机构',click:function(){
+						alert(treeNode.name);
+					}},{
+						icon:'edit',text:'修改机构',click:function(){
+							
+						}
+					},{
+						icon:'remove',text:'删除机构',click:function(){
+							
+						}
+					},{
+						icon:'file',text:'查看机构',click:function(){
+							
+						}
+					}]},event.clientX, event.clientY);
+					testMenu.addSeperator(3);
+				})(treeNode, event);
+			}
+	}}},name5TreeSetting:{check:{enable:false}},
+	name5Nodes:[{id:'1',name:'我的电脑',children:[{id:'2',name:'本地磁盘C'},{id:'3',name:'本地磁盘D'}]}]
+}
+
+function testOpenDialog(){
+	var saveDialog = top.FrontCommon.openSaveDialog({width:350,height:550,title:'保存数据'},{name:'saveForm',id:'saveForm',items:1},
+			[{id:'username',name:'username',text:'用户名',type:'text',required:true},
+			 {id:'password',name:'password',text:'密码',type:'password'},
+			 {id:'game',name:'game',text:'选择游戏',type:'select',url:FrontCommon.contextPath+'/test/test.json',urlDataProp:["datas"],"data-label":"text"}],
+			 {username:'shayt8425',password:'8231923',game:'PES2017'},function(success,formObj){
+				 if(success){
+					 top.FrontCommon.success("保存成功")
+					 top.FrontCommon.closeDialog(saveDialog);
+				 }else{
+					 top.FrontCommon.error("保存失败")
+				 }
+			 })
+}
+
+function queryData(){
+	var valid = form1.valid();
+	if(valid){
+		myTable.searchByParams();
+	}
+}
+
+$(function(){
+	window.tableHeight = document.documentElement.clientHeight - 50;
+	$("#firstDiv").find(".ztree").height(document.documentElement.clientHeight-22)
+	window.form1 = $(".common_form").formParser()[0];
+	window.myTable = $("#testTable").tableParser()[0];//使用解析器解析，初始化表格
+	window.myTree = $("tree").treeParser()[0];//初始化树
+	//bootstrap table方法调用$(myTable.tableObj).bootstrapTable('xxx',arguments)
+    $(window).bind('resize',function () {
+    	//自动调整几个动态变化的高度及宽度
+    	window.tableHeight = document.documentElement.clientHeight - 50;
+    	$("#firstDiv").find(".ztree").height(document.documentElement.clientHeight-22)
+		//自动调整表格的高度
+    	myTable.setHeight(tableHeight);
+    });
+	
+    $("#uploadImg").uploadify({
+        height: 31,
+        swf: FrontCommon.contextPath+'/resource/plug/uploadify-3.2.1/uploadify.swf',
+        uploader: '',
+        width: 95,
+        buttonImage: FrontCommon.contextPath+"/resource/images/upload.png",
+        onUploadSuccess: function (file, data, response) {
+            var dict = JSON.parse(data);
+            var error = dict.error;
+            if (error == "0") {
+                top.layer.alert("上传成功");
+                $("#headimg").val(dict.url[0].url);
+                $("#headimgsrc").attr("src", contextPath + dict.url[0].url);
+            }
+        }
+    });
+})
+</script>
+</body>

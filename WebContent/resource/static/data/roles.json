@@ -1,0 +1,507 @@
+{
+"data":[{
+	"id":"03",
+	"alias":"运行监测",
+	"url":"map.html?type=1",
+	"cnum":0,
+	"module":[{
+					"id":"0302",
+					"alias":"运行曲线",
+					"url":"",
+					"module":[],
+					"image":"",
+					"type": "3"
+					},{
+						"id":"0303",
+						"alias":"文件上传",
+						"url":"",
+						"module":[],
+						"image":"",
+						"type": "3"
+					},{
+						"id":"0304",
+						"alias":"文件下载",
+						"url":"",
+						"module":[],
+						"image":"",
+						"type": "3"
+					},{
+						"id":"0306",
+						"alias":"运行记录",
+						"url":"",
+						"module":[],
+						"image":"",
+						"type": "3"
+					},{
+						"id":"0307",
+						"alias":"关注",
+						"url":"",
+						"module":[],
+						"image":"",
+						"type": "3"
+					}],
+	"image":"&#xe686;",
+	"type": "1"
+},{
+	"id":"06",
+	"alias":"报警监控",
+	"url":"modules/faultalarm/alarmex.html",
+	"cnum":1,
+	"module":[{
+				"id":"060101",
+				"alias":"版本报警",
+				"url":"bbalarm.html",
+				"module":[],
+				"image":"&#xe632;",
+				"type": "2",
+				"domId":"bbwarn"
+			},{
+				"id":"060104",
+				"alias":"LKJ报警",
+				"url":"devicealarm.html",
+				"module":[],
+				"image":"&#xe632;",
+				"type": "2",
+				"domId":"device"
+			},{
+				"id":"060107",
+				"alias":"机车信号报警",
+				"url":"jcxhalarm.html",
+				"module":[],
+				"image":"&#xe632;",
+				"type": "2",
+				"domId":"jcxhwarn"
+			},{
+				"id":"060108",
+				"alias":"CIR报警",
+				"url":"ciralarm.html",
+				"module":[],
+				"image":"&#xe632;",
+				"type": "2",
+				"domId":"cirwarn"
+			},{
+				"id":"060103",
+				"alias":"轮径报警",
+				"url":"ljalarm.html",
+				"module":[],
+				"image":"&#xe632;",
+				"type": "2",
+				"domId":"ljwarn"
+			},{
+				"id":"060105",
+				"alias":"检测报警",
+				"url":"jcalarm.html",
+				"module":[],
+				"image":"&#xe632;",
+				"type": "2",
+				"domId":"jcwarn"
+			}],
+	"image":"&#xe6b1;",
+	"color":"#F7CF68",
+	"type": "1"
+},{
+	"id":"05",
+	"alias":"文件管理",
+	"url":"",
+	"cnum":3,
+	"module":[{
+				"id":"0501",
+				"alias":"文件下载",
+				"url":"modules/lkjfiledownload/lkjdownload_main.html",
+				"module":[{
+					"id":"050101",
+					"alias":"允许有速度情况下载",
+					"url":"",
+					"module":[],
+					"image":"",
+					"type": "3"
+				},{
+					"id":"050102",
+					"alias":"允许强制存储文件",
+					"url":"",
+					"module":[],
+					"image":"",
+					"type": "3"
+				},{
+					"id":"050103",
+					"alias":"允许从设备获取文件",
+					"url":"",
+					"module":[],
+					"image":"",
+					"type": "3"
+				},{
+					"id":"050104",
+					"alias":"允许下载重复文件",
+					"url":"",
+					"module":[],
+					"image":"",
+					"type": "3"
+				}],
+				"image":"&#xe6a4;",
+				"color":"#D19D62",
+				"type": "1"
+			}],
+	"image":"&#xe67a;",
+	"type": "1"
+},{
+	"id":"02",
+	"alias":"版本监测",
+	"url":"",
+	"cnum":4,
+	"module":[{
+				"id":"0201",
+				"alias":"计划管理",
+				"url":"modules/planmanage/planmanage.html",
+				"module":[],
+				"image":"&#xe64c;",
+				"color":"#509FE1",
+				"type": "1"
+			},{
+				"id":"0202",
+				"alias":"过程监测",
+				"url":"modules/hzprocessmonitor/monitor.html",
+				"module":[],
+				"image":"&#xe649;",
+				"color":"#66B9D7",
+				"type": "1"
+			},{
+				"id":"0203",
+				"alias":"换装查询",
+				"url":"modules/huanzhuangquery/query_ex.html",
+				"module":[],
+				"image":"&#xe659;",
+				"color":"#B375B5",
+				"type": "1"
+			},{
+				"id":"0204",
+				"alias":"换装销号",
+				"url":"modules/hzxh/hzxh.html",
+				"module":[],
+				"image":"&#xe64a;",
+				"color":"#D19D62",
+				"type": "1"
+			}],
+	"image":"&#xe670;",
+	"type": "1"
+},{
+    "id":"08",
+    "alias": "作业监测",
+    "url":"",
+    "cnum":2,
+    "module": [{
+                 "id":"0801",
+                 "alias": "作业周期查询",
+                 "url":"modules/lococheckquery/alarmex.html",
+                 "module":[{
+                 		      "id":"080101",
+                 		      "alias":"周期检测",
+                 		      "url":"devicealarm.html",
+                 		      "module":[],
+                 		      "image":"&#xe6b9;",
+                 		      "type":"2",
+                 		      "domId":"device"
+                 		   },{
+                 		   	  "id":"080102",
+                 		   	  "alias":"位置分布",
+                 		   	  "url":"railspread.html",
+                 		   	  "module":[],
+                 		   	  "image":"&#xe679;",
+                 		   	  "type":"2",
+                 		   	  "domId":"enclosure"
+                 		   },{
+                 		      "id":"080103",
+                 		      "alias":"实时报警",
+                 		      "url":"lkjfaultcount.html",
+                 		      "module":[],
+                 		      "image":"",
+                 		      "type":"2",
+                 		      "domId":"lkjfaultcount"
+                 		   },{
+                 		      "id":"080104",
+                 		      "alias":"出入库管理",
+                 		      "url":"locoStoreStatus.html",
+                 		      "module":[],
+                 		      "image":"",
+                 		      "type":"2",
+                 		      "domId":"locostorestatus"
+                 		   }],
+                 "image":"&#xe65a;",
+                 "color":"#22C1CB",
+                 "type":"1"
+              }],
+    "image":"&#xe6b9;",
+    "type":"1"
+},{
+	"id":"04",
+	"alias":"机车分布",
+	"url":"",
+	"cnum":2,
+	"module":[{
+				"id":"0401",
+				"alias":"位置分布",
+				"url":"modules/motorspread/railtab.html",
+				"module":[{
+							"id":"040101",
+							"alias":"位置分布",
+							"url":"positionspread.html",
+							"module":[],
+							"image":"&#xe679;",
+							"type": "2",
+							"domId":"loco_name"
+						},{
+							"id":"040102",
+							"alias":"型号分布",
+							"url":"modelspread.html",
+							"module":[],
+							"image":"&#xe6c4;",
+							"type": "2",
+							"domId":"loco_type"
+						}],
+				"image":"&#xe679;",
+				"color":"#22C1CB",
+				"type": "1"
+			},{
+				"id":"0402",
+				"alias":"围栏分布",
+				"url":"modules/motorspread/railspread.html",
+				"module":[],
+				"image":"&#xe678;",
+				"color":"#BBBD7A",
+				"type": "1"
+			}],
+	"image":"&#xe664;",
+	"type": "1"
+},{
+	"id":"01",
+	"alias":"设备统计",
+	"url":"",
+	"cnum":3,
+	"module":[{
+				"id":"0101",
+				"alias":"上线统计",
+				"url":"modules/onlinestatstic/onlinestatstic.html",
+				"module":[],
+				"image":"&#xe69d;",
+				"color":"#668BBD",
+				"type": "1"
+			},{
+				"id":"0102",
+				"alias":"故障分析",
+				"url":"modules/incidentstatstic/faultanalysis.html",
+				"module":[{
+							"id":"010204",
+							"alias":"LKJ",
+							"url":"lkjFaultanalysis.html",
+							"module":[],
+							"image":"&#xe679;",
+							"type": "2",
+							"domId":"lkj"
+						},{
+							"id":"010207",
+							"alias":"机车信号",
+							"url":"jcxhFaultanalysis.html",
+							"module":[],
+							"image":"&#xe6c4;",
+							"type": "2",
+							"domId":"jcxh"
+						},{
+							"id":"010208",
+							"alias":"CIR",
+							"url":"cirFaultanalysis.html",
+							"module":[],
+							"image":"&#xe6c4;",
+							"type": "2",
+							"domId":"cir"
+						}],
+				"image":"&#xe6bb;",
+				"color":"#66B9D7",
+				"type": "1"
+			},{
+				"id":"0103",
+				"alias":"设备历史查询",
+				"module":[],
+				"image":"&#xe6c2;",
+				"url":"modules/devicehis/hismain.html",
+				"color":"#83bb54",
+				"type": "1"
+			}],
+	"image":"&#xe653;",
+	"type": "1",
+	"remark":"type表示菜单类型，1：普通菜单 2：tab菜单 3：按钮"
+},{
+	"id":"07",
+	"alias":"系统管理",
+	"url":"",
+	"cnum":15,
+	"module":[{
+				"id":"0701",
+				"alias":"系统设置",
+				"url":"modules/systemset/systemsetMain.html",
+				"module":[{
+							"id":"070101",
+							"alias":"参数设置",
+							"url":"systemSet.html",
+							"module":[],
+							"image":"&#xe62c;",
+							"type": "2",
+							"domId":"systemSet"
+						},{
+							"id":"070102",
+							"alias":"地图设置",
+							"url":"mapSet.html",
+							"module":[],
+							"image":"&#xe62d;",
+							"type": "2",
+							"domId":"mapSet"
+						}],
+				"image":"&#xe67d;",
+				"color":"#D19D62",
+				"type": "1"
+			},{
+				"id":"0703",
+				"alias":"车型管理",
+				"url":"modules/traintype/traintype.html",
+				"module":[],
+				"image":"&#xe68d;",
+				"color":"#83BB54",
+				"type": "1"
+			},{
+				"id":"0704",
+				"alias":"机车管理",
+				"url":"modules/train/train.html",
+				"module":[],
+				"image":"&#xe68e;",
+				"color":"#BB8D7A",
+				"type": "1"
+			},{
+				"id":"0705",
+				"alias":"数据字典",
+				"url":"modules/dictionary/dictionary.html",
+				"module":[],
+				"image":"&#xe692;",
+				"color":"#BCCBC7",
+				"type": "1"
+			},{
+				"id":"0706",
+				"alias":"TSC管理",
+				"url":"modules/tscmanger/tscmanger.html",
+				"module":[],
+				"image":"&#xe6ae;",
+				"color":"#FFC772",
+				"type": "1"
+			},{
+				"id":"0707",
+				"alias":"TSC升级",
+				"url":"modules/tscupdate/tscupdatemain.html",
+				"module":[],
+				"image":"&#xe69f;",
+				"color":"#44D0F7",
+				"type": "1"
+			},{
+				"id":"0708",
+				"alias":"TSC日志",
+				"url":"modules/downfile/filedown.html",
+				"module":[],
+				"image":"&#xe69e;",
+				"color":"#40B361",
+				"type": "1"
+			},{
+				"id":"0709",
+				"alias":"SIM卡管理",
+				"url":"modules/sim/sim.html",
+				"module":[],
+				"image":"&#xe6b0;",
+				"color":"#D9B710",
+				"type": "1"
+			},{
+				"id":"0710",
+				"alias":"TSC审核",
+				"url":"modules/locoalarmreg/locoalarmreg.html",
+				"module":[],
+				"image":"&#xe6af;",
+				"color":"#668BBD",
+				"type": "1"
+			},{
+				"id":"0711",
+				"alias":"电子围栏",
+				"url":"map.html?type=2",
+				"module":[],
+				"image":"&#xe6ad;",
+				"color":"#22C1BB",
+				"type": "1"
+			},{
+				"id":"0712",
+				"alias":"标注点",
+				"url":"map.html?type=3",
+				"module":[],
+				"image":"&#xe6b8;",
+				"color":"#F7CF68",
+				"type": "1"
+			},{
+				"id":"0713",
+				"alias":"系统日志",
+				"url":"modules/syslog/syslog.html",
+				"module":[],
+				"image":"&#xe69e;",
+				"color":"#FF8936",
+				"type": "1"
+			},{
+				"id":"0714",
+				"alias":"用户管理",
+				"url":"modules/sysuser/sysuser.html",
+				"module":[],
+				"image":"&#xe683;",
+				"color":"#177CB1",
+				"type": "1"
+			},{
+				"id":"0715",
+				"alias":"组织管理",
+				"url":"modules/zcdept/dept.html",
+				"module":[],
+				"image":"&#xe693;",
+				"color":"#A78F44",
+				"type": "1"
+			},{
+				"id":"0716",
+				"alias":"角色管理",
+				"url":"modules/sysrole/sysrole.html",
+				"module":[],
+				"image":"&#xe6b5;",
+				"color":"#89ADA9",
+				"type": "1"
+			},{
+				"id":"0717",
+				"alias":"APP审核",
+				"url":"modules/appregister/appRegister.html",				
+				"module":[],
+				"image":"&#xe6cd;",
+				"color":"#1296db",
+				"type": "1"
+			},{
+				"id":"0718",
+				"alias":"报警项点",
+				"url":"modules/alarmCode/alarmCode.html",				
+				"module":[],
+				"image":"&#xe6ce;",
+				"color":"#FD6D64",
+				"type": "1"
+			},{
+				"id":"0719",
+				"alias":"项点结果集",
+				"url":"modules/alarmCode/itemResultSet.html",				
+				"module":[],
+				"image":"&#xe6bb;",
+				"color":"#444C60",
+				"type": "1"
+			},{
+				"id":"0720",
+				"alias":"帮助",				
+				"module":[],
+				"image":"&#xe66f;",
+				"color":"#00CD00",
+				"type": "1"
+			}],
+	"image":"&#xe67d;",
+	"type": "1"
+}]
+}

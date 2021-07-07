@@ -1,0 +1,1178 @@
+/*******��������ӵ�css*********/
+.moveShowDiv
+{
+    width: 580px;
+    height: 472px;
+}
+
+
+.moveShowDiv_larger
+{
+    width: 775px;
+    height: 460px;
+}
+
+.moveTopShowDiv
+{
+    width: 580px;
+    height: 46px;
+    border: 1px solid #808080;
+    border-bottom: 0px;
+    position: relative;
+    border-right: 0px;
+}
+
+.moveTopShowDiv_larger
+{
+    width: 775px;
+    border-top: 0px;
+}
+.moveTopShowDiv img.moveTopShowImg
+{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.moveSatus
+{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 1;
+}
+.sdStatus
+{
+    width: 40px;
+    height: 41px;
+    position: absolute;
+    top: 1px;
+    left: 44px;
+    z-index: 1;
+}
+.sdYTarget
+{
+    width: 36px;
+    height: 9px;
+    display: block;
+    float: left;
+    margin-top: 1px;
+    visibility: hidden;
+}
+.sdVisible
+{
+    visibility: hidden;
+}
+
+
+.moveSatus img
+{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.moveSpeed, .moveRestrictSpeed, .moveDistance, .moveSignDistance, .moveTime
+{
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    top: 2px;
+    left: 103px;
+    z-index: 1;
+    color: #54cb00;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    overflow: hidden;
+    font-weight: 900;
+    font-family: arial;
+    font-size: 19px;
+    color: rgb(23, 241, 23);
+}
+.moveSpeed_larger
+{
+    width: 75px;
+}
+.moveRestrictSpeed
+{
+    left: 170px;
+    color: #e60012;
+}
+.moveRestrictSpeed_larger
+{
+    left: 199px;
+    width: 75px;
+}
+.moveDistance
+{
+    left: 235px;
+    color: #f3ae00;
+    width: 65px;
+}
+.moveDistance_larger
+{
+    left: 294px;
+    width: 85px;
+}
+.moveSignDistance
+{
+    left: 340px;
+    width: 90px;
+}
+.moveSignDistance_larger
+{
+    left: 410px;
+}
+
+.moveSD_S
+{
+    width: 87px;
+    height: 20px;
+    line-height: 20px;
+    color: White;
+    font-size: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+.moveSD_D
+{
+    width: 87px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 18px;
+    margin-top: 3px;
+    color: #f3ae00;
+    text-align: center;
+}
+.moveTime
+{
+    left: 460px;
+    width: 119px;
+    color: #f3ae00;
+    font-size: 12px;
+    text-align: center;
+}
+.moveTime_larger
+{
+    left: 528px;
+    width: 246px;
+}
+.moveDate
+{
+    height: 20px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.moveDate_larger
+{
+    height: 20px;
+    width: 108px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    font-size: 15px;
+    line-height: 20px;
+    /*float: left;*/
+}
+
+
+
+.moveTimeDiv
+{
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.moveTimeDiv_larger
+{
+    height: 20px;
+    width: 108px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    /*float: left;*/
+}
+
+
+
+
+.moveBottomShowDiv
+{
+    width: 578px;
+    height: 350px;
+    /*border: 1px solid white;*/
+    border-top: 0px;
+    position: relative;
+}
+.moveBottomShowDiv_larger
+{
+    width: 775px;
+    border: 0px;
+}
+.loadingDiv
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -16px;
+    margin-top: -16px;
+    width: 32px;
+    height: 32px;
+    z-index: 9999999;
+    display: none;
+}
+.loadMsg
+{
+    position: absolute;
+    top: 22px;
+    left: 151px;
+    width: 200px;
+    height: 40px;
+    margin-left: -100px;
+    margin-top: -20px;
+    border: 1px solid #808080;
+    background-color: #2059B9;
+    color: white;
+    z-index: 9;
+    line-height: height: 40px;
+    text-align: center;
+    font-size: 20;
+    display: none;
+}
+.loadingDiv .m_loading
+{
+}
+
+.moveBottomShowDiv img
+{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.moveRightBox
+{
+    width: 47px;
+    height: 351px;
+    position: absolute;
+    right: 0px;
+    top: 47px;
+    background-color: #4D4D4D;
+}
+
+.moveRightBox02
+{
+    width: 47px;
+    height: 350px;
+    position: absolute;
+    right: 0px;
+    top: 47px;
+    background-color: #4D4D4D;
+}
+
+
+
+.moveRightBox_larger
+{
+    height: 400px;
+}
+.moveRB_Box
+{
+    width: 38px;
+    height: 26px;
+    margin-left: 5px;
+    float: left;
+    text-align: center;
+    background-color: Black;
+    color: #808080;
+    line-height: 26px;
+    border-bottom: 1px solid #808080;
+}
+.mar
+{
+    margin-top: 3px;
+}
+.moveBight
+{
+    background-color: #62CC1B;
+    color: White;
+}
+.moveShowEngine
+{
+    width: 195px;
+    height: 150px;
+    border: 1px solid #808080;
+    background-color: #2059B9;
+    position: absolute;
+    right: 51px;
+    top: 51px;
+    z-index: 9px;
+    display: none;
+}
+.moveItem
+{
+    height: 20px;
+    line-height: 20px;
+}
+.moveItem .itemName, .moveItem .itemValue
+{
+    float: left;
+    width: 97px;
+    color: White;
+}
+
+.moveItem .itemName
+{
+    text-align: left;
+    text-indent: 10px;
+}
+.moveItem .itemValue
+{
+    text-align: center;
+}
+.movegk
+{
+    width: 130px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.movegk_f, .movegk_nz, .movegk_qy
+{
+    width: 40px;
+    height: 20px;
+    float: left;
+    margin-left: 1px;
+    line-height: 20px;
+    border: 1px solid black;
+}
+.movegk_f
+{
+    background-color: #64CFFA;
+}
+.movegk_nz
+{
+    background-color: #191919;
+}
+.movegk_qy
+{
+    background-color: #DD0004;
+}
+.movesd_div1, .movesd_div2, .movesd_div3
+{
+    float: left;
+    width: 30px;
+    margin-left: 10px;
+}
+.movesd_div2
+{
+    color: #62CC1B;
+}
+.moveMiddleLine
+{
+    position: absolute;
+    top: 0px;
+    left: 260px;
+    border-left: 1px solid #4affff;
+    width: 1px;
+    z-index: 99;
+    height:98%; /* cursor:w-resize;*/
+   display: block;
+}
+
+.moveTurnSpeedNum
+{
+    width: 20px;
+    position: absolute;
+    left: 503px;
+    top: 9px;
+    z-index: 999;
+}
+.moveTurnSpeedNum_larger
+{
+    left: 690px;
+}
+
+
+.moveSpeedNum
+{
+    width: 20px;
+    position: absolute;
+    left: 23px;
+    top: 9px;
+    z-index: 999;
+}
+.moveSN_N
+{
+    border-top: 0px;
+    height: 14px;
+    text-align: right;
+    line-height: 15px;
+    float: left;
+    width: 20px;
+    margin-top: 7px;
+}
+.moveSN_N_larger
+{
+    margin-top: 16px;
+}
+.moveBottomSpeed
+{
+    height: 234px;
+    width: 100%;
+    position: relative;
+}
+.moveBottomSpeedHis
+{
+    height: 234px;
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+
+.moveBottomSpeed_larger
+{
+    height: 332px;
+}
+.maxSpeed
+{
+    height: 1px;
+    border-top: 1px solid red;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 184px;
+}
+.currentSpeed
+{
+    height: 1px;
+    border-top: 1px solid green;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 186px;
+}
+.minSpeed
+{
+    height: 1px;
+    border-top: 1px solid Yellow;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 184px;
+}
+.movePipePressure
+{
+    height: 70px;
+    position: relative;
+    top: 6px;
+    width: 100%;
+}
+.movePipePressureHis
+{
+    height: 70px;
+    position: relative;
+    top: 6px;
+    width: 100%;
+    display: none;
+}
+
+.movePipePressure_larger
+{
+    height: 80px;
+}
+
+.moveLightBar
+{
+    height: 15px;
+    position: relative;
+    width: 100%;
+}
+.moveLightBarHis
+{
+    height: 15px;
+    position: relative;
+    width: 100%;
+    display: none;
+}
+
+
+.moveLightBar_larger
+{
+    margin-top: 2px;
+}
+.linebar
+{
+    position: relative;
+    margin-top: 3px;
+    border: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    height: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    float: left;
+}
+.linebarTop
+{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 6px;
+    border-bottom: 1px solid black;
+}
+.linebarBottom
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 4px;
+}
+
+
+.moveLineSection
+{
+    height: 30px;
+    position: relative;
+}
+.movebight
+{
+    height: 30px;
+    position: relative;
+}
+
+.moveWaybridge
+{
+    height: 30px;
+    position: relative;
+}
+.moveWayLabel
+{
+    height: 20px;
+    position: relative;
+    width: 372px;
+    top: 10px;
+}
+.moveWayLabelHis
+{
+    height: 20px;
+    position: relative;
+    width: 372px;
+    top: 10px;
+    display: none;
+}
+.moveWayNum
+{
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    height: 20px;
+    margin-left: -24px;
+}
+.moveWayNum .moveHLine
+{
+    height: 3px;
+    width: 1px;
+    border-left: 1px solid white;
+    margin: 0 auto;
+}
+.moveWayNum .moveWayN_Num
+{
+    color: #00b6ec;
+}
+
+.moveHrs
+{
+    height: 1px;
+    border-top: 1px solid blue;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 184px;
+}
+
+.moveHrs1
+{
+    height: 1px;
+    border-top: 1px solid Orange;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 184px;
+}
+
+
+
+.currentTrain
+{
+    position: absolute;
+    bottom: 0px;
+    left: 220px;
+    width: 40px;
+    height: 7px;
+    z-index:99;
+}
+.carHead
+{
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    right: -7px;
+    top: 0px;
+}
+
+.movePPNum
+{
+    height: 70px;
+    width: 20px;
+    position: absolute;
+    left: 23px;
+    top: 257px;
+    z-index: 999;
+}
+.movePPNum_larger
+{
+    top: 363px;
+}
+.movePPNum .movePP_num
+{
+    height: 20px;
+    line-height: 20px;
+}
+
+.moveWayLabelDiv
+{
+    position: absolute;
+    bottom: 0px;
+    left: 80px;
+    height: 30px;
+    width: 1px;
+    border-left: 1px solid #9D9D9D;
+}
+.moveWayLabelDiv .moveC
+{
+    position: absolute;
+    top: -7px;
+    left: -1px;
+    width: 5px;
+}
+.moveWayLabelDiv .moveC .moveCWhite
+{
+    position: absolute;
+    top: 4px;
+    left: -1px;
+    width: 5px;
+}
+.moveWayLabelDiv .signalNum
+{
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    width: 18px;
+    color: White;
+    text-align: center;
+}
+
+
+
+.movePGreen
+{
+    color: #54cb00;
+}
+.movePGray
+{
+    color: Gray;
+}
+
+
+.moveBottomContainDiv
+{
+    height: 450px;
+    width: 441px;
+    position: relative;
+    margin-left: 53px;
+    overflow: hidden; /*cursor:move;*/
+}
+.moveBottomContainDiv_larger
+{
+    height:560px;
+    width: 630px;
+    float: left;
+}
+
+
+.moveErrorPage
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+.moveErrorPage
+{
+    text-align: center;
+    color: Red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+.moveHisControlR
+{
+    height: 24px;
+    position: relative;
+    width: 100%;
+    background-color: #4D4D4D;
+    position: absolute;
+    /*bottom: -80px;*/
+    left: 0px;
+    display: none;
+    z-index: 1020;
+}
+.moveHisControlR_larger
+{
+    width: 775px;
+    bottom: -90px;
+}
+.moveDrawSpeed
+{
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    width: 175px;
+    height: 7px;
+    background-color: White;
+    border-radius: 5px;
+}
+.moveDrawSpeed_larger
+{
+    width: 375px;
+}
+
+.moveHisControlR .moveDragLine
+{
+    height: 7px;
+    width: 0px;
+    background-color: #F9A805;
+    border-radius: 5px;
+}
+
+
+.moveHisControlR .moveHasLoadLine
+{
+    height: 7px;
+    width: 0px;
+    background-color: #8a8c8e;
+    border-radius: 5px;
+}
+
+
+
+.moveHisControlR .moveDragLine
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.moveHisControlR .moveDrawImgDiv
+{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 0px;
+    margin-left: -10px;
+    cursor: pointer;
+    z-index: 99;
+}
+.moveControlSpeedBtn
+{
+    width: 105px;
+    height: 21px;
+    position: absolute;
+    left: 210px;
+    top: 2px;
+}
+.moveControlSpeedBtn_larger
+{
+    left: 420px;
+}
+.moveHisControlR .moveControlSpeedBtn img
+{
+    display: block;
+    float: left;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.moveVideotapeSpeed
+{
+    width: 100px;
+    position: absolute;
+    left: 335px;
+    height: 24px;
+    line-height: 24px;
+    top: 0px;
+}
+.moveVideotapeSpeed_larger
+{
+    left: 540px;
+}
+
+.moveMoveCountSpeed
+{
+    width: 100px;
+    position: absolute;
+    left: 410px;
+    height: 24px;
+    line-height: 24px;
+    top: 0px;
+}
+.moveMoveCountSpeed_larger
+{
+    left: 610px;
+}
+
+
+
+.curveSelectSation
+{
+    width: 41px;
+    position: absolute;
+    left: 535px;
+    height: 21px;
+    line-height: 21px;
+    top: 0px;
+    z-index: 9999;
+}
+.curveSelectSation_largar
+{
+    left: 730px;
+    z-index: 9999;
+}
+
+
+
+
+.selectSationDiv_max
+{
+    position: absolute;
+    top: -380px;
+    width: 212px;
+    height: 230px;
+    left: -450px;
+    background-color: white;
+    z-index: 9999;
+    border: 1px solid #9D9D9D;
+    padding: 10px;
+}
+
+
+.selectSationDiv_min {
+  position: absolute;
+  top: -330px;
+  width: 212px;
+  height: 150px;
+  left: -380px;
+  background-color: white;
+  z-index: 9999;
+  border: 1px solid #9D9D9D;
+  padding: 10px;
+}
+
+.moveHisControlR .selectSationBtn
+{
+}
+
+.moveHisControlR .selectSationDiv
+{
+    display: none;
+    color: #363636;
+}
+
+
+.moveHisControlR .selectSationInput
+{
+    margin: 0px;
+    padding: 0px;
+    width: 82px;
+    height: 27px;
+}
+.moveHisControlR .selectSationBtn
+{
+    display: block;
+    padding: 0px;
+    text-decoration: none;
+    width: 71px;
+    height: 22px;
+    line-height: 22px;
+    background: url('../../../img/app/button_top.png');
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 31px;
+}
+.selectSationCancelBtn
+{
+    display: block;
+    padding: 0px;
+    text-decoration: none;
+    width: 71px;
+    height: 22px;
+    line-height: 22px;
+    background: url('../../../img/app/button_top.png');
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 116px;
+}
+.moveHisControlR .selectSationCancelBtn:hover
+{
+    background: url('../../../img/app/button_down.png');
+}
+.moveHisControlR .selectSationBtn:hover
+{
+    background: url('../../../img/app/button_down.png');
+}
+.moveHisControlR .daoshanjiao
+{
+    display: block;
+    position: absolute;
+    left: 13px;
+    bottom: -8px;
+}
+
+.moveHisControlR .VideotapeSpeedNum
+{
+    color: White;
+}
+.moveHisControlR .moveCountNum
+{
+    color: White;
+    position: absolute;
+    left: 17px;
+    z-index: 9999;
+    top: 0px;
+    height: 24px;
+    width: 95px;
+    text-align: right;
+}
+
+.moveShowHisDiv
+{
+	top:430px;
+    /*position: absolute;*/
+    bottom: 0px;
+    right: 4px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.min-moveShowHisDiv{
+	position: absolute;
+}
+
+
+.moveHisControlR fieldset
+{
+    border: 1px solid #B5B5B5;
+    height: 180px;
+}
+
+.moveHisControlR .selectItem
+{
+    width: 100%;
+    height: 45px;
+}
+
+.moveHisControlR .selectItem input, .moveHisControlR .selectItem select
+{
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+.moveHisControlR .selectItemName
+{
+    width: 55px;
+    height: 30px;
+    float: left;
+}
+.moveHisControlR .selectItemValue
+{
+    width: 129px;
+    height: 30px;
+    float: left;
+}
+
+
+.moveHisControlR .selectItemValue input, .selectItemValue select
+{
+    display: block;
+    width: 125px;
+    height: 24px;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #B5B5B5;
+}
+.moveHisControlR .selectItemValue input
+{
+    padding-left: 2px;
+}
+
+.selectItemValue select
+{
+    width: 104px;
+}
+
+.selectControl
+{
+    background: #EBEBE4;
+}
+
+
+.newMoveShowHisDiv{
+	position: relative;
+    z-index: 1020;
+    top:13px;
+   	height: 72px;
+   	width:100%;
+  
+}
+
+.daoQiaoSui{
+	height: 24px;
+	margin-top: 1px;
+	width:100%;
+}
+
+.quXian{
+	height: 24px;
+	margin-top: 1px;
+	width:100%;
+}
+
+.congDuanMian{
+	height: 24px;
+	width:100%;
+}
+
+.leftshow {
+	height:24px;
+	text-align:center;
+	line-height:24px;
+}
+
+/*���·���ʾ
+
+.congQuQiao-left{
+	height:75px;
+	width: 53px;
+	position: absolute;
+	z-index:1000;
+	top:460px;
+	background-color: #121212;
+}*/
+
+/*���·���ʾ*/
+.moveRightBox-right{
+	top:505px;
+	height:88px;
+	background-color:#4D4D4D;
+	/*position: absolute;*/
+}
+
+.max-moveRightBox-right{
+	right: 0px;
+	width: 45px;
+	top:505px;
+	height: 88px;
+	background-color:#4D4D4D;
+	position: absolute;
+}
+
+.max-moveShowHisDiv{
+	padding-top: 30px;
+	
+}
+
+.showFrontStation{
+	height: 40px;
+    width: 135px;
+    text-align: center;
+    float: left;
+}
+
+.showLeftTime{
+	 float: left;
+}
+
+.leftTitle{
+	background-color:#4D4D4D;
+	float:left;
+	height: 40px;
+	font-size: 12px;
+	color:#FFFFFF;
+	
+}
+
+.leftTitleTop{
+	float: left;
+	height: 20px;
+	line-height: 20px;
+}
+
+.leftTitleBot{
+	height: 20px;
+	line-height: 20px;
+}
+
+.showName_max{
+	 font-size: 20px;
+}
+.showName_min{
+	 font-size: 12px;
+}
+
+.leftTime{
+	padding-left: 3px;
+}
+/*
+ * 
+ *�м�����λ�� �ƶ�ʱ���ֲ�����ʽ
+.moveMiddleLine_min{
+	width:1px;
+	height: 440px;
+	left: 354px;
+	border-left:1px solid #4affff;
+	z-index: 100;
+	display: block;
+	position:absolute;
+}
+
+.moveMiddleLine_max{
+	width:1px;
+	height: 547px;
+	left: 487px;
+	border-left:1px solid #4affff;
+	z-index: 100;
+	display: block;
+	position:absolute;
+}*/
+
+
+

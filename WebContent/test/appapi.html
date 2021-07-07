@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Cache-Control" content="no-cache">
+	<link rel="stylesheet" href="../resource/plug/bootstrap-3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../resource/plug/bootstrap-table/bootstrap-table.css" />
+	<script type="text/javascript" src="../resource/js/jquery-3.2.1.min.js"></script>
+	<style type="text/css">
+		.fixed-table-container table {
+		    width: 100%;
+		    table-layout: fixed;
+		}
+		
+		.fixed-table-container .fixed-table-header {
+			height: 33px;
+		}
+	</style>
+ </head> 
+ <body>
+ <div class="row" style="margin: 10px 20px 0px 20px;"> 
+	<div class="col-sm-12 ">
+ 	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title" id="d_title">A.系统公共－数据接口</h3>
+		</div>
+		<div class="panel-body" style="border: 1px solid #d6e9c6;">
+			<ul>
+				<li>1.<a
+					href="/dmp/appIndex/loginForApp.json?username=admin&password=1"
+					target="view_window">用户登录</a>
+				</li>
+				<li>2.<a
+					href="/dmp/appIndex/mainRefresh.json?userId=1"
+					target="view_window">主页数量统计</a>
+				</li>
+				<li>3.<a
+					href="/dmp/appIndex/userRefresh.json?userId=1"
+					target="view_window">用户信息刷新</a>
+				</li>
+			</ul>
+		</div>
+	</div> 
+  	</div>
+  	</div> 
+  	<div class="row" style="margin: 10px 20px 0px 20px;"> 
+	<div class="col-sm-12 ">
+ 	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title" id="d_title">B.待办处理－数据接口</h3>
+		</div>
+		<div class="panel-body" style="border: 1px solid #d6e9c6;">
+			
+		</div>
+	</div> 
+  	</div>
+  	</div>
+  	 <div class="row" style="margin: 10px 20px 0px 20px;"> 
+	<div class="col-sm-12 ">
+ 	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title" id="d_title">C.待办任务－数据接口</h3>
+		</div>
+		<div class="panel-body" style="border: 1px solid #d6e9c6;">
+			
+		</div>
+	</div> 
+  	</div>
+  	</div>
+  	 	
+  	<div class="row" style="margin: 10px 20px 0px 20px;"> 
+	<div class="col-sm-12 ">
+ 	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title" id="d_title">D.通知报警－数据接口</h3>
+		</div>
+		<div class="panel-body" style="border: 1px solid #d6e9c6;">
+			<ul>
+				<li>1.<a
+					href="/dmp/appNotice/pageList.json?sortName=time&sortOrder=desc&pageSize=20&pageNumber=1"
+					target="view_window">预警通知分页查询</a>
+				</li>
+				<li>2.<a
+					href="/dmp/appNotice/delete.json?id=dd1cbefc60e84c4a9256cc95e209dabb"
+					target="view_window">预警通知删除</a>
+				</li>
+				<li>3.<a
+					href="/dmp/appNotice/update.json?id=dd1cbefc60e84c4a9256cc95e209dabb"
+					target="view_window">预警通知己读</a>
+				</li>
+			</ul>
+		</div>
+	</div> 
+  	</div>
+  	</div>  	
+  	 <div class="row" style="margin: 10px 20px 0px 20px;"> 
+	<div class="col-sm-12 ">
+ 	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title" id="d_title">E.统计查询－数据接口</h3>
+		</div>
+		<div class="panel-body" style="border: 1px solid #d6e9c6;">
+			<ul>
+				<li>1.<a
+					href="/dmp/appSearch/findComponentByIsbn.json?isbn=4127011106175210175"
+					target="view_window">跟据设备ISBN获得设备基本信息</a>
+				</li>
+				<li>2.<a
+					href="/dmp/appSearch/findDeviceBoardHistoryPageList.json?sortName=time&sortOrder=desc&pageSize=20&pageNumber=1"
+					target="view_window">跟据设备ID获得拆装车记录分页列表</a>
+				</li>
+				<li>3.<a
+					href="/dmp/appSearch/findDeviceAllotRecordPageList.json?sortName=time&sortOrder=desc&pageSize=20&pageNumber=1"
+					target="view_window">跟据设备ID获得调拨记录分页列表</a>
+				</li>
+				<li>4.<a
+					href="/dmp/appSearch/findDeviceCheckPageList.json?sortName=time&sortOrder=desc&pageSize=20&pageNumber=1"
+					target="view_window">跟据设备ID获得检修记录分页列表</a>
+				</li>
+				<li>5.<a
+					href="/dmp/appSearch/findDeviceFaultHistoryPageList.json?sortName=time&sortOrder=desc&pageSize=20&pageNumber=1"
+					target="view_window">跟据设备ID获得故障记录分页列表</a>
+				</li>
+				<li>6.<a
+					href="/dmp/appSearch/findDeviceOperatePageList.json?sortName=time&sortOrder=desc&pageSize=20&pageNumber=1"
+					target="view_window">跟据设备ID获得操作记录分页列表</a>
+				</li>
+				<li>7.<a
+					href="/dmp/appSearch/getConfigList.json?sortName=time&sortOrder=desc&pageSize=20&pageNumber=1"
+					target="view_window">跟据设备ID获得板卡记录</a>
+				</li>
+				<li>-------------------------
+				</li>
+				<li>8.<a
+					href="/dmp/appSearch/countLocoByOrg.json?userLevel=2&orgId=00000000000000000013"
+					target="view_window">机车统计查询</a>
+				</li>
+				<li>9.<a
+					href="/dmp/appSearch/locoStatByOrg.json?start_org_id=0002"
+					target="view_window">机车状态统计查询</a>
+				</li>
+				
+				<li>11.<a
+					href="/dmp/appSearch/getLocoInfo.json?loco_num=DGC-11505"
+					target="view_window">机车详情查询</a>
+				</li>
+				<li>12.<a
+					href="/dmp/appSearch/countDeviceByOrg.json?userLevel=1&orgId=0002"
+					target="view_window">设备统计查询</a>
+				</li>
+			</ul>
+		</div>
+	</div> 
+  	</div>
+  	</div>
+ </body>
+</html>

@@ -1,0 +1,539 @@
+@CHARSET "UTF-8";
+/*系统样式文字，定义本系统样式*/
+html,body,td,div,span,p,h1,h2,h3,h4,h5,li,a,ul{/*系统所有字体采用微软雅黑*/
+	font-family: 微软雅黑,Arial;
+}
+html,body,td,div,span,p{font-size: 14px;}
+a:focus{border:0px;}
+textarea{
+	resize:none;
+}
+/*气泡窗样式*/
+.popover{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #ff8787;	
+    border-radius: 3px;
+}
+.popover-content{padding:3px 8px;font-size:12px;color:#dd1d1d;}
+.popover.bottom>.arrow{border-bottom-color: #ff8787;left:20%!important}
+/*表单基本样式，包括表单行高，表单文字说明样式*/
+.common_form{
+	width: 100%;
+	margin:0px;
+}
+
+.common_form table{
+	
+}
+.common_form table>tbody>tr{
+	height: 40px;
+}
+
+.common_form table>tbody>tr>td.fc_label{
+	padding-left: 15px;
+	text-align:right;
+	white-space: nowrap;
+	font-size:14px;
+	color: #979ca0;
+}
+.common_form table>tbody>tr>td{
+	position: relative;
+	white-space: nowrap;
+}
+/*表单基本样式结束*/
+/**
+ * 以下代码自定义bootstrap样式
+ */
+/*列表list样式自定义*/
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{background-color: #ddd;padding:10px;border-color:#ccc;color:#000}
+.panel-body > .list-group-item{border:0px;border-radius:0px;border-bottom:1px solid #eeeeee;margin-bottom:0px;}
+.list-group-item-heading{font-size:14px;margin-bottom:0px;}
+.frontCommonListDiv > a.selected{background-color: rgb(219,238,248)!important}
+ /*tab样式自定义*/
+.tab-content{
+	border:1px solid #ccc;
+	border-top:0px;
+	border-radius:0px 0px 5px 5px;
+	outline: none;
+}
+*{outline:none;}
+.tab-content > .tab-pane{
+	padding:5px;
+	outline: none;
+}
+.nav>li>a{padding:7px 15px;background-color: rgb(221,221,221);border-color: rgb(221,221,221);color:#000;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+   background: url("../images/tab_active.png") repeat-x transparent;
+   color:#000;
+   border-color: #ccc;
+   border-bottom-color: #fff;
+}/*tab样式结束*/
+.tab_back_none > li.active > a, .tab_back_none > li.active > a:focus, .tab_back_none > li.active > a:hover{color:#5d5d5d;background: none;border:0px;border-bottom: 4px solid #5dd4e6}
+.tab_back_none > li > a{background-color: #fff;border: 0px #fff solid;color:#9c9fa1;}
+.tab_back_none > li > a:hover{border:0px solid #fff;border-bottom: 4px solid #5dd4e6;background-color: #fff}
+/*面板样式自定义*/
+.panel-default{
+	border: 0px solid #444c60;
+	box-shadow: 0px 3px 7px #ddd;
+}
+.panel-default > span.hiddenTitle{
+	color: #fff;
+	cursor: pointer;
+}
+.panel-default > span.hiddenTitle:hover{
+	color: #eeeeee;
+}
+.panel-body{
+	border: 1px solid #eeeeee;
+	border-top: 0px;
+	border-radius: 0px 0px 4px 4px;
+	
+}
+.panelEmpty{
+	border: 1px solid #444c60;
+	background-color: #444c60;
+	padding-left: 5px;
+	padding-top:2px;
+}
+.panel-default > .panel-heading {
+    background-image: linear-gradient(#444c60 0px, #444c60 100%);
+    background-repeat: repeat-x;
+    border: 1px solid #444c60;
+    color:#FFF;
+    border-radius:4px 4px 0px 0px;
+    padding:7px 15px;
+}
+
+.panel-default > .panel-heading2{
+	background-image: linear-gradient(#ddd 0px, #ddd 100%);
+    background-repeat: repeat-x;
+    border: 1px solid #ddd;
+    color:#000;
+    border-radius:4px 4px 0px 0px;
+    padding:7px 15px;
+}
+.panel-default > .panel-heading{
+	position: relative;
+}
+.panel-default > .panel-heading > .headBtnGrp .btn{
+	padding:2px 10px;
+}
+.panel-default > .panel-heading > span.fa{cursor:pointer;}
+.panel-default > .panel-heading > span.fa:hover{color:#ccc}
+.panel-default > .panel-heading > .headBtnGrp > span.fa{cursor:pointer;margin-right:5px;}
+.panel-default > .panel-heading > .headBtnGrp > span.fa:hover{color:#ccc}
+.panel-default > .panel-heading > .headBtnGrp{
+	position: absolute;
+	top:5px;
+	right:10px;
+}
+/*面板样式自定义结束*/
+
+/*表单及按钮样式自定义*/
+.btn{
+	font-size:14px;
+	padding:4px 10px;
+	border-radius: 2px;
+}
+.btn-xs {
+    padding: 2px 10px;
+    font-size: 14px;
+    border-radius: 2px;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 0;
+  outline-offset: 0px;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  /* color: #fff; */
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-info,.btn-primary,.btn-warning,.btn-danger,.btn-success{
+	background:#4bb8eb;
+	color: #FFFFFF;
+	border: 1px solid #4bb8eb;
+	/* background: linear-gradient(to right, #1b92dc 0%,#3df0c8 100%);
+	border: 0px solid #fff;
+	color: #fff; */
+}
+.btn-info:hover,.btn-primary:hover,.btn-success:hover,.btn-danger:hover,.btn-warning:hover {
+  	background:#FFFFFF#3fa5d4;
+	color: #FFFFFF;
+	border: 1px solid #3fa5d4;
+}
+.btn-info:focus,
+.btn-info.focus,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-success:focus,
+.btn-success.focus,
+.btn-danger:focus,
+.btn-danger.focus,
+.btn-warning:focus,
+.btn-warning.focus {
+  	background:#4bb8eb;
+	color: #FFFFFF;
+	border: 1px solid #4bb8eb;
+  	/* background:#FFFFFF;
+	border: 1px solid #2a94e8;
+	color:#2a94e8; */
+}
+
+.btn-default{
+	background:#FFFFFF;
+	color: #909090;
+	border: 1px solid #adadad;
+	/* background: #b7b7b7;
+	border: 0px solid #b7b7b7;
+	color: #fff; */
+}
+.btn-default:hover {
+ /*  color: #fff;
+  background-color: #b7b7b7;
+  border-color: #b7b7b7; */
+  background:#4bb8eb;
+  color: #FFFFFF;
+  border: 1px solid #4bb8eb;
+}
+.btn-default:active,
+.btn-default.active{
+  color: #fff;
+  background-color: #b7b7b7;
+  border-color: #b7b7b7;
+}
+.btn-default:focus,
+.btn-default.focus {
+  color: #fff;
+  background-color: #b7b7b7;
+  border-color: #b7b7b7;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.btn-default:active.focus,
+.btn-default.active.focus {
+  color: #fff;
+  background-color: #b7b7b7;
+  border-color: #b7b7b7;
+}
+
+.advance_search_div{
+	display: none;
+	padding:5px 20px 5px 0px;
+	top:32px;
+	position:absolute;
+	border:1px solid #ccc;
+	width:auto;
+	border-radius:4px;
+	left:0px;
+	background-color: #fff;
+	z-index:100000;
+	box-shadow: 0px 3px 7px #ddd;
+}
+.advance_search_div table{margin-left:-5px}
+.advance_search_div table>tbody>tr>td{position:relative;}
+.form-control {
+  background-color: #fff ;
+  padding: 0px 5px;
+  padding-left:10px;
+  height: 25px;
+  font-size: 12px;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #e9ecf4;
+  color: #333333;
+}
+.glyphicon.glyphicon-unchecked{color: #dbdbdb}
+.glyphicon.glyphicon-check{color: #b9b9b9}
+.glyphicon.glyphicon-ok-circle-empty{color: #dbdbdb}
+.glyphicon.glyphicon-ok-circle{color: #b9b9b9}
+.form-control:focus{border-color: #e9ecf4;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;}
+textarea.form-control{
+	padding-top:3px;
+}
+.input-group-btn .btn{
+	height:25px;
+	border: 1px solid #e9ecf4;
+	padding: 1px 5px 1px 5px;
+	border-left: 0px;
+	outline:none;
+	color: #333;
+	background: #fff;
+}
+span[type='checkbox'],span[type='radio']{color:#333;}
+.input-group-btn .btn>.glyphicon-calendar{color: #333;}
+.input-group-btn .btn>.glyphicon{font-size:12px;}
+.input-group-btn .btn:focus,
+.input-group-btn .btn:active:focus,
+.input-group-btn .btn.active:focus,
+.input-group-btn .btn.focus,
+.input-group-btn .btn:active.focus,
+.input-group-btn .btn.active.focus {
+  outline: none;
+  outline-offset: 0px;
+}
+.input-group-btn .btn:hover,
+.input-group-btn .btn:focus,
+.input-group-btn .btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+.input-group-btn .btn:active,
+.input-group-btn .btn.active {
+  background-image: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.input-group-btn .btn-default:active,
+.input-group-btn .btn-default.active,
+.input-group-btn.open > .dropdown-toggle.btn-default{
+	color: #333;
+	background-color: #fff;
+	border-color: #e9ecf4;
+}
+
+.input-group-btn .btn-default:focus,
+.input-group-btn .btn-default.focus {
+  	color: #333;
+	background-color: #fff;
+	border-color: #e9ecf4;
+}
+.input-group-btn .btn-default:hover {
+  	color: #333;
+	background-color: #fff;
+	border-color: #e9ecf4;
+}
+
+.input-group-btn .btn-default:active:hover,
+.input-group-btn .btn-default.active:hover,
+.input-group-btn.open > .dropdown-toggle.btn-default:hover,
+.input-group-btn .btn-default:active:focus,
+.input-group-btn .btn-default.active:focus,
+.input-group-btn.open > .dropdown-toggle.btn-default:focus,
+.input-group-btn .btn-default:active.focus,
+.input-group-btn .btn-default.active.focus,
+.input-group-btn.open > .dropdown-toggle.btn-default.focus {
+  	color: #333;
+	background-color: #fff;
+	border-color: #e9ecf4;
+}
+/*树表单控件样式定义*/
+.tree-menu{
+  position: absolute;
+  top: 100%;
+  left: auto;
+  z-index: 1000;
+  display: none; 
+  float: left;
+  min-width: 160px;
+  padding: 5px 5px;
+  margin: 2px 0 0; 
+  list-style: none;
+  font-size: 14px;
+  text-align: left; 
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  box-shadow : 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+}
+.dropdown-menu{
+	left: auto;
+}
+.open>.tree-menu{
+	display: block;
+}
+/*表单及按钮样式自定义结束*/
+
+/*树控件样式定义*/
+.ztree *{
+	font-size:14px;
+}
+.ztree li{line-height: 24px;}
+.ztree li a{height: 24px;line-height:24px;padding: 0px 3px 0 0}
+.ztree li a:hover{background: #eafbfe;text-decoration: none;}
+.ztree li a.level0>.node_name{color: #333333}
+.ztree .node_name{color: #555555}
+.ztree li span.button.ico_close{visibility:hidden;background: none;}
+.ztree li span.button.ico_open{visibility:hidden;background: none;}
+.ztree li span.button.ico_docu{visibility:hidden;background: none;}
+.ztree li span.button.center_docu{visibility:hidden;background: none;}
+.ztree li span.button.bottom_docu{visibility:hidden;background: none;}
+.ztree li span.button.top_docu{visibility:hidden;background: none;}
+.ztree a>span.button.ico_close{width:2px;}
+.ztree a>span.button.ico_open{;width:2px;}
+.ztree a>span.button.ico_docu{width:2px;}
+.ztree a>span.button.center_docu{width:2px;}
+.ztree a>span.button.bottom_docu{width:2px;}
+.ztree a>span.button.top_docu{width:2px;}
+.ztree li span.button.chk{margin-top: -1px;}
+.ztree li ul.line{background: none;}
+.ztree li a.curSelectedNode{height:24px;background: #eafbfe;border: 0px solid #eafbfe;}
+.ztree li span.button{font-family:"iconfont" !important;
+  font-size:14px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;}
+.ztree li span.button.roots_docu{background: none;}
+.ztree li span.button.root_docu{background: none;}
+.ztree li span.button.root_close{transform:rotate(-90deg);padding:10px 0px 0px 2px;background: none;}
+.ztree li span.button.root_close:before{content: "\e61b";}
+.ztree li span.button.roots_close{transform:rotate(-90deg);padding:10px 0px 0px 2px;background: none;}
+.ztree li span.button.roots_close:before{content: "\e61b";}
+.ztree li span.button.root_open{padding-top:8px;background: none;}
+.ztree li span.button.root_open:before{content: "\e61b";}
+.ztree li span.button.roots_open{padding-top:8px;background: none;}
+.ztree li span.button.roots_open:before{content: "\e61b";}
+.ztree li span.button.center_close{transform:rotate(-90deg);padding:10px 0px 0px 2px;background: none;}
+.ztree li span.button.center_close:before{content: "\e61b";}
+.ztree li span.button.center_open{padding-top:8px;background: none;}
+.ztree li span.button.center_open:before{content: "\e61b";}
+.ztree li span.button.bottom_close{transform:rotate(-90deg);padding:10px 0px 0px 2px;background: none;}
+.ztree li span.button.bottom_close:before{content: "\e61b";}
+.ztree li span.button.bottom_open{padding-top:8px;background: none;}
+.ztree li span.button.bottom_open:before{content: "\e61b";}
+/*树控件样式定义结束*/
+/*下面是弹窗样式自定义*/
+.pl0{padding-left:0px!important;}
+.full-screen .modal-dialog{margin: 0px!important;overflow:hidden;}
+.gray-dialog .modal-header{background-color: #ccc;border-color: #ccc;}
+.gray-dialog .modal-content{border-color: #ccc;border-radius:0px;}
+.modal-content{border-radius: 0px;}
+.modal-backdrop.in{opacity:0.5}
+.modal-header{background-color: #fff;color:#000;padding:10px 15px;border-bottom-color: #e9ecf4;}
+.modal-footer{padding:10px 15px;border-top-color: #e9ecf4}
+.modal-content{border-color: #eee}
+.modal-header .modal-title{font-size:16px;border-left: 3px solid rgb(93,212,230);padding-left:5px;}
+.modal-dialog{margin-bottom:0px;}
+.close{color:rgb(191,194,203);opacity: 1;text-shadow: none;}
+.close:hover{color:orange;opacity: 1}
+.confirmDialog .modal-content{}
+.confirmDialog .modal-header{}
+/*弹窗样式自定义结束*/
+/*下面是表格样式的自定义，重写*/
+.panel-body .fixed-table-container{border-radius:0px;border-left:0px;border-right:0px;border-bottom:0px;}
+.fixed-table-container{border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;}
+.container{padding:0px;margin:0px;width:auto}
+.fixed-table-container{border-color: #eeeeee}
+.fixed-table-container thead th .th-inner, .fixed-table-container tbody td .th-inner, .fixed-table-container .bs-checkbox .th-inner{
+	padding:4px 8px;
+}
+.fixed-table-container thead th{
+	font-weight: 600;
+	padding:4px 8px;
+	color: #555555;
+	border-left: 1px solid #eeeeee;
+	color: #555555;
+	text-align: center!important;
+}
+.fixed-table-container thead th[rowspan='2']{
+}
+.fixed-table-container tbody td{
+	border-left: 1px solid #eeeeee;
+	color: #666;
+	font-size: 12px;
+}
+.fixed-table-container{border-radius: 2px;-webkit-border-radius: 2px;}
+.fixed-table-container tbody .selected td{background-color: #d7f7fd!important}
+.fixed-table-container tbody>tr:hover{background-color: #eafbfe!important}
+.fixed-table-container .no-records-found{border-bottom: 1px solid #eeeeee}
+.fixed-table-container input[name='btSelectItem']{vertical-align: middle;background-color: #dbdbdb}
+.fixed-table-container a{margin-right:10px;font-size:14px;}
+.fixed-table-container .btn-xs{margin-right:10px;}
+.fixed-table-container a:last-child{margin-right:0px;}
+.fixed-table-container a>.glyphicon {top:2px;display:none}
+.fixed-table-toolbar{width:100%;height:43px;background: #eee;border:0px;display:none;}
+.fixed-table-toolbar .bs-bars, .fixed-table-toolbar .search, .fixed-table-toolbar .columns{line-height:31px;margin:5px 10px;}
+.fixed-table-toolbar .columns{margin-top:7px;}
+.fixed-table-pagination > .pagination td{border:0px;}
+.fixed-table-pagination > .pagination tbody>tr:hover{background-color: transparent!important;}
+.fixed-table-pagination div.pagination, .fixed-table-pagination .pagination-detail{margin:3px 10px 1px 10px;}
+.fixed-table-pagination div.pagination{height:25px;}
+.fixed-table-pagination .pagination-info{line-height:25px;}
+.panel-body .fixed-table-pagination{border:0px;border-top:1px solid #eeeeee;width:100%;margin:0px;}
+.fixed-table-pagination{width:calc(100% + 2px);height:30px;background: #fff;margin-left:-1px;border:1px solid #eee;border-radius:0px 0px 2px 2px}
+.bootstrap-table .table:not(.table-condensed), .bootstrap-table .table:not(.table-condensed) > tbody > tr > th, .bootstrap-table .table:not(.table-condensed) > tfoot > tr > th, .bootstrap-table .table:not(.table-condensed) > thead > tr > td, .bootstrap-table .table:not(.table-condensed) > tbody > tr > td, .bootstrap-table .table:not(.table-condensed) > tfoot > tr > td{padding:5px 8px;}
+.bootstrap-table .table>tbody>tr>td, .bootstrap-table .table>tbody>tr>th, .bootstrap-table .table>tfoot>tr>td, .bootstrap-table .table>tfoot>tr>th, .bootstrap-table .table>thead>tr>td, .bootstrap-table .table>thead>tr>th{
+	border-top: 1px solid #eeeeee;
+}
+.bootstrap-table .table > thead > tr > th{border-bottom: 1px solid #eeeeee}
+.bootstrap-table .table > thead > tr > th:last-child{border-right: 1px solid #eeeeee}
+.bootstrap-table .table > tbody > tr > td{text-overflow: ellipsis;overflow:hidden;white-space: nowrap;}
+.bootstrap-table .table > tbody > tr > td:last-child{border-right: 1px solid #eeeeee}
+.bootstrap-table .table > tbody > tr > td.no-right-b{border-right: none}
+.bootstrap-table .table > thead > tr > th.no-right-b{border-right: none}
+.bootstrap-table .table{border-bottom: 1px solid #eee;}
+.bootstrap-table .table-striped>tbody>tr:nth-of-type(odd){background-color: rgb(248,249,251)}
+.fixed-table-container .no-records-found{border-bottom:0px;}
+.pagination-detail>.page_btn{cursor:pointer;min-width:30px;height:24px;border-radius: 2px;border:1px solid #eee;text-align: center;float:left;padding:0px 8px;color:#979ca0;margin-right:10px;}
+.pagination-detail>.page_btn.disabledCls{background: #eee;cursor:default;}
+.pagination-detail>.page_btn:not(.disabledCls):hover{color:#fff;background-image: linear-gradient(#1d94df 0px, #3df2c9 100%);background-repeat: repeat-x;}
+.pagination-detail>.page_btn.active{color:#fff;background-image: linear-gradient(#1d94df 0px, #3df2c9 100%);background-repeat: repeat-x;}
+.pagination-detail>.info{color:#979ca0;float:left;margin-right:10px;}
+.bsgridPaging.pagingLittleToolbar{width:auto;}
+.bsgridPaging.pagingLittleToolbar tr{height:24px;}
+.bsgridPaging.pagingLittleToolbar td{padding:0px 10px;color: #979ca0;font-size:14px;font-family:'微软雅黑';}
+.bsgridPaging .page_btn{cursor:pointer;min-width:30px;height:24px;border-radius: 2px;border:1px solid #eee;text-align: center;float:left;padding:0px 8px;color:#979ca0;}
+.bsgridPaging .page_btn:hover{color:#fff;background-image: linear-gradient(#1d94df 0px, #3df2c9 100%);background-repeat: repeat-x;}
+/*表格样式自定义结束*/
+/*报警数字提醒样式自定义*/
+.count{
+	position:absolute;
+	top: 5px;
+	right: 5px;
+	color: white;
+    border-radius: 20px;
+    width: 18px;
+    height: 18px;
+    background: #e74c3c;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+}
+/*bootstrap菜单样式自定义*/
+.dropdown-menu .divider{margin:5px 0px;}
+.dropdown-menu>li>a{overflow:hidden;text-overflow: ellipsis;overflow:hidden;}
+/*菜单样式自定义结束*/
+/*end*/
+
+::-webkit-scrollbar {width: 10px;height:10px;}
+
+::-webkit-scrollbar-track-piece{background-color: #efefef;margin:2px;}
+
+::-webkit-scrollbar-thumb{background: #aaa;min-height: 40px;min-width: 150px;border-radius: 10px;}
+
+::-webkit-scrollbar-thumb:vertical:hover{background: #555555}
+
+::-webkit-scrollbar-thumb:horizontal:hover{background: #555555}
+
+.mt100{
+	margin-top: 100px;
+}
+
+body{
+  margin:0px;
+  overflow:hidden;
+}  

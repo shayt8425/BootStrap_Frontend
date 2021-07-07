@@ -1,0 +1,438 @@
+﻿#onlinecountqueryC
+{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+.searchDiv
+{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+.hiddenDiv
+{
+    display: none;
+}
+.marginTopItem
+{
+    margin-top: 20px;
+}
+
+.onlinecount_Item
+{
+    width: 230px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.onlinecount_ItemName_bureau
+{
+    float: left;
+    width: 70px;
+    text-align: right;
+    top: 20px;
+    position: absolute;
+    left: 30px;
+}
+.onlinecount_bureau_ItemName_input
+{
+    /* display: block; */ /* padding: 0px; */ /* margin: 0px; */
+    float: right;
+    position: absolute;
+    top: 20px;
+    left: 110px;
+    width: 150px;
+    height: 20px;
+}
+.onlinecount_ItemName_depot
+{
+    float: left;
+    width: 70px;
+    text-align: right;
+    top: 20px;
+    position: absolute;
+    left: 310px;
+}
+.onlinecount_depot_ItemName_input
+{
+    /* display: block; */ /* padding: 0px; */ /* margin: 0px; */
+    float: right;
+    position: absolute;
+    top: 20px;
+    left: 400px;
+    width: 150px;
+    height: 20px;
+}
+.onlinecount_bureau
+{
+    position: absolute;
+    left: 10px;
+    width: 120px; /*top: 3px;*/
+}
+.onlinecount_depot
+{
+    position: absolute; /* left: 360px; */
+    width: 120px; /* top: 3px; */
+}
+.s_ItemName input
+{
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    float: right;
+}
+
+#onlinecountqueryC hr
+{
+    width: 230px;
+    margin: 0 auto;
+    border: 0px;
+    border-top: 1px dashed #000;
+}
+
+#onlinecount_s_type
+{
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+#onlinecountqueryC checkbox
+{
+}
+.s_type_cbx_item
+{
+    margin-top: 15px;
+}
+
+.s_c_middle
+{
+    vertical-align: middle;
+}
+.s_searchBtn
+{
+    display: block;
+    width: 71px;
+    height: 22px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    margin: 0 auto; /* margin-top: 40px; */
+    background-image: url('../../../img/app/button_top.png');
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 620px;
+}
+.s_searchBtn:hover
+{
+    background-image: url('../../../img/app/button_down.png');
+}
+
+
+#onlinecountM
+{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+
+.m_topic
+{
+    /* text-align: center; */
+    height: 70px;
+    line-height: 70px;
+    font-size: 13px; /* font-weight: bold; */ /* color: black; */
+}
+.m_road, .m_sd_time
+{
+    font-size: 14px;
+    color: Black;
+    padding-left: 55px;
+    height: 40px;
+}
+.m_sd_time
+{
+    margin-top: 10px;
+}
+
+.m_char
+{
+    width: 100%;
+    position: relative;
+}
+
+.m_char img
+{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -230px;
+}
+.m_horizontal_line
+{
+    width: 1px;
+    height: 250px;
+    background-color: black;
+    left: 50px;
+    position: absolute;
+    top: 15px;
+}
+.m_vertical_line
+{
+    width: 720px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 50px;
+    top: 265px;
+    z-index: 9999;
+}
+.m_train
+{
+    width: 700px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    left: 51px;
+}
+.m_road_lading_train
+{
+    position: absolute;
+    left: 61px;
+    top: 80px;
+    font-weight: bolder;
+}
+.m_road_lading_train_count
+{
+    position: absolute;
+    left: 131px;
+    top: 80px;
+    font-weight: bolder;
+}
+.m_online_train_main, .m_offline_train_main, .m_onway_train_main, .m_onpool_train_main
+{
+    width: 140px;
+    height: 250px;
+    background-color: white;
+    bottom: 0px;
+    position: absolute;
+}
+.m_online_train_main
+{
+    left: 40px;
+}
+.m_offline_train_main
+{
+    left: 210px;
+}
+.m_onway_train_main
+{
+    left: 380px;
+}
+.m_onpool_train_main
+{
+    left: 550px;
+}
+
+.m_online_train, .m_offline_train, .m_onway_train, .m_onpool_train
+{
+    width: 50px; /*height: 200px;*/
+    position: absolute;
+    bottom: 30px;
+}
+.m_online_train
+{
+    background-color: rgb(250, 111, 111);
+}
+.m_offline_train
+{
+    background-color: rgb(124, 208, 241);
+}
+.m_onway_train
+{
+    background-color: rgb(253, 193, 87);
+}
+.m_onpool_train
+{
+    background-color: rgb(84, 167, 245);
+}
+
+.m_online_train_count, .m_offline_train_count, .m_onway_train_count, .m_onpool_train_count
+{
+    color: black;
+    width: 25px;
+    left: 15px;
+    position: absolute; /*font-weight: bolder;*/
+}
+.m_online_train_type, .m_offline_train_type, .m_onway_train_type, .m_onpool_train_type
+{
+    width: 50px;
+    bottom: 0px;
+    position: absolute;
+    left: 5px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+.m_online_train_showText, .m_offline_train_showText, .m_onway_train_showText, .m_onpool_train_showText
+{
+    position: absolute;
+    left: 55px;
+    width: 80px;
+    height: 100px; /*background-color: rgb(250, 111, 111);*/
+    top: 110px;
+}
+.m_online_train_showText1, .m_offline_train_showText1, .m_onway_train_showText1, .m_onpool_train_showText1
+{
+    position: absolute;
+    left: 10px;
+    text-align: left;
+    width: 80px;
+    height: 20px; /* background-color: rgb(250, 111, 111); */ /* top: 135px; */
+}
+.m_online_train_showText2, .m_offline_train_showText2, .m_onway_train_showText2, .m_onpool_train_showText2
+{
+    position: absolute;
+    left: 10px;
+    text-align: left;
+    width: 80px;
+    height: 20px; /* background-color: rgb(250, 111, 111); */
+    top: 20px;
+}
+.m_online_train_showText3, .m_offline_train_showText3, .m_onway_train_showText3, .m_onpool_train_showText3
+{
+    position: absolute;
+    left: 10px;
+    text-align: left;
+    width: 80px;
+    height: 20px; /* background-color: rgb(250, 111, 111); */
+    top: 40px;
+}
+.m_online_train_showText4, .m_offline_train_showText4, .m_onway_train_showText4, .m_onpool_train_showText4
+{
+    position: absolute;
+    left: 10px;
+    text-align: left;
+    width: 80px;
+    height: 20px; /* background-color: rgb(250, 111, 111); */
+    top: 60px;
+}
+.m_online_train_showText5, .m_offline_train_showText5, .m_onway_train_showText5, .m_onpool_train_showText5
+{
+    position: absolute;
+    left: 10px;
+    text-align: left;
+    width: 80px;
+    height: 20px; /* background-color: rgb(250, 111, 111); */
+    top: 80px;
+}
+/*-------------------------------------------------------------------------------------------*/
+.m_online_train_href, .m_offline_train_href, .m_onway_train_href, .m_onpool_train_href
+{
+    width: 50px;
+    height: 250px; /*background-color: gray;*/
+    position: absolute;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+/*---------------------------*/
+
+.trainInfoDiv-table
+{
+    position: absolute;
+    top: 5px;
+}
+.tableInfoDivHeader
+{
+    width: 760px;
+    height: 300px;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    z-index: 99999;
+}
+.tableInfoDiv-table-body tr:hover
+{
+    background: #F9A500;
+    cursor: pointer;
+}
+.tableInfoDiv-table-body tbody tr
+{
+    line-height: 16px;
+}
+.tableInfoDivOut
+{
+    width: 800px;
+    height: 405px;
+    position: absolute;
+    top: 40px; /* left: 80px; */
+    background-color: rgb(253, 250, 250);
+    z-index: 99999;
+}
+.tableInfoDiv
+{
+    position: absolute;
+    top: 36px;
+    width: 760px;
+    height: 265px;
+    overflow-y: auto;
+    z-index: 99998;
+}
+.tableInfoTitle
+{
+    position: absolute;
+    width: 480px;
+    height: 60px;
+}
+.total
+{
+    position: absolute;
+    width: 480px;
+    height: 40px;
+    font-size: initial;
+    left: 20px;
+    font-weight: bolder;
+}
+.every
+{
+    position: absolute;
+    width: 480px;
+    height: 20px;
+    top: 40px;
+    left: 20px;
+    font-size: initial;
+}
+.onlinecount-closeImg-btn
+{
+    position: absolute;
+    top: 0px;
+    left: 485px;
+    cursor: pointer;
+}
+.s_backBtn
+{
+    display: block;
+    width: 71px;
+    height: 22px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    margin: 0 auto; /* margin-top: 40px; */
+    background-image: url('../../../img/app/button_top.png');
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 620px;
+}
+.s_backBtn:hover
+{
+    background-image: url('../../../img/app/button_down.png');
+}
+.selectOptionCss
+{
+    height: 20px;
+}

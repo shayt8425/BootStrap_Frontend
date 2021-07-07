@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html style="height:100%">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>县域道路交通安全风险评估预警系统</title>
+<link href="resource/plug/bootstrap-3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" />
+<link href="resource/plug/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="resource/plug/toastr/toastr.min.css" />
+<link rel="stylesheet" href="resource/css/frontcommon.css" />
+<link href="resource/plug/richtab/css/style.css" rel="stylesheet" />
+<link href="resource/plug/richtab/css/tabstyle.css" rel="stylesheet" />
+<script type="text/javascript">
+	window.contextPathUrl = "contextpathlogin.json" 
+</script>
+<script src="resource/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="resource/plug/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="resource/plug/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="resource/plug/richtab/js/tab.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapDialog.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapMessage.js"></script>
+<style type="text/css">
+li{list-style: none;}
+.midleul::-webkit-scrollbar { width: 0 !important }
+html,body{height: 100%;}
+a:hover, a:visited, a:link, a:active {color:#e1e1e1;text-decoration:none;}
+.d-firstNav{height:60px;line-height: 60px;cursor: pointer;padding-left: 35px;}
+.d-firstNav i{font-size: 20px;display:inline-block;width: 24px;height:24px}
+.d-firstNav span{font-size: 16px;margin-left: 5px;}
+.d-firstNav i.active{}
+.background{display:inline-block;width:24px;height:24px;line-height: 24px;text-align: center;}
+.background.active{display:inline-block; background: #23759c;}
+.d-firstDrop {display: none;color: #e1e1e1;}     
+.d-firstNav.active{color:#fff; background: #23759c;}
+.rotate180{transform:rotate(180deg);}
+.d-firstDrop li{font-size: 14px;height: 40px;line-height: 40px;padding-left:66px;}
+.d-firstDrop li.active a{color: #3dcbff}
+
+.left-nav-close ul li {height:44px;line-height: 44px;cursor: pointer;}
+.left-nav-close ul li i{font-size: 17px;margin-left: 1px;}
+.left-nav-close ul li.active {background: url(resource/images/indexImg/xuanzhong.png) center center no-repeat;}
+.left-nav-close ul li i.active{background-image: -webkit-gradient(linear,  0% 0%, 100% 0%, from(#1d94df), to(#3df2d9));-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+.workbench{float: left;width:96px;background-color: #f1f0f0;height: 51px;border-bottom: 2px solid #2da8db}
+.menu_main{
+	cursor: pointer;background-color:#fff;
+	border:1px solid #d6dce1;border-top-left-radius: 2px;color:#9ba0a4;line-height: 29px;vertical-align:middle;text-align:center;margin-top: 22px;height: 29px;border-right:0;transition:color .5s;-moz-transition:color .5s;-webkit-transition:color .5s;-o-transition:color .5s;font-family: ”微软雅黑”;font-size: 16px
+}
+.menu_main.active{background: -moz-linear-gradient(left, #1b92dc 0%, #3df0c8 100%);
+    background: -webkit-linear-gradient(left, #1b92dc 0%,#3df0c8 100%);
+    background: -o-linear-gradient(left, #1b92dc 0%,#3df0c8 100%);
+    background: -ms-linear-gradient(left, #1b92dc 0%,#3df0c8 100%);
+    background: linear-gradient(to right, #1b92dc 0%,#3df0c8 100%);
+    color:#ffffff;
+    }
+#page-tab #menu-list a{
+	height:30px;
+	line-height:30px;
+	box-shadow:0px 3px 3px 1px #F2F4F8 inset;
+	border-right:1px solid #ddd;
+}
+ul,ol {
+    margin-bottom: 0;
+  }
+
+.outer {overflow: hidden;}
+.midleul {overflow-x: hidden;overflow-y: auto;}
+.shadow{box-shadow:0px 3px 3px 1px #F2F4F8 inset}
+#page-tab-content{border-bottom:1px solid #ddd}
+.tab-btn{border-left:1px solid #ddd}
+/* .modal-body{overflow-y: scroll !important;overflow-x: none} */
+.table>tbody>tr>td{border:none;text-align: left;padding-left:80px}
+#timetable td,#timetable th{
+	padding: 5px 8px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	border: 1px solid #eeeeee;
+}
+#timetable th{
+	background: #666666;
+	color:#fff;
+}
+.width25{
+	width:300px;
+}
+</style>
+</head>
+<body style="overflow: hidden;height:100%">
+<!-- 左边导航栏 -->
+<div class="left-nav" style="height:calc(100%);float: left;color:#e1e1e1;">
+	<!-- 左边导航栏 - 关闭状态  -->
+	<div class="left-nav-close" style="height:100%;width:45px;text-align: center;background:#2f2f2f;display: none;">
+		<!-- LOGO -->
+		<div style="background:#2f2f2f;height: 50px;line-height: 50px;border-bottom:1px solid #404040"><img style="width:32px; vertical-align:middle"alt="中国中车" src="resource/images/indexImg/logo1.png"></div>
+		<ul id="minNav" class="minNav">
+		</ul>
+		<div style="position: absolute; bottom: 10px;left:5px"> <i style="font-size: 28px;cursor:pointer;" class="icon iconfont icon-indent"></i></div>
+	</div>
+	<!-- 左边导航栏 - 展开状态  -->
+	
+	<div class="left-nav-open" style="height:100%;width:200px;text-align: left;background:#2f2f2f">
+        <!-- LOGO -->
+        <div style="background:#2f2f2f;height: 50px;line-height: 50px;border-bottom:1px solid #404040">
+        	<img style="height:31px;vertical-align:middle;margin-left: 40px"alt="" src="resource/images/indexImg/logo.png">
+        </div>
+        <div class="outer" style="height: 100%;">
+        <ul class="midleul" id="navIcon" style="overflow: auto;height:calc(100vh - 100px);">
+        </ul>
+        </div>
+        <div style="position: absolute; bottom: 0px;left:0px;height:40px;line-height:40px;background: #2f2f2f;width:200px;"> <i style="font-size: 22px;margin-left:35px;cursor:pointer;" class="icon iconfont icon-suojin"></i></div> 
+	</div>
+</div>
+<div class="right" style="float:left;background: #F2F4F8;">
+<!-- 顶部头像栏 -->
+<div class="top" style="height:50px;line-height: 50px;background: #fff;">
+	<div style="float:left;height:50px;line-height:50px;font-weight:400;font-size:22px;padding-left:30px;">县域道路交通安全风险评估预警系统</div>
+	<div style="float:right">
+		<ul>
+			<li style="float: right;margin: 0 20px 0 8px;height: 40px" id="quitButtn"><i style="font-size: 20px;color: #CBCBCB;cursor: pointer" class="icon iconfont icon-tuichu"></i></li>
+			<li style="float: right;margin: 0 8px;position: relative;height: 40px"><div id="redDot" class="redDot" style="cursor: pointer;position: absolute;width: 25px;font-size: 12px;color: red;text-align: center;border-radius:50%;"></div><i style="font-size: 25px; color: #CBCBCB;cursor: pointer" class="icon iconfont icon-naoling-"></i></li>
+			<li style="float: right;margin: 0 8px;;height: 40px"><img style="height:25px;vertical-align:middle;border-radius:50%;cursor: pointer" src="resource/images/indexImg/head.png"></li>
+		</ul>
+	</div>
+</div>
+<!-- 顶部tab页 -->
+<div class="top-nav" style="">
+	<div id="page-tab" style="float: left;width:calc(100% - 93px);overflow: hidden;">
+		<nav id="page-tab-content" class="shadow">
+			<div id="menu-list">
+				<a id="gztBtn" href="javascript:void(0);" data-url="" data-value="gzt" class="active"><i class="icon iconfont icon-shebei1 active" style="font-size: 20px;float: left;margin-top: 1px;display: inline-block;padding-right: 2px;"></i>工作台</a>                
+			</div>
+		</nav>
+	</div>
+	<div id="btn" class="shadow" style="float: left;margin-top: 0px;height: 30px;border-bottom:1px solid #ddd">
+		<div class="tab-btn shadow" id="page-prev" ></div>
+		<div class="tab-btn shadow" id="page-next" ></div>
+		<div id="page-operation" class="tab-btn shadow">
+			<div id="menu-all">
+				<ul id="menu-all-ul">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+	<!--菜单HTML End-->
+	
+</div>
+<!--iframe Start (根据页面顶部占用高度，自行调整高度数值)-->
+<div id="page-content"  style="height: calc(100vh - 80px);padding:0px !important;">        </div>
+<!--iframe End-->
+</div>
+<!-- 用来打开tab栏目的a标签 -->
+<div class="otherLink" style="display: none;"></div>
+<script type="text/javascript" src="resource/js/index.js"></script>
+</body>
+<script type="text/javascript">
+
+$('.right').animate({width: document.body.clientWidth - 200},{ duration: 0, queue: false });
+/**
+ * 点击展开关闭按钮
+ */
+window.leftWidth = 200;//保存左边nav的宽度，用于改变窗口大小事件
+$('.icon-suojin').click(function(){
+	$('.left-nav-open').animate({width:'toggle'},{ duration: 0, queue: false });
+	$('.left-nav-close').animate({width:'toggle'},{ duration: 0, queue: false });
+	leftWidth = 45;
+	var rightWidth =  document.body.clientWidth - 45;
+	$('.right').animate({width:rightWidth},{ duration: 0, queue: false });
+})
+$('.icon-indent').click(function(){
+	$('.left-nav-open').animate({width:'toggle'},{ duration: 0, queue: false });
+	$('.left-nav-close').animate({width:'toggle'},{ duration: 0, queue: false });
+	leftWidth = 200;
+	var rightWidth =  document.body.clientWidth - 200;
+	$('.right').animate({width:rightWidth},{ duration: 0, queue: false });
+})
+/**
+ * 窗口大小改变事件，改变右边宽度
+ */
+ $(window).bind('resize',function () {
+	 var rightWidth =  document.body.clientWidth - leftWidth;
+	 $('.right').animate({width:rightWidth},{ duration: 0, queue: false });
+ });
+
+/**
+ * 工作台点击事件。改变iframe内容与nav样式
+ */
+ $("<iframe>", {
+ 	"style":"height:100%",
+ 	"scrolling":"auto",
+     "class": "iframe-content active",
+     "data-url": "",
+     "data-value": 'gzt',
+     "src": "test/test4.html"
+ }).appendTo("#page-content");
+$('#gztBtn').click(function(){
+	var url = $(this).attr("data-url");
+	var value = 'gzt';
+	$("#menu-list a").removeClass("active");
+    $("#menu-list a i").removeClass("active");
+    $(this).addClass("active");
+    $(this).children('i').addClass("active");
+    $("#page-content iframe.active").removeClass("active");
+    $("#page-content .iframe-content[data-url='" + url + "'][data-value='" + value + "']").addClass("active");
+	
+});
+
+/**
+ * 点击tab标签显示全部
+ */
+ $(function(){
+      	var row  ='isnull';
+	 $("#quitButtn").click(function(){
+		 FrontCommon.confirm("您确定要退出吗？","系统提示",function(isConfirm){
+			 if(isConfirm){
+			 }
+		 });
+	 });
+ })
+</script>
+</html>

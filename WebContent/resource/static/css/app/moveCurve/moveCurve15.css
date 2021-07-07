@@ -1,0 +1,1261 @@
+.moveShowDiv15
+{
+    width: 507px;
+    height: 400px;
+} 
+.moveShowDiv15_larger
+{
+	width: 775px;
+	height: 529px;
+	background-image:url(../../../img/app/app-realtimelocomotivequery-move/bigger.png)
+}
+
+.moveTopShowDiv15
+{
+	width: 460px;
+	height: 46px;
+	border: 1px solid #808080;
+	border-bottom: 0px;
+	position: relative;
+	border-right: 0px;
+}
+.moveTopShowDiv15_larger
+{
+	width: 775px;
+	background-image: url(background-image
+:url(../static/img/app/app-realtimelocomotivequery-move/bigger.png));
+}
+
+.moveTopShowDiv15 img.moveTopShowImg15
+{
+    display: block;
+    position: absolute;
+	margin-left:15px	
+}
+
+.moveSatus15
+{
+	width: 60px;
+	height: 32px;
+	position: absolute;
+	top: 6px;
+	left: 8px;
+	z-index: 1;
+}
+
+
+
+
+/* .moveSatus15 img
+{
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 15px;
+} */
+
+.moveShowDiv15_larger div.moveSpeed,
+.moveShowDiv15_larger div.moveRestrictSpeed,
+.moveShowDiv15_larger div.moveDistance,
+.moveShowDiv15_larger div.moveSignDistance,
+.moveShowDiv15_larger div.moveTime
+{
+	width: 45px;
+	height: 38px;
+	position: absolute;
+	top: 4px;
+	left: 103px;
+	z-index: 1;
+	color: #54cb00;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+	overflow: hidden;
+	font-weight: 900;
+	font-family: arial;
+	font-size: 22px;
+	color: rgb(63,120,161);
+}
+.moveShowDiv15_larger div.moveSpeed_larger
+{
+	width: 92px;
+	left: 78px;
+	text-align: right;
+}
+.moveShowDiv15_larger div.moveRestrictSpeed
+{
+    left: 168px;
+    color: #e60012;
+}
+.moveShowDiv15_larger div.moveRestrictSpeed_larger
+{
+	left: 174px;
+	width: 91px;
+	text-align: right;
+}
+.moveShowDiv15_larger div.moveDistance
+{
+    left: 233px;
+    color: #f3ae00;
+    width: 65px;
+}
+.moveShowDiv15_larger div.moveDistance_larger
+{
+	left: 274px;
+	width: 109px;
+	text-align: right;
+}
+.moveShowDiv15_larger div.moveSignDistance
+{
+	left: 328px;
+	width: 123px;
+}
+.moveShowDiv15_larger div.moveSignDistance_larger
+{
+	left: 392px;
+}
+
+.moveShowDiv15_larger div.moveSD_S
+{
+	height: 20px;
+	line-height: 20px;
+	color: White;
+	font-size: 12px;
+	text-align: left;
+	overflow: hidden;
+	width: 60%;
+	float: left;
+}
+
+.moveShowDiv15_larger div.moveSD_S1
+{
+	height: 20px;
+	line-height: 20px;
+	color: White;
+	font-size: 12px;
+	text-align: right;
+	overflow: hidden;
+	width: 40%;
+	float: right;
+}
+
+
+.moveShowDiv15_larger div.moveSD_D
+{
+	width: 100%;
+	height: 15px;
+	line-height: 15px;
+	font-size: 12px;
+	margin-top: 3px;
+	color: #f3ae00;
+	text-align: center;
+}
+.moveShowDiv15_larger div.moveTime
+{
+	left: 413px;
+	width: 67px;
+	color: #f3ae00;
+	font-size: 12px;
+	text-align: center;
+}
+.moveShowDiv15_larger div.moveTime_larger
+{
+	left: 535px;
+	width: 210px;
+}
+.moveShowDiv15_larger div.moveDate
+{
+	height: 20px;
+	text-align: center;
+	border-bottom: 1px solid white;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.moveShowDiv15_larger div.moveDate_larger
+{
+    height: 40px;
+    width: 140px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    font-size: 15px;
+    line-height: 40px;
+    float: left;
+}
+
+
+.moveShowDiv15_larger div.moveTimeDiv
+{
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.moveShowDiv15_larger div.moveTimeDiv_larger
+{
+    height: 40px;
+    width: 61px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 40px;
+    float: left;
+}
+
+
+
+
+.moveShowDiv15_larger div.moveBottomShowDiv
+{
+	width: 460px;
+	height: 350px;
+	border-top: 0px;
+	position: relative;
+}
+.moveShowDiv15_larger div.moveBottomShowDiv_larger
+{
+    width: 730px;
+    border: 0px;
+}
+.loadingDiv
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -16px;
+    margin-top: -16px;
+    width: 32px;
+    height: 32px;
+    z-index: 9999999;
+    display: none;
+}
+.loadMsg
+{
+    position: absolute;
+    top: 22px;
+    left: 151px;
+    width: 200px;
+    height: 40px;
+    margin-left: -100px;
+    margin-top: -20px;
+    border: 1px solid #808080;
+    background-color: #2059B9;
+    color: white;
+    z-index: 9;
+    line-height: height: 40px;
+    text-align: center;
+    font-size: 20;
+    display: none;
+}
+.loadingDiv .m_loading
+{
+}
+
+
+.moveShowDiv15_larger div.moveRightBox
+{
+	width: 47px;
+	height: 350px;
+	position: absolute;
+	right: 0px;
+	top: 47px;
+	background-color: #191919;
+	display: none;
+}
+.moveShowDiv15_larger div.moveRightBox_larger
+{
+    height: 460px;
+}
+.moveShowDiv15_larger div.moveRB_Box
+{
+    width: 38px;
+    height: 26px;
+    margin-left: 5px;
+    float: left;
+    text-align: center;
+    background-color: Black;
+    color: #808080;
+    line-height: 26px;
+    border-bottom: 1px solid #808080;
+}
+.moveShowDiv15_larger div.mar
+{
+    margin-top: 3px;
+}
+.moveShowDiv15_larger div.moveBight
+{
+    background-color: #62CC1B;
+    color: White;
+}
+.moveShowDiv15_larger div.moveShowEngine
+{
+    width: 195px;
+    height: 150px;
+    border: 1px solid #808080;
+    background-color: #2059B9;
+    position: absolute;
+    right: 51px;
+    top: 51px;
+    z-index: 9px;
+    display: none;
+}
+.moveShowDiv15_larger div.moveItem
+{
+    height: 20px;
+    line-height: 20px;
+}
+.moveShowDiv15_larger div.moveItem .itemName,
+.moveShowDiv15_larger div.moveItem .itemValue
+{
+    float: left;
+    width: 97px;
+    color: White;
+}
+
+.moveShowDiv15_larger div.moveItem .itemName
+{
+    text-align: left;
+    text-indent: 10px;
+}
+.moveShowDiv15_larger div.moveItem .itemValue
+{
+    text-align: center;
+}
+.moveShowDiv15_larger div.movegk
+{
+    width: 130px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.moveShowDiv15_larger div.movegk_f,
+.moveShowDiv15_larger div.movegk_nz,
+.moveShowDiv15_larger div.movegk_qy
+{
+    width: 40px;
+    height: 20px;
+    float: left;
+    margin-left: 1px;
+    line-height: 20px;
+    border: 1px solid black;
+}
+.moveShowDiv15_larger div.movegk_f
+{
+    background-color: #64CFFA;
+}
+.moveShowDiv15_larger div.movegk_nz
+{
+    background-color: #191919;
+}
+.moveShowDiv15_larger div.movegk_qy
+{
+    background-color: #DD0004;
+}
+.moveShowDiv15_larger div.movesd_div1,
+.moveShowDiv15_larger div.movesd_div2,
+.moveShowDiv15_larger div.movesd_div3
+{
+    float: left;
+    width: 30px;
+    margin-left: 10px;
+}
+.moveShowDiv15_larger div.movesd_div2
+{
+    color: #62CC1B;
+}
+.moveShowDiv15_larger div.moveMiddleLine
+{
+	position: absolute;
+	top: 5px;
+	left: 511px;
+	border-left: 1px solid #4affff;
+	width: 1px;
+	z-index: 99;
+	height: 342px; /* cursor:w-resize;*/
+}
+
+.moveShowDiv15_larger div.moveTurnSpeedNum
+{
+    width: 20px;
+    position: absolute;
+    left: 430px;
+    top: 9px;
+    z-index: 999;
+}
+.moveShowDiv15_larger div.moveTurnSpeedNum_larger
+{
+    left: 690px;
+}
+
+
+.moveShowDiv15_larger div.moveSpeedNum
+{
+	width: 20px;
+	position: absolute;
+	left: 14px;
+	top: 7px;
+	z-index: 999;
+	height: 340px;
+}
+.moveShowDiv15_larger div.moveSN_N
+{
+	border-top: 0px;
+	height: 20px;
+	text-align: right;
+	line-height: 15px;
+	float: left;
+	width: 20px;
+	margin-top: 7px;
+}
+.moveShowDiv15_larger div.moveSN_N_larger
+{
+	margin-top: 28.5px;
+}
+.moveShowDiv15_larger div.moveBottomSpeed
+{
+    height: 234px;
+    width: 100%;
+    position: relative;
+}
+.moveShowDiv15_larger div.moveBottomSpeedHis
+{
+    height: 234px;
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+
+.moveShowDiv15_larger div.moveBottomSpeed_larger
+{
+	height: 342px;
+	top: 5px;
+	width: 730px;
+}
+.moveShowDiv15_larger div.maxSpeed
+{
+    height: 1px;
+    border-top: 1px solid red;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 184px;
+}
+.moveShowDiv15_larger div.currentSpeed
+{
+    height: 1px;
+    border-top: 1px solid green;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 186px;
+}
+.moveShowDiv15_larger div.minSpeed
+{
+    height: 1px;
+    border-top: 1px solid Yellow;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 184px;
+}
+.moveShowDiv15_larger div.movePipePressure
+{
+	height: 70px;
+	top: 6px;
+	width: 100%;
+}
+.moveShowDiv15_larger div.movePipePressureHis
+{
+    height: 70px;
+    position: relative;
+    top: 6px;
+    width: 100%;
+    display: none;
+}
+
+.moveShowDiv15_larger div.movePipePressure_larger
+{
+    height: 80px;
+}
+
+.moveShowDiv15_larger div.moveLightBar
+{
+    height: 15px;
+    position: relative;
+    width: 100%;
+}
+.moveShowDiv15_larger div.moveLightBarHis
+{
+    height: 15px;
+    position: relative;
+    width: 100%;
+    display: none;
+}
+
+
+.moveShowDiv15_larger div.moveLightBar_larger
+{
+    margin-top: 2px;
+}
+.moveShowDiv15_larger div.linebar
+{
+    position: relative;
+    margin-top: 3px;
+    border: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    height: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    float: left;
+}
+.moveShowDiv15_larger div.linebarTop
+{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 6px;
+    border-bottom: 1px solid black;
+}
+.moveShowDiv15_larger div.linebarBottom
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 4px;
+}
+
+
+.moveShowDiv15_larger div.moveLineSection
+{
+    height: 30px;
+    position: relative;
+}
+.moveShowDiv15_larger div.movebight
+{
+    height: 30px;
+    position: relative;
+}
+
+.moveShowDiv15_larger div.moveWaybridge
+{
+    height: 30px;
+    position: relative;
+}
+.moveShowDiv15_larger div.moveWayLabel
+{
+    height: 20px;
+    position: relative;
+    width: 372px;
+
+}
+.moveShowDiv15_larger div.moveWayLabelHis
+{
+    height: 20px;
+    position: relative;
+    width: 372px;
+    top: 10px;
+    display: none;
+}
+.moveShowDiv15_larger div.moveWayNum
+{
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    height: 20px;
+    margin-left: -24px;
+}
+.moveShowDiv15_larger div.moveWayNum .moveHLine
+{
+    height: 3px;
+    width: 1px;
+    border-left: 1px solid white;
+    margin: 0 auto;
+}
+.moveShowDiv15_larger div.moveWayNum .moveWayN_Num
+{
+    color: #00b6ec;
+}
+
+.moveShowDiv15_larger div.currentTrain
+{
+	position: absolute;
+	bottom: -19px;
+	left: 470px;
+	width: 53px;
+	height: 26px;
+	z-index: 99999;
+}
+.moveShowDiv15_larger div.carHead
+{
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    right: -7px;
+    top: 0px;
+}
+
+.moveShowDiv15_larger div.movePPNum
+{
+    height: 70px;
+    width: 20px;
+    position: absolute;
+    left: 23px;
+    top: 257px;
+    z-index: 999;
+}
+.moveShowDiv15_larger div.movePPNum_larger
+{
+    top: 363px;
+}
+.moveShowDiv15_larger div.movePPNum .movePP_num
+{
+    height: 20px;
+    line-height: 20px;
+}
+
+
+
+.moveShowDiv15_larger div.moveWayLabelDiv
+{
+    position: absolute;
+    bottom: 0px;
+    left: 80px;
+    height: 30px;
+    width: 1px;
+    border-left: 1px solid #9D9D9D;
+}
+
+.moveWayLabelDiv1
+{
+    position: absolute;
+    bottom: 0px;
+    left: 80px;
+    height: 30px;
+    width: 1px;
+    border-left: 1px solid #9D9D9D;
+}
+
+.moveWayLabelDiv1 .moveC
+{
+	position: absolute;
+	left: -7px;
+	top: -13px;
+}
+
+
+.moveWayLabelDiv1 .moveC .moveCWhite
+{
+    position: absolute;
+    top: 4px;
+    left: -1px;
+    width: 5px;
+}
+.moveWayLabelDiv1 .signalNum
+{
+	position: absolute;
+	top: -14px;
+	left: 8px;
+	width: 120px;
+	color: White;
+	text-align: left;
+}
+
+.stationDiv1
+{
+	position: absolute;
+	bottom: 255px;
+	left: 170px;
+	height: 23px;
+	width: 33px;
+	text-align: center;
+	color:red;
+	font-size:medium
+	
+}
+
+.stationDiv1 .stationC
+{
+	position: absolute;
+	left: -16px;
+	top: -34px;
+}
+
+
+
+.stationDiv1 .stationName
+{
+	position: absolute;
+	top: -27px;
+	left: -74px;
+	width: 53px;
+	color: White;
+	text-align: right;
+}
+
+.moveShowDiv15_larger div.moveWayLabelDiv .moveC
+{
+	position: absolute;
+	left: -7px;
+	top: -13px;
+}
+
+
+.moveShowDiv15_larger div.moveWayLabelDiv .moveC .moveCWhite
+{
+    position: absolute;
+    top: 4px;
+    left: -1px;
+    width: 5px;
+}
+.moveShowDiv15_larger div.moveWayLabelDiv .signalNum
+{
+	position: absolute;
+	top: -14px;
+	left: 8px;
+	width: 120px;
+	color: White;
+	text-align: left;
+}
+
+
+
+.movePGreen
+{
+    color: #54cb00;
+}
+.movePGray
+{
+    color: Gray;
+}
+
+
+.moveShowDiv15_larger div.moveBottomContainDiv
+{
+    height: 350px;
+    width: 372px;
+    position: relative;
+    margin-left: 45px;
+    overflow: hidden; /*cursor:move;*/
+}
+.moveShowDiv15_larger div.moveBottomContainDiv_larger
+{
+    height: 347px;
+    width: 685px;
+
+}
+
+
+.moveShowDiv15_larger div.moveErrorPage
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+.moveShowDiv15_larger div.moveErrorPage
+{
+    text-align: center;
+    color: Red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+.moveShowDiv15_larger div.moveHisControlR
+{
+	height: 24px;
+	position: relative;
+	width: 100%;
+	background-color: #004D82;
+	position: absolute;
+	top: 544px;
+	left: 8px;
+}
+.moveShowDiv15_larger div.moveHisControlR_larger
+{
+	width: 775px;
+}
+.moveShowDiv15_larger div.moveDrawSpeed
+{
+	position: absolute;
+	top: 9px;
+	left: 7px;
+	width: 175px;
+	height: 7px;
+	background-color: White;
+	border-radius: 5px;
+}
+.moveShowDiv15_larger div.moveDrawSpeed_larger
+{
+    width: 375px;
+}
+
+.moveShowDiv15_larger div.moveHisControlR .moveDragLine
+{
+    height: 7px;
+    width: 0px;
+    background-color: #F9A805;
+    border-radius: 5px;
+}
+
+
+.moveShowDiv15_larger div.moveHisControlR .moveHasLoadLine
+{
+    height: 7px;
+    width: 0px;
+    background-color: #8a8c8e;
+    border-radius: 5px;
+}
+
+
+
+.moveShowDiv15_larger div.moveHisControlR .moveDragLine
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.moveShowDiv15_larger div.moveHisControlR .moveDrawImgDiv
+{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 0px;
+    margin-left: -10px;
+    cursor: pointer;
+    z-index: 99;
+}
+.moveShowDiv15_larger div.moveControlSpeedBtn
+{
+    width: 105px;
+    height: 21px;
+    position: absolute;
+    left: 190px;
+    top: 2px;
+}
+.moveShowDiv15_larger div.moveControlSpeedBtn_larger
+{
+    left: 390px;
+}
+.moveShowDiv15_larger div.moveHisControlR .moveControlSpeedBtn img
+{
+    display: block;
+    float: left;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.moveShowDiv15_larger div.moveVideotapeSpeed
+{
+	width: 65px;
+	position: absolute;
+	left: 295px;
+	height: 24px;
+	line-height: 24px;
+	top: 0px;
+}
+.moveShowDiv15_larger div.moveVideotapeSpeed_larger
+{
+	left: 509px;
+}
+
+.moveShowDiv15_larger div.moveMoveCountSpeed
+{
+	width: 56px;
+	position: absolute;
+	left: 350px;
+	height: 24px;
+	line-height: 24px;
+	top: 0px;
+}
+.moveShowDiv15_larger div.moveMoveCountSpeed_larger
+{
+    left: 590px;
+}
+
+
+
+.moveShowDiv15_larger div.curveSelectSation
+{
+    width: 41px;
+    position: absolute;
+    left: 462px;
+    height: 21px;
+    line-height: 21px;
+    top: 0px;
+    z-index: 9999;
+}
+.moveShowDiv15_larger div.curveSelectSation_largar
+{
+	left: 731px;
+	z-index: 9999;
+}
+
+
+
+.moveShowDiv15_larger div.moveHisControlR .curveSelectSation .selectSationDiv
+{
+    position: absolute;
+    top: -220px;
+    width: 202px;
+    height: 190px;
+    left: 0px;
+    background-color: white;
+    z-index: 9999;
+    border: 1px solid #9D9D9D;
+    padding: 10px;
+}
+.moveHisControlR .selectSationBtn
+{
+}
+
+.moveShowDiv15_larger div.moveHisControlR .selectSationDiv
+{
+    display: none;
+    color: #363636;
+}
+
+
+.moveShowDiv15_larger div.moveHisControlR .selectSationInput
+{
+    margin: 0px;
+    padding: 0px;
+    width: 82px;
+    height: 27px;
+}
+.moveShowDiv15_larger div.moveHisControlR .selectSationBtn
+{
+    display: block;
+    padding: 0px;
+    text-decoration: none;
+    width: 71px;
+    height: 22px;
+    line-height: 22px;
+    background: url('../../../img/app/button_top.png');
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 31px;
+}
+.moveShowDiv15_larger .selectSationCancelBtn
+{
+    display: block;
+    padding: 0px;
+    text-decoration: none;
+    width: 71px;
+    height: 22px;
+    line-height: 22px;
+    background: url('../../../img/app/button_top.png');
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 116px;
+}
+.moveShowDiv15_larger div.moveHisControlR .selectSationCancelBtn:hover
+{
+    background: url('../../../img/app/button_down.png');
+}
+.moveShowDiv15_larger div.moveHisControlR .selectSationBtn:hover
+{
+    background: url('../../../img/app/button_down.png');
+}
+.moveShowDiv15_larger div.moveHisControlR .daoshanjiao
+{
+    display: block;
+    position: absolute;
+    left: 13px;
+    bottom: -8px;
+}
+
+.moveHisControlR .VideotapeSpeedNum
+{
+    color: White;
+}
+.moveShowDiv15_larger div.moveHisControlR .moveCountNum
+{
+	color: White;
+	position: absolute;
+	z-index: 9999;
+	top: -1px;
+	height: 25px;
+	width: 75px;
+	text-align: left;
+	left: 60px;
+}
+
+.moveShowDiv15_larger div.moveShowHisDiv
+{
+	position: absolute;
+	bottom: -78px;
+	right: -114px;
+	z-index: 999;
+	cursor:pointer;
+	width: 28px;
+	height: 28px;
+}
+
+.moveShowDiv15_larger div.moveHisControlR fieldset
+{
+    border: 1px solid #B5B5B5;
+    height: 140px;
+}
+
+.moveShowDiv15_larger div.moveHisControlR .selectItem
+{
+    width: 100%;
+    height: 30px;
+}
+
+.moveShowDiv15_larger div.moveHisControlR .selectItem input,
+.moveShowDiv15_larger div.moveHisControlR .selectItem select
+{
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+.moveShowDiv15_larger div.moveHisControlR .selectItemName
+{
+    width: 70px;
+    height: 30px;
+    float: left;
+}
+.moveShowDiv15_larger div.moveHisControlR .selectItemValue
+{
+    width: 108px;
+    height: 30px;
+    float: left;
+}
+
+
+.moveShowDiv15_larger div.moveHisControlR .selectItemValue input,
+.moveShowDiv15_larger div.selectItemValue select
+{
+    display: block;
+    width: 100px;
+    height: 24px;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #B5B5B5;
+}
+.moveShowDiv15_larger div.moveHisControlR .selectItemValue input
+{
+    padding-left: 2px;
+}
+
+.moveShowDiv15_larger div.selectItemValue select
+{
+    width: 104px;
+}
+
+.selectControl
+{
+    background: #EBEBE4;
+}
+
+.moveRB_Box15
+{
+	width: 38px;
+	height: 20px;
+	margin-left: 5px;
+	float: left;
+	text-align: center;
+	background-color: Black;
+	color: #808080;
+	line-height: 26px;
+	border-bottom: 1px solid #808080;
+	display: none;
+}
+
+.moveShowDiv15_larger div.moveHrs
+{
+	height: 66px;
+	position: absolute;
+	top: 258px;
+	left: 43px;
+	width: 120px;
+	border: 1px solid gray;
+}
+
+.moveShowDiv15_larger div.moveHrs_larger
+{
+	width: 272px;
+
+}
+
+.moveShowDiv15_larger div.moveHrs1
+{
+	position: absolute;
+	top: 258px;
+	left: 180px;
+	width: 195px;
+	height: 49px;
+	border:none
+}
+
+.moveShowDiv15_larger div.moveHrs1_larger
+{
+	left: 318px;
+	width: 282px;
+}
+
+.moveShowDiv15_larger div.moveHrs1 .inner1
+{
+	width: 160px;
+	height: 100%;
+	border-right: 1px solid gray;
+	top: 0px;
+	
+}
+
+.moveShowDiv15_larger div.moveHrs1 .inner1_larger
+{
+	width: 200px;
+}
+
+.moveShowDiv15_larger div.moveHrs1 .inner1 .maintb
+{
+	width: 100%;
+}
+
+
+
+.moveShowDiv15_larger div.inner2
+{
+	width: 26px;
+	height: 60px;
+	top: 259px;
+	position: absolute;
+	left: 342px;
+}
+
+.moveShowDiv15_larger div.inner2_larger
+{
+	left: 604px;
+}
+
+.moveShowDiv15_larger div.inner2 .inner2_line
+{
+	height: 18px;
+	line-height: 18px;
+}
+
+.moveShowDiv15_larger div.inner2 .inner2_line_larger
+{
+	position: relative;
+}
+
+
+.moveShowDiv15_larger div.inner2 .inner2_line .inner2_line_box
+{
+	width: 34px;
+	height: 18px;
+	margin-left: 0px;
+	float: left;
+	text-align: center;
+	line-height: 18px;
+}
+
+
+
+
+
+.moveShowDiv15_larger div.moveHrs2
+{
+	height: 66px;
+	position: absolute;
+	top: 258px;
+	left: 379px;
+	width: 75px;
+	text-align: center;
+}
+
+.moveShowDiv15_larger div.moveHrs2_larger
+{
+	left: 644px;
+	width: 128px;
+}
+
+.moveShowDiv15_larger div.bottomDiv_larger
+{
+	top: 422px;
+}
+
+
+.moveShowDiv15_larger div.left_bottom
+{
+	height: 70px;
+	width: 40px;
+	position: absolute;
+	left: 2px;
+	z-index: 999;
+	top: 251px;
+}
+.moveShowDiv15_larger div.left_bottom_larger
+{
+	top: 353px;
+	height: 120px;
+}
+.moveShowDiv15_larger div.left_bottom .left_bottom_inner
+{
+	height: 14px;
+	line-height: 14px;
+}
+
+.moveShowDiv15_larger div.left_bottom .left_bottom_inner_larger
+{
+	height: 25px;
+	line-height: 25px;
+}
+
+.moveShowDiv15_larger div.left_bottom .left_bottom_inner .left_bottom_inner_box
+{
+	width: 38px;
+	height: 14px;
+	margin-left: 0px;
+	float: left;
+	text-align: center;
+	line-height: 14px;
+}
+
+.moveShowDiv15_larger div.left_bottom .left_bottom_inner .left_bottom_inner_box_larger
+{
+	height: 23px;
+	line-height: 23px;
+}
+
+.text-color-blue
+{
+	color: #00BFF3;
+}
+
+.text-color-white
+{
+	color:white;
+}
+
+.left-bottom-selected-color
+{
+	background-color:#6FF;
+
+}
+
+.locoQueryDiv
+{
+	display:none;
+    margin-left: 45px;
+	height: 342px;
+	top: 5px;
+	position: absolute;
+	width: 730px;
+	color: #004F84;
+	z-index:9999999
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="css/dropdown.css" rel="stylesheet" type="text/css">
+		<script src="js/lib/jquery-1.9.0.js" type="text/javascript"></script>
+		<script src="js/dropdown.js" type="text/javascript"></script>
+	</head>
+	<body>
+
+		<input id="DropDown" style="border: 1px #aaaaaa solid;"/>
+
+		<script type="text/javascript">
+			var mDropDown = new DropDown({
+				id : "DropDown",
+				data : [{
+					key : "大本营",
+					value : "1"
+				}, {
+					key : "爵士",
+					value : "2"
+				}, {
+					key : "模压",
+					value : "3"
+				}]
+			});
+
+			mDropDown.getItemText = function(obj) {
+				return obj.key;
+			};
+
+			mDropDown.onActive = function($Target, index, obj) {
+				$Target.val(obj.key);
+				this.hidden();
+			};
+
+			mDropDown.onClear = function($Target){
+				alert("clear");
+			};
+
+			mDropDown.init();
+			//mDropDown.clear();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="RTTree.css" rel="stylesheet" type="text/css" />
+    <script src="RTTree.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div id="treeGird1">
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+
+    var tree = new RTTree({
+        parentColName: "parent",
+        datas: [{ "parent": "x37b1", "a": "wew1", "b": "rtrte", "c": "56564", "d": "7777" }, { "parent": "x37b2", "a": "wew2", "b": "rtrte", "c": "888", "d": "333" }, { "parent": "x37b1", "a": "wew3", "b": "rtrte", "c": "56564", "d": "333"}],
+        selectType: "checkbox",
+        containId: "treeGird1",
+        //url: "testData.js",
+        treeWidth: "350",
+        treeHeight: "600",
+        treeHead: ["name1", "name2", "name3", "name4"],
+        treeModel: [{ name: "a", width: "80px" }, { name: "b", width: "50px" }, { name: "d", width: "5px" }, { name: "c", width: "50px" }, { name: "parent"}],
+        replaceTd: [{ colName: "a", fn: function (colValue, td, d) {
+            return "<img src='img/online_pic.png' style='vertical-align:middle;width:16px;height:16px;' />" + colValue;
+        }
+        }, { colName: "b", fn: function (colValue, td, d) {
+            return "GGGG" + colValue;
+        }
+    }],
+        trClick: function (tr, data) {
+
+
+        },
+        selectInputFn: function (data) {
+            //  alert(555);
+
+        }
+    });
+    // 模拟刷新
+    setInterval(function () {
+        tree.refresh();
+
+    }, 1000);
+
+
+
+
+</script>

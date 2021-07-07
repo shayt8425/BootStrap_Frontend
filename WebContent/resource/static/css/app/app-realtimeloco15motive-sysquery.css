@@ -1,0 +1,270 @@
+.sysstatusquery_maindiv
+{
+	width:730px;
+	height:342px;
+	background-image:url(../../img/app/app-loco15sysquery/sys_status.png);
+
+	color:white
+}  
+                    
+.machineunit_maindiv
+{
+	width:730px;
+	height:342px;
+	background-image:url(../../img/app/app-loco15sysquery/machine_unit.png);
+
+	color:white
+}
+ 
+.extendunit_maindiv
+{
+	width:730px;
+	height:342px;
+	background-image:url(../../img/app/app-loco15sysquery/extendunit.png);
+	color:white
+}
+
+.versioninfo_maindiv
+{
+	width:730px;
+	height:342px;
+	background-image:url(../../img/app/app-loco15sysquery/versioninfo.png);
+	color:white
+}
+
+.runparam_maindiv
+{
+	width:730px;
+	height:342px;
+	background-image:url(../../img/app/app-loco15sysquery/runparam.png);
+	color:white
+}
+
+.checkparam_maindiv
+{
+	width:730px;
+	height:342px;
+	background-image:url(../../img/app/app-loco15sysquery/checkparam.png);
+	color:white
+}
+
+
+
+.hidden{
+	display:none;
+}
+
+
+
+.sysstatusquery_maindiv div.div1
+{
+	position: absolute;
+	left: 79px;
+	width: 89px;
+	top: 57px;
+	height: 35px;
+	text-align: center;
+	font-stretch: expanded;
+	font-weight: bolder;
+}
+
+.sysstatusquery_maindiv div.div2
+{
+	left: 202px;
+}
+
+.sysstatusquery_maindiv div.div3
+{
+	top: 208px;
+}
+
+.sysstatusquery_maindiv div.div4
+{
+	top: 112px;
+	width: 169px;
+	height: 80px;
+	left: 97px;
+}
+
+.sysstatusquery_maindiv div.div5
+{
+	left: 438px;
+}
+
+.sysstatusquery_maindiv div.div6
+{
+	top: 115px;
+	left: 418px;
+	height: 64px;
+	width: 136px
+}
+
+.bottomdiv
+{
+	position: absolute;
+	left: 76px;
+	top: 243px;
+	width: 537px;
+	height: 83px;
+}
+
+.tableclass
+{
+	width:100%;
+	height:100%;
+	text-align:center;
+
+}
+
+.tableclass tr
+{
+	font-family:"Microsoft YaHei" ! important;
+	font-size:small;
+}
+
+.error_img{
+	position: absolute;
+	background-image: url(../../img/app/app-loco15sysquery/error.png);
+	display:none;
+	width: 40px;
+	
+	height: 40px;
+}
+
+.error_div1
+{
+	top: 34px;
+	left: 144px;
+}
+
+.error_div2
+{
+	top: 34px;
+	left: 265px;
+}
+
+.error_div3
+{
+	top: 84px;
+	left: 240px;
+}
+
+.error_div4
+{
+	top: 185px;
+	left: 140px;
+}
+
+.error_div5
+{
+	top: 185px;
+	left: 261px;
+}
+
+.error_div6
+{
+	top: 34px;
+	left: 501px;
+}
+
+.error_div7
+{
+	top: 90px;
+	left: 523px;
+}
+.error_div8
+{
+	top: 185px;
+	left: 501px;
+}
+
+.rightDiv
+{
+	position: absolute;
+	height: 100%;
+	width: 108px;
+	left: 625px;
+	top: 0px;
+}
+
+.moduleDiv
+{
+cursor:pointer;
+	height: 32px;
+	margin-top:29px;
+}
+.moduleDiv1
+{
+	cursor:pointer;
+	height: 32px;
+	margin-top:13px;
+}
+
+
+
+.middle_div
+{
+	position: absolute;
+	left: 60px;
+	width: 496px;
+	top: 63px;
+	height: 212px;
+}
+
+.tdclass
+{
+	text-align:center;
+
+}
+
+.colorDiv
+{
+	height: 15px;
+	width: 15px;
+	background-image: url(../../img/app/app-loco15sysquery/green.png);
+	margin-left:7px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+.colorDiv_Error
+{
+	height: 15px;
+	width: 15px;
+	background-image: url(../../img/app/app-loco15sysquery/red.png);
+margin-left:7px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+.colorDiv-black
+{
+	height: 15px;
+	width: 15px;
+	background-image: url(../../img/app/app-loco15sysquery/black.png);
+margin-left:5px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+
+}
+
+.versioninfo_middle_div
+{
+	position: absolute;
+	left: 42px;
+	width: 541px;
+	top: 63px;
+	height: 249px;
+
+	overflow:auto;
+}
+
+.checkparam_middle_div
+{
+	position: absolute;
+	left: 31px;
+	width: 569px;
+	top: 45px;
+	height: 260px;
+
+}

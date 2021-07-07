@@ -1,0 +1,83 @@
+
+.labelpointsenclosure-detail-editDiv-tab01 tr{
+	height:28px;
+}
+
+
+.labelpointsenclosure-detail-editDiv-tab01{
+	margin:15px; 
+	margin-left: 46px;
+}
+
+.labelpointsenclosure-detail-editDiv-tab02{
+	margin-left: 68px;
+}
+
+.labelpointsenclosure-detail-showDiv-tab01{
+	margin:15px;
+	margin-left: 46px;
+}
+
+.labelpointsenclosure-detail-showDiv-tab01 tr{
+	height:28px;
+}
+	
+.labelpointsenclosure-detail-title{
+	
+	position: absolute;
+    height: 30px;
+    width: 60%;
+    line-height: 30px;
+    left: 20px;
+    font-size: 14px;
+    font-weight: bold;	
+}	
+table.labelpointsenclosure-detail-editDiv-tab01 th {
+     text-align: left; 
+}
+table.labelpointsenclosure-detail-showDiv-tab01 th {
+     text-align: left; 
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.labelpointsenclosure-lineSelect {
+	width: 90%;
+    height: 70%;
+    position: absolute;
+    display: none;
+    left: 55%;
+    top: 70%;
+    background-color: #FFFFFF;
+    z-index: 9999999999;
+    overflow: auto;
+}
+
+
+.paragraphSelect-table {
+    width: 100%;
+    height: 100%;
+}
+
+.paragraphSelect-table tr {
+    background: rgb(221, 220, 220);
+}
+
+.paragraphSelect-table tr td {
+    width: 30.34%;
+    height: 30.34%;
+    text-align: center;
+    border: 1px solid rgb(200, 199, 199);
+}
+
+.txt-impt {
+    color: #C00;
+}
+
+.lab-td4 {
+ 	padding-top: 9px; 
+ }

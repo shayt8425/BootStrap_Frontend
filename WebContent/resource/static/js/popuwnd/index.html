@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/popuwnd.css">
+<script type="text/javascript" src="js/lib/jquery-1.9.0.js"></script>
+<script type="text/javascript" src="js/popuwnd.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var addWnd = function() {
+			var _wnd = new window.PopuWnd({
+				title : "",
+				html : "内容",
+				width : 300,
+				height : 300,
+				left:200,
+				top:90,
+				shadow:true,
+				isZoom:true
+			});
+			_wnd.isMax = false;
+			_wnd.onZoom = function(){
+				if(this.isMax){
+					this.setSize(400,600);
+					this.isMax = false;
+				}else{
+					this.setSize(300,300);
+					this.isMax = true;
+				}
+				
+			};
+			_wnd.init();
+		}
+	</script>
+	<input type="button" onclick="addWnd();" style='position: fixed; top: 120px;' value='111添加'>
+</body>
+</html>

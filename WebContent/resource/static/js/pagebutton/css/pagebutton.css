@@ -1,0 +1,31 @@
+.x-pagebutton{
+    position: relative;
+    height:40px;
+    float: right;
+    color: #bbbbbb;
+    font-size: 12px;
+    font-family: monospace;
+    -moz-user-select: none; 
+    -khtml-user-select:none; 
+    user-select: none;
+}
+
+.x-pagebutton-active{
+    cursor: pointer;
+    color: #005aba;
+}
+
+.x-pagebutton-input{
+    border: 1px #bbbbbb solid;
+    background: none;
+     color: #888888;
+    font: 12px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+}
+.x-pagebutton-input a{
+	 -moz-user-select: none; 
+    -khtml-user-select:none; 
+    user-select: none;
+}

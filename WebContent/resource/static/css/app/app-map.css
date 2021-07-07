@@ -1,0 +1,517 @@
+.pointTab
+{
+    width: 330px;
+    height: 290px;
+   /*  background-color: white; */
+    background-color:#e9eef0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    z-index:999999999999;
+
+}
+
+.pointTab .paointab_contain
+{
+ width:100%;
+ height:100%;
+ overflow:hidden;    
+}
+
+
+
+.pointTab .closediv
+{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: url("../../../static/img/map/graph_delete.png");
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    z-index: 99;
+}
+.pointTab .bottomImg
+{
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    z-index: 1;
+    margin-left: -15px;
+}
+
+.pointTab .pointTab_shadow_down
+{
+    width: 100%;
+    height: 8px;
+    background: url("../../../static/img/map/shadow_down.png") repeat-x;
+    position: absolute;
+    bottom: -7px;
+}
+
+.pointTab .pointTab_shadow_down_left
+{
+    width: 7px;
+    height: 7px;
+    background: url("../../../static/img/map/shadow_down_left.png");
+    position: absolute;
+    bottom: -7px;
+    left: -7px;
+}
+
+
+.pointTab .pointTab_shadow_down_right
+{
+    width: 7px;
+    height: 7px;
+    background: url("../../../static/img/map/shadow_down_right.png");
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+}
+
+.pointTab .pointTab_shadow_top_left
+{
+    width: 7px;
+    height: 7px;
+    background: url("../../../static/img/map/shadow_top_left.png");
+    position: absolute;
+    top: -7px;
+    left: -7px;
+}
+
+
+
+.pointTab .pointTab_shadow_top
+{
+    width: 100%;
+    height: 8px;
+    background: url("../../../static/img/map/shadow_top.png") repeat-x;
+    position: absolute;
+    top: -7px;
+}
+.pointTab .pointTab_shadow_left
+{
+    width: 7px;
+    height: 100%;
+    background: url("../../../static/img/map/shadow_left.png") repeat-y;
+    position: absolute;
+    left: -7px;
+    top: 0px;
+}
+
+.pointTab .pointTab_shadow_right
+{
+    width: 8px;
+    height: 100%;
+    background: url("../../../static/img/map/shadow_right.png") repeat-y;
+    position: absolute;
+    right: -7px;
+    top: 0px;
+}
+.pointTab .maptab_contain
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.pointTab .maptab_containH
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+}
+
+
+.pointTab .proItem
+{
+    padding: 0px;
+    margin: 0px;
+    width: 150px;
+    height: 40px;
+    float: left;
+    position: relative;
+    line-height: 40px;
+    margin-left: 10px;
+}
+.pointTab .proItem dt
+{
+    float: left;
+    width: 60px;
+    text-align: center;
+    overflow: hidden;
+}
+.pointTab .proItem dd
+{
+    margin-left: 40px;
+    text-align: left;
+    padding-left: 10px;
+    color: Blue;
+}
+
+.pointTab .tabBottom
+{
+    width: 90%;
+    height: 110px;
+    margin-left: 5%;
+    position: absolute;
+    top: 180px;
+    bottom: 0;
+}
+.tabBottom_top
+{
+    margin-left: 15px;
+    margin-top: 8px;
+    height: 35px;
+}
+.tabBottom_top input
+{
+    width: 110px;
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+}
+.tabBottom_center
+{
+    margin-left: 15px;
+    height: 35px;
+}
+
+.tabBottom_bottom
+{
+    margin-left: 15px;
+    height: 35px;
+}
+.tabBottom_center_left
+{
+    float: left;
+}
+.tabBottom_center_left input
+{
+    vertical-align: middle;
+}
+
+.tabBottom_center_right
+{
+    float: right;
+    margin-right: 85px;
+}
+.tabBottom_center_right input
+{
+    vertical-align: middle;
+}
+.tabBottom_bottom
+{
+    height: 25px;
+    position: relative;
+    margin-top: -8px;
+}
+.tabBottom_bottom_img
+{
+    display: block;
+    width: 71px;
+    height: 22px;
+    margin: 0 auto;
+    background: url("../../../static/img/app/button_top.png");
+    margin-bottom: 15px;
+    text-align: center;
+    vertical-align: middle;
+    color: White;
+    text-decoration: none;
+    line-height: 22px;
+}
+.tabBottom_bottom_img:hover
+{
+    background: url("../../../static/img/app/button_down.png");
+}
+.bottom_line
+{
+    width: 90%;
+    border-top: 1px solid #CCCCCC;
+    margin-left: 5%;
+    position: absolute;
+    top: 180px;
+    bottom: 0;
+}
+.pointb_show
+{
+    width: 10px;
+    height: 5px;
+    background: url("../../../static/img/map/pointb_show.png");
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    background-color: Blue;
+    top: -7px;
+}
+.pointb_show_show
+{
+    background: url("../../../static/img/map/pointb_show.png");
+}
+.pointb_show_hide
+{
+    background: url("../../../static/img/map/pointb_hide.png");
+}
+
+.trace
+{
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    width: 100px;
+    margin-left: -50px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background: url("../../../static/img/map/trace.png");
+    cursor: pointer;
+}
+.TIPSDiv
+{
+    /*width: 100px;*/
+    /*padding-left: 10px;*/
+   /*padding-left: 8px;
+   padding-right: 5px;
+    height: 25px;
+    line-height: 25px;
+    position:absolute;
+    overflow: hidden;
+    border-radius: 5px;
+    top: 10px;
+    text-align: center;
+    left: 43px;   
+    color: #fff;
+    min-width: 30px;*/
+    font-size:14px;
+    color:black;
+    font-weight:bolder;
+}
+
+.TIPSDivLess
+{
+    /*width: 100px;*/
+    /*padding-left: 10px;*/
+    padding-left: 8px;
+    padding-right: 5px;
+    height: 25px;
+    line-height: 25px;
+    position:absolute;
+    overflow: hidden;
+    border-radius: 5px;
+    top: -7px;
+    text-align: center;
+    left: 23px;   
+    color: #fff;
+    min-width: 30px;
+}
+
+.TIPSDiv2{
+    padding-left: 8px;
+    padding-right: 5px;
+    height: 30px;
+    line-height: 30px;
+    position:absolute;
+    overflow: hidden;
+    border-radius: 5px;
+    top: 7px;
+    text-align: center;
+    left: 43px;   
+    color: #fff;
+    min-width: 80px;
+    background: url("../../../static/img/map/map_01.png");
+  
+}
+
+/*.stationDiv
+{
+    width: 90px;
+    padding-left: 0px;
+    height: 25px;
+    position:absolute;
+    overflow: hidden;
+    border-radius: 5px;
+    top: 10px;
+    text-align: center;
+    left: 43px;
+    line-height: 25px;
+    background-color: green;
+    filter:alpha(Opacity=50); opacity: 0.8;
+    color: white;
+}*/
+
+.stationDiv
+{
+    width: 120px;
+    padding-left: 0px;
+    height: 25px;
+    position:absolute;
+    overflow: hidden;
+    border-radius: 5px;
+    top: 10px;
+    /*top: -10px;*/
+    text-align: center;
+    left: 43px;
+    /*left: 13px;*/
+    line-height: 25px;
+    
+    /*filter:alpha(Opacity=50); opacity: 0.8;*/
+    color: black;
+    font-family: Microsoft YaHei;
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.railwaysDiv
+{
+    width: 120px;
+    padding-left: 0px;
+    height: 25px;
+    position:absolute;
+    overflow: hidden;
+    border-radius: 5px;
+    top: 5px;
+    left: -50px;
+    text-align: center;
+    line-height: 25px;
+    color: black;
+    font-family: Microsoft YaHei;
+    font-size: 17px;
+    font-weight: bolder;
+ 
+}
+
+
+
+.stationDivLess
+{
+	/*width: 62px;*/
+	padding-left: 0px;
+	height: 15px;
+	position: absolute;
+	overflow: hidden;
+	border-radius: 5px;
+	top: -4px;
+	text-align: center;
+	left: 12px;
+	line-height: 15px;
+	filter: alpha(Opacity=50);
+	opacity: 2;
+	color: blue;
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	text-shadow: 10em 50px 60px rgb(253, 242, 242);
+	/* filter: initial; */
+}
+
+.stationDivLessForStation
+{
+    width: 90px;
+    padding-left: 0px;
+    height: 25px;
+    position:absolute;
+    overflow: hidden;
+    border-radius: 5px;
+    top: -5px;
+    /*top: -10px;*/
+    text-align: center;
+    left: 23px;
+    /*left: 13px;*/
+    line-height: 25px;
+    background-color: green;
+    filter:alpha(Opacity=50); opacity: 0.8;
+    color: white;
+}
+
+
+.guDaoNumberDiv
+{
+    width: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 25px;
+    position:absolute;
+    overflow: hidden;
+    border-radius: 20px;
+    top: 5px;
+    text-align: center;
+    left: 10px;
+    line-height: 25px;
+    background-color: #6666CC;
+     filter:alpha(Opacity=50); opacity: 0.75;
+    color: white;
+    display:none;
+    /*z-index: 22;*/
+}
+.TIPS_bottomImg
+{
+    position: absolute;
+    height: 25px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+}
+.showLevelOnMould
+{
+ position:absolute;
+  right:5px;
+  top:155px;
+  width:40px;
+  height:150px;
+ 
+}
+.map-duan,.map-ju,.map-guo,
+{
+     width:28px;
+     height:20px;
+     position:absolute;
+     cursor:pointer;
+     left:0px;
+     text-align:center;
+     display:none;
+}
+.map-duan
+{
+   top:35px;
+   
+   width:28px;
+     height:20px;
+     position:absolute;
+     cursor:pointer;
+     left:0px;
+     text-align:center;
+     display:none;
+
+}
+.map-ju
+{
+   top:75px;
+   
+   width:28px;
+     height:20px;
+     position:absolute;
+     cursor:pointer;
+     left:0px;
+     text-align:center;
+     display:none;
+    
+}
+.map-guo
+{
+     top:110px;
+     width:28px;
+     height:20px;
+     position:absolute;
+     cursor:pointer;
+     left:0px;
+     text-align:center;
+     display:none;
+    
+}
+
+

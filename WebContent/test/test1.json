@@ -1,0 +1,69 @@
+[{
+	"name":"我的电脑",
+	"id":"my computer",
+	"children":[{
+		"name":"本地磁盘C",
+		"id":"2",
+		"children":[{
+			"name":"我的游戏",
+			"id":"4",
+			"children":[{
+				"name":"测试",
+				"id":"20"
+			}]
+		},{
+			"name":"我的文档",
+			"id":"5"
+		},{
+			"name":"我的电影",
+			"id":"6"
+		},{
+			"name":"我的下载",
+			"id":"7"
+		},{
+			"name":"360 downloads",
+			"id":"8"
+		},{
+			"name":"迅雷下载",
+			"id":"9"
+		},{
+			"name":"工作资料",
+			"id":"10"
+		},{
+			"name":"work space",
+			"id":"11"
+		},{
+			"name":"其他文件",
+			"id":"12"
+		},{
+			"name":"我的股票",
+			"id":"13"
+		},{
+			"name":"我的音乐",
+			"id":"14"
+		},{
+			"name":"windows",
+			"id":"15"
+		},{
+			"name":"program files",
+			"id":"16"
+		},{
+			"name":"java",
+			"id":"17"
+		}]
+	},{
+		"name":"本地磁盘D",
+		"id":"3",
+		"children":[{
+			"name":"visual basic",
+			"id":"18"
+		},{
+			"name":"javascript",
+			"id":"19"
+		}]
+	}]
+},{
+	"name":"我的手机",
+	"id":"my phone",
+	"children":[]
+}]

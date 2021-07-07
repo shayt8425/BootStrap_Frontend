@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" /> 
+  <title>条形码、二维码生成</title> 
+  <script type="text/javascript" src="../resource/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../resource/dist/JsBarcode.all.js"></script> 
+  <script type="text/javascript" src="../resource/dist/jquery.qrcode.min.js"></script> 
+ </head> 
+ <body> 
+  <svg id="svgcode"></svg> 
+  <!-- or --> 
+  <canvas id="canvascode"></canvas> 
+  <!-- or --> 
+  <img id="imgcode" /> 
+  
+  <div id="qrcode">  <!-- div容器用于展示二维码 -->
+  </div>
+  <input type="text" id="getval"/> <button id="send" onclick="upd()">点击更换验证码</button>
+  <script>  
+        $("#svgcode").JsBarcode('Hi!');//or JsBarcode("#svgcode", "Hi!");  
+
+        $("#canvascode").JsBarcode('Hello world!');//or JsBarcode("#canvascode", "Hello world!");  
+  
+        $("#imgcode").JsBarcode("I'm huangenai!");//or JsBarcode("#imgcode", "I'm huangenai!");  
+        
+    	$(function(){
+    		$("#qrcode").qrcode({ 
+    		    render: "table", //table方式 
+    		    width: 200, //宽度 
+    		    height:200, //高度 
+    		    text: "http:\//www.baidu.com/baidu?tn=monline_3_dg&ie=utf-8&wd=js%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81" //任意内容 
+    		}); 
+    	});
+    	
+    	function upd(){
+    		var str = toUtf8($("#getval").val());
+    		$("#qrcode").children("table").remove();
+    		
+    		$("#qrcode").qrcode({
+    			 render: "table", //table方式 
+    			    width: 200, //宽度 
+    			    height:200, //高度 
+    			    text: str
+    		});
+    	}
+    	
+    	function toUtf8(str) {     //此方法设置中文编码
+    	    var out, i, len, c;    
+    	    out = "";    
+    	    len = str.length;    
+    	    for(i = 0; i < len; i++) {    
+    	        c = str.charCodeAt(i);    
+    	        if ((c >= 0x0001) && (c <= 0x007F)) {    
+    	            out += str.charAt(i);    
+    	        } else if (c > 0x07FF) {    
+    	            out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));    
+    	            out += String.fromCharCode(0x80 | ((c >>  6) & 0x3F));    
+    	            out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F));    
+    	        } else {    
+    	            out += String.fromCharCode(0xC0 | ((c >>  6) & 0x1F));    
+    	            out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F));    
+    	        }    
+    	    }    
+    	    return out;    
+    	} 
+  </script> 
+ </body>
+</html>

@@ -1,0 +1,758 @@
+.content-lkjequipmentversionhistoryquery-MainDiv{
+	width:100%;
+	height:100%;
+}
+
+.app_lkjequipmentversionhistoryquery_tab_div {
+	width: 100%;
+	height: 37px;
+	border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.tab-three-div {
+	left: 70%;
+	position: absolute;
+	width: 30%;
+	height: 31.5px;
+	/* left: 180px; */
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	display: inline-block;
+	border-bottom: 0px;
+
+}
+
+.tab-empty {
+	position: absolute;
+	width: 620px;
+	height: 30px;
+	left: 191px;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border-bottom: 1px solid #ccc;
+	top: 1px;
+}
+
+.tab-first {
+	position: relative;
+	width: 10%;
+	height: 30px;
+	left: 0px;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	top: 1px;
+	display: inline-block;
+}
+
+.tab-first-head {
+	left: 10%;
+	position: absolute;
+	width: 30%;
+	height: 31.5px;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	display: inline-block;
+	border-bottom: 0px;
+	/* left: 0px; */
+
+}
+
+.tab-second {
+	left: 40%;
+	position: absolute;
+	width: 30%;
+	height: 31.5px;
+	/* left: 60px; */
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	display: inline-block;
+	border-bottom: 0px;
+}
+
+.tab-div1-new {
+	left: 0px;
+	position: absolute;
+	top: 5px;
+	width: 20%;
+	height: 30px;
+	background: #fff;
+}
+
+.content-basic-div-new {
+	padding-left: 0px;
+	width: 100%;
+	height: 500px;
+}
+
+.content-body {
+	width: 100%;
+	margin-top: 0px;
+	border-bottom: 1.5px #A8A8A8 solid;
+}
+
+.content-lkjequipmentversionhistoryquery-head {
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top:15px;
+}
+
+.content-lkjequipmentversionhistoryquery-tuzhong {
+	height: 200px;
+	line-height: 200px;
+	display: table;
+}
+
+.content-lkjequipmentversionhistoryquery-kunei {
+	height: 200px;
+	line-height: 200px;
+	display: table;
+}
+
+.content-lkjequipmentversionhistoryquery-churuku {
+	height: 100px;
+	line-height: 200px;
+	display: table;
+}
+
+.content-lkjequipmentversionhistoryquery-head-comm {
+	height: 30px;
+	line-height:30px;
+	width:120px;
+	float: right;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.content-lkjequipmentversionhistoryquery-search{
+	width: 250px;
+}
+
+.search-text-input{
+	border:1px solid #005dba;
+	height:21px;
+}
+
+.search-button{
+	border:1px solid #005dba;
+	background-color: #005dba;
+	color:#FFFFFF;
+	height:25px;
+}
+
+.content-lkjequipmentversionhistoryquery-head-split{
+	border-right:1px solid #ccc;
+}
+
+.content-lkjequipmentversionhistoryquery-left{
+	width:5%;
+	height:100%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 25px;
+	display: table-cell;
+	background-color: #005dba;
+	color: #FFFFFF;
+}
+
+.content-lkjequipmentversionhistoryquery-tuzhong-right{
+	width:100%;
+	height:100%;
+	overflow-y: auto;
+}
+
+.content-lkjequipmentversionhistoryquery-right-top{
+	height:35px;
+	line-height: 35px;
+	width:99%;
+	border-bottom:1px solid #ccc;
+	vertical-align: middle;
+	padding-left:10px;
+}
+
+.content-lkjequipmentversionhistoryquery-right-top img{
+	vertical-align: middle;
+}
+
+.content-lkjequipmentversionhistoryquery-tuzhong-right-bottom{
+	height:50px;
+	line-height: 50px;
+	width:100%;
+	border-bottom:1px solid #ccc;
+	/*overflow-y: scroll;*/
+}
+
+.content-lkjequipmentversionhistoryquery-tuzhong-train{
+	width:100px;
+	height:46px;
+	line-height: 46px;
+	float:left;
+	margin-left:2px;
+	margin-top:2px;
+}
+
+.content-lkjequipmentversionhistoryquery-tuzhong-train-online{
+	background-color: #4dcd70;
+}
+
+.content-lkjequipmentversionhistoryquery-tuzhong-train-outline{
+	background-color: #f4ae00;
+}
+
+.content-lkjequipmentversionhistoryquery-tuzhong-train-info{
+	width:100%;
+	height:15px;
+	line-height: 15px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.content-lkjequipmentversionhistoryquery-tuzhong-train-info-top{
+	margin-top:10px;
+}
+
+.screen-up{
+	position: absolute;
+	width:14px;
+	height:25px;
+}
+
+.screen-up-tuzhong,.screen-up-kunei{
+	top:35px;
+	right:0px;
+}
+
+.screen-down{
+	position: absolute;
+	width:14px;
+	height:25px;
+}
+
+.screen-down-tuzhong{
+	top:60px;
+	right:0px;
+}
+
+.screen-down-kunei{
+	top:90px;
+	right:0px;
+}
+
+.screen-up img{
+	vertical-align: top;
+}
+
+.content-lkjequipmentversionhistoryquery-kunei-right-bottom{
+	height:115px;
+	line-height: 115px;
+	width:100%;
+	border-bottom:1px solid #ccc;
+	/*overflow-y: scroll;*/
+}
+.content-lkjequipmentversionhistoryquery-kunei-right{
+	overflow-y: auto;
+	width:100%;
+	height:100%;
+}
+
+.content-lkjequipmentversionhistoryquery-churuku-right{
+	overflow-y: auto;
+	width:100%;
+	height:100%;
+}
+
+.content-lkjequipmentversionhistoryquery-kunei-train{
+	width:160px;
+	height:50px;
+	line-height: 50px;
+	float:left;
+	margin-left:2px;
+	margin-top:2px;
+}
+
+.content-lkjequipmentversionhistoryquery-kunei-train-online{
+	/*background: url(../../../img/app/failureWarnning-images/train-online.png) no-repeat;;*/
+	border: 1px solid rgb(192, 191, 191);
+	background: #CCCCCC;
+	cursor: pointer;
+}
+
+.content-lkjequipmentversionhistoryquery-kunei-train-outline{
+	/*background: url(../../../img/app/failureWarnning-images/train-offline.png) no-repeat;;*/
+	border: 1px solid rgb(192, 191, 191);
+	background: #CCCCCC;
+}
+
+.content-lkjequipmentversionhistoryquery-kunei-train-info-left{
+	width:50%;
+	height:15px;
+	line-height: 15px;
+	text-align: center;
+	vertical-align: bottom;
+	float: left;
+}
+
+.content-lkjequipmentversionhistoryquery-kunei-train-info-right{
+	width:50%;
+	height:15px;
+	line-height: 15px;
+	text-align: center;
+	vertical-align: bottom;
+	float: right;
+}
+
+.content-lkjequipmentversionhistoryquery-kunei-train-empty{
+	width: 162px;
+	height: 35px;
+	/*background: url(../../../../img/app/failureWarnning-images/train-online.png) no-repeat;*/
+	position: absolute;
+	border: 0px;
+}
+
+.content-lkjequipmentversionhistoryquery-kunei-train-info{
+	width: 162px;
+	height: 20px;
+	/* vertical-align: bottom; */
+	position: absolute;
+	/* top: 37px; */
+	top: 37px;
+	border: 0px;
+}
+/*******************************************************/
+.content-lkjequipmentversionhistoryquery-middleDiv{
+	width: 100%;
+	height: 95%;
+}
+.content-lkjequipmentversionhistoryquery-middle-top{
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	vertical-align: middle;
+	/* padding-top: 7px; */
+	border-bottom: 1px solid rgb(192, 191, 191);
+}
+.content-lkjequipmentversionhistoryquery-middle-top-sub1{
+	position: relative;
+	width: 10%;
+	/* left: 30%; */
+	display: inline-block;
+	font-weight: bolder;
+}
+.content-lkjequipmentversionhistoryquery-middle-top-hr{
+	position: relative;
+	width: 1px;
+	height: 25px;
+	background-color: rgb(204, 204, 204);
+	/* left: 40%; */
+	line-height: 25px;
+	top: 10px;
+	display: inline-block;
+}
+.content-lkjequipmentversionhistoryquery-checkbox{
+	vertical-align: middle;
+}
+.content-lkjequipmentversionhistoryquery-middle-top-sub2{
+	position: relative;
+	width: 10%;
+	display: inline-block;
+	font-weight: bold;
+}
+.content-lkjequipmentversionhistoryquery-middle-top-sub3{
+	position: relative;
+	width: 10%;
+	display: inline-block;
+	font-weight: bold;
+}
+.content-lkjequipmentversionhistoryquery-middle-c{
+	position: relative;
+	/*position: absolute;*/
+	width: 100%;
+	overflow: auto;
+	height: 96%;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub{
+	position: relative;
+	padding-bottom: 3px;
+	border-bottom: 1px solid rgb(192, 191, 191);
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-title{
+	/* position: relative; */
+	height: 35px;
+	line-height: 35px;
+	/* text-align: center; */
+	vertical-align: middle;
+	border-bottom: 1px solid rgb(192, 191, 191);
+	background-color: whitesmoke;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-title-name{
+	position: relative;
+	display: inline-block;
+	left: 2%;
+	width: 17%;
+}
+
+.content-lkjequipmentversionhistoryquery-middle-c-sub-title-tz{
+	position: relative;
+	display: inline-block;
+	left: 5%;
+	width: 8%;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-title-tz-num{
+	position: relative;
+	display: inline-block;
+	left: 10%;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-title-kn{
+	position: relative;
+	display: inline-block;
+	left: 5%;
+	width: 8%;
+}
+
+.content-lkjequipmentversionhistoryquery-middle-c-sub-title-crk{
+	position: relative;
+	left: 5%;
+	display: inline-block;
+	width: 11%;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-title-img{
+	position: relative;
+	left: 5%;
+	display: inline-block;
+	/* width: 8%; */
+	height: 22px;
+	line-height: 22px;
+	width: 22px;
+	top: 6.5px;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-title-img:hover{
+	cursor: pointer;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c{
+	position: relative;
+	height: 100px;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-tableDiv{
+	position: relative;
+	height: 45px;
+	width: 97%;
+	/* left: 20px; */
+	display: inline-block;
+	margin-top: 2px;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-tableDiv-Height{
+	height: 100px;
+	overflow-y: hidden;
+	left:20px;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-table{
+	position: relative;
+	/* height: 100%; */
+	width: 100%;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-table tr{
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	background: rgb(204, 204, 204);
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-table-emptyTd{
+	border: 0px;
+	background-color: white;	
+}
+
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-table tr td{
+	/* position: relative; */
+	border: 1px solid rgb(204, 204, 204);
+	text-align: center;
+	width: 10%;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-table-other tr{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: rgb(204, 204, 204);
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-table-other tr td{
+	/* position: relative; */
+	border: 1px solid rgb(204, 204, 204);
+	text-align: center;
+	width: 20%;
+}
+
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-scroll{
+	position: relative;
+	width: 14px;
+	height: 100%;
+	right: 0px;
+	display: inline-block;
+	float: right;
+	
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-scrollUp{
+	width: 100%;
+	height: 14px;
+	line-height: 14px;
+	vertical-align: middle;
+	position: absolute;
+	top: 0px;
+	cursor: pointer;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-scrollDown{
+	width: 100%;
+	height: 14px;
+	line-height: 14px;
+	vertical-align: middle;
+	position: absolute;
+	bottom: 0px;
+	cursor: pointer;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-sub{
+	width: 100%;
+	height: 56px;
+	border-top: 1px solid rgb(192, 191, 191);
+	margin-top: 3px;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-sub-tableDiv{
+	position: absolute;
+	height: 56px;
+	width: 95%;
+	left: 20px;
+	display: inline-block;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-sub-table{
+	position: relative;
+	/* height: 100%; */
+	width: 100%;
+}
+
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-sub-scroll{
+	position: absolute;
+	width: 14px;
+	height: 56px;
+	right: 0px;
+	/*display: inline-block;*/
+	
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-sub-scrollUp{
+	width: 100%;
+	height: 14px;
+	line-height: 14px;
+	vertical-align: middle;
+	position: absolute;
+	top: 0px;
+	cursor: pointer;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-sub-scrollDown{
+	width: 100%;
+	height: 14px;
+	line-height: 14px;
+	vertical-align: middle;
+	position: absolute;
+	bottom: 0px;
+	cursor: pointer;
+}
+/*******************************************************/
+.content-lkjequipmentversionhistoryquery-endDiv{
+	width:100%;
+	height:100%;
+}
+/**********************************************/
+.content-lkjequipmentversionhistoryquery-locoTypeHoverDiv{
+	width: 150px;
+	height: 200px;
+	/*top: 100px;*/
+	position: absolute;
+	/*left: 200px;*/
+	background: white;
+	box-shadow: 1px 1px 10px gray;
+}
+.content-lkjequipmentversionhistoryquery-locoTypeHoverDiv-tab{
+	width: 144px;
+	height: 196px;
+	margin-top: 3px;
+	margin-left: 3px;
+	background: rgb(239, 239, 239);
+}
+.locoTypeHoverDiv-tab-topHr{
+	background: white;
+	height: 2px;
+	border: 0px;
+	position: relative;
+	bottom: 0px;
+	
+}
+.content-lkjequipmentversionhistoryquery-locoTypeHoverDiv-tab tr{
+	line-height: 25px;
+	height: 25px;
+}
+.content-lkjequipmentversionhistoryquery-locoTypeHoverDiv-tab tr td{
+	width:90px;
+	text-align: center;
+}
+.content-lkjequipmentversionhistoryquery-locoTypeHoverDiv-tab tr th{
+	width:54px;
+	text-align: right;
+}
+/**************************************/
+.content-lkjequipmentversionhistoryquery-tuzhongHoverDiv{
+	width: 170px;
+	height: 340px;
+	top: 100px;
+	position: absolute;
+	left: 200px;
+	background: white;
+	box-shadow: 1px 1px 10px gray;
+}
+
+.content-lkjequipmentversionhistoryquery-tuzhongHoverDiv-tab{
+	width: 164px;
+	height: 196px;
+	margin-top: 3px;
+	margin-left: 3px;
+	background: rgb(239, 239, 239);
+}
+
+.content-lkjequipmentversionhistoryquery-tuzhongHoverDiv-tab tr{
+	line-height: 25px;
+	height: 25px;
+}
+.content-lkjequipmentversionhistoryquery-tuzhongHoverDiv-tab tr td{
+	width:100px;
+	text-align: center;
+}
+.content-lkjequipmentversionhistoryquery-tuzhongHoverDiv-tab tr th{
+	width:64px;
+	text-align: right;
+}
+/***************************************/
+.content-lkjequipmentversionhistoryquery-rightClickDiv{
+	width: 100px;
+	height: 196px;
+	margin-top: 3px;
+	margin-left: 3px;
+	top: 100px;
+	position: absolute;
+	left: 200px;
+	background: white;
+	box-shadow: 1px 1px 10px gray;
+	
+}
+.content-lkjequipmentversionhistoryquery-rightClickDiv-tab{
+	width: 100%;
+	height:100%;
+}
+.content-lkjequipmentversionhistoryquery-rightClickDiv-tab tr{
+	width: 100%;
+}
+.content-lkjequipmentversionhistoryquery-rightClickDiv-tab tr td{
+	width: 100%;
+	text-align: center;
+
+}
+.content-lkjequipmentversionhistoryquery-rightClickDiv-tab tr td:hover{
+	background: #f3ae00;
+	cursor: pointer;
+}
+.content-lkjequipmentversionhistoryquery-rightClickDiv-tab-tdBorder{
+	border-bottom: 1px solid rgb(192, 191, 191);
+}
+/****************************************/
+.content-lkjequipmentversionhistoryquery-tab1-bodyHeight{
+	height:45px;
+	line-height:45px;
+}
+.bodyHeight-60px{
+	height:60px;
+	line-height:60px;
+}
+/************88**/
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-tabDiv{
+	width: 100%;
+
+	overflow-y: hidden;
+	left: 20px;
+	position: absolute;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-tabDiv2{
+	
+	height: 100%;
+	
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-tabDiv-Td{
+	width: 9%;
+	height: 45px;
+	border: 1px solid rgb(192, 191, 191);
+	background: #CCCCCC;
+	display: inline-block;
+	text-align: center;
+	line-height: 45px;
+	margin-left: 3px;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-tabDiv-TdOnline{
+	background:#4dcd70;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-tabDiv-Td-type{
+	height: 22.5px;
+	position: relative;
+	top: 0px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 22.5px;
+	width: 100%;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-tabDiv-Td-checiname{
+	height: 22.5px;
+	position: relative;
+	bottom: 0px;
+	line-height: 22.5px;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-sub-showLocoNo{
+	width: 100%;
+	height: 53px;
+	position: absolute;
+	margin-top: 3px;
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-sub-showLocoNo-sub{
+	width: 8%;
+	height: 25px;
+	background: rgb(168, 168, 168);
+	display: inline-block;
+	/* color: red; */
+	position: relative;
+	line-height: 25px;
+	margin-left: 3px;
+	text-align: center;
+	/* top: 0px; */
+	display: inline-block;
+	margin-top: 2px;
+}
+
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-table-td-bg{
+	background: #f3ae00;
+	cursor:pointer;
+	
+}
+.content-lkjequipmentversionhistoryquery-middle-c-sub-c-sub-showLocoNo-sub-outDiv{
+	width: 100%;
+	height: 53px;
+	/* position: relative; */
+	/* margin-top: 3px; */
+	line-height: 100%;
+}

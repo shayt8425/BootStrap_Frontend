@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<script type="text/javascript" src="../resource/js/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../resource/plug/bootstrap-3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../resource/plug/zTree_v3/css/zTreeStyle/zTreeStyle.css" />
+<link rel="stylesheet" href="../resource/plug/toastr/toastr.min.css" />
+<link rel="stylesheet" href="../resource/css/frontcommon.css" />
+<link rel="stylesheet" href="../resource/css/zzlkj.css" />
+<script type="text/javascript" src="../resource/plug/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../resource/plug/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../resource/plug/zTree_v3/js/jquery.ztree.all.min.js"></script>
+<script type="text/javascript" src="../resource/plug/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapTree.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapTooltip.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapFormItem.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapMessage.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapDialog.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon-Parser.js"></script>
+<title>通过js代码方式生成表单</title>
+<style type="text/css">
+	.common_form table>tbody>tr>td{
+		position: relative;
+		white-space: normal;
+	}
+	
+	span[type='checkbox']{
+		float:left;
+	}
+</style>
+</head>
+<body>
+<div style="text-align: center;">
+	<h2>表单演示</h1>
+	
+</div>
+<div style="margin:0px;" id="myFormDiv">
+<!-- 	<form name="testForm" method="post" class="common_form"> -->
+<!-- 		<table> -->
+<!-- 			<tr> -->
+<!-- 				<td class="fc_label">&nbsp;&nbsp;<font style="color:red">*</font>测试：</td> -->
+<!-- 				<td id="nameItem"> -->
+<!-- 				</td> -->
+<!-- 				<td class="fc_label">&nbsp;&nbsp;<font style="color:red">*</font>测试2：</td> -->
+<!-- 				<td> -->
+<!-- 					<input class="form-control" style="width:180px;" placeholder="Password" type="password" /> -->
+<!-- 				</td> -->
+<!-- 			</tr> -->
+<!-- 		</table> -->
+<!-- 	</form> -->
+</div>
+<!-- Single button -->
+<div style="text-align: center;margin-top:20px;">
+	<button type="button" class="btn btn-info" onclick="testLeftRightList();">
+       <span class="fa fa-magnet"></span> 测试左右结构
+    </button>
+	<button type="button" class="btn btn-info" onclick="testProgressBar();">
+       <span class="fa fa-magnet"></span> 测试进度条
+    </button>
+	<button type="button" class="btn btn-warning" onclick="testOpenDialog();">
+       <span class="fa fa-tv"></span> 测试弹窗
+    </button>
+	<button type="button" class="btn btn-primary" onclick="submitFormData();">
+       <span class="fa fa-check"></span> 提交
+    </button>
+    <button type="button" class="btn btn-primary" onclick="startConnect()">
+       <span class="fa fa-check"></span> 连接websocket
+    </button>
+    <button type="button" class="btn btn-primary" onclick="sendMessage()">
+       <span class="fa fa-check"></span> 开始websocket传输
+    </button>
+     <button type="button" class="btn btn-primary" onclick="closeConnect()">
+       <span class="fa fa-check"></span> 关闭websocket连接
+    </button>
+    <button type="button" class="btn btn-primary" onclick="startHisRemote()">
+       <span class="fa fa-check"></span> 历史接口数据
+    </button>
+    <button type="button" class="btn btn-primary" onclick="startFrontPageConn()">
+       <span class="fa fa-check"></span> 首页接口测试
+    </button>
+    <button type="button" class="btn btn-default" onclick="window.testForm.clear();">
+       <span class="fa fa-refresh" required=true></span> 重置
+    </button>
+</div>
+<!-- 选择控件 -->
+<fieldset class="pos-r" style="margin:5px;">
+    <legend><span class="sky">1:选择类型控件</span></legend>
+    <div class="checkList">
+	  <label class="check-title">选择人员：</label>
+	  <ul class="check-content">
+	    <li class="checked">张三</li>
+	    <li class="checked">张三</li>
+	    <li class="checked">张三</li>
+	    <li class="">张三</li>
+	    <li class="">张三</li>
+	  </ul>
+	</div>
+</fieldset>
+<fieldset class="pos-r" style="margin:5px;">
+    <legend><span class="sky">2:进度时间轴</span></legend>
+    <div class="myflow">
+              <label class="flow-title">进度跟踪：</label>
+              <ul class="flow-list">
+                <li class="flow-success"><span>制定下发修程计划</span></li>
+                <li class="flow-success"><span>分配作业</span></li>
+                <li class="flow-danger"><div class="tooltip top in" style="z-index: 1;" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner">不合格</div></div><span>下车登记</span></li>
+                <li><span>上车登记</span></li>
+                <li><span>修程作业登记</span></li>
+                <li class="flow-danger"><span>修程验收<a href="">（详情）</a></span></li>
+                <li><span>完成</span></li>
+              </ul>
+            </div>
+</fieldset>
+
+<script type="text/javascript">
+$(function(){
+	window.testForm = new FrontCommon.Form({
+		id:'testForm',
+		name:"testForm",
+		container: 'myFormDiv'
+	});
+	testForm.add({id:"name1",name:"name1",text:"用户名",placeholder:'请输入',type:'text',required:true});
+	testForm.add({id:"name2",name:"name2",text:"密码",placeholder:'请输入',type:'password',required:true});
+	testForm.add({id:"name3",name:"name3",text:"生日",placeholder:'请选择日期',type:'date',required:false});
+	testForm.add({id:"name4",name:"name4",text:"时间",placeholder:'请选择时间',type:'date',required:false,dateFmt:'HH:mm:ss'});
+	testForm.add({id:"name5",name:"name5",text:"职位",placeholder:'请输入',type:'text',required:true});
+	testForm.add({id:"name7",name:"name7",change:function(oldValue,newValue){
+// 		FrontCommon.success("选择了"+$(this.domObj).find("input[type='text']").val());
+	},text:"我的游戏",type:'select',multiple:true,required:true,placeholder:'请选择游戏',
+		height:250,colspan:1,url:'test.json',urlDataProp:["datas"],"data-label":"text"});
+	testForm.add({id:"name8",name:"name8",text:"最喜欢的",type:'select',required:false,placeholder:'请选择游戏',
+		height:250,colspan:1,url:'test.json',urlDataProp:["datas"],"data-label":"text",change:function(oldValue, newValue){
+			var formItem = this;
+			if(newValue!=""){
+				FrontCommon.request("test7.json",{},function(data){
+					if(data[newValue]&&data[newValue].length>0){
+						formItem.relateForm.getFormItemByName('name13').setDatas(data[newValue]);
+					}else{
+						formItem.relateForm.getFormItemByName('name13').setDatas([]);
+					}
+					window.name13Init = true;
+				})
+			}else{
+				formItem.relateForm.getFormItemByName('name13').setDatas([]);
+			}
+		}});
+	testForm.add({id:"name13",name:"name13",text:"具体游戏",type:'select',required:false,placeholder:'请选择具体',
+		height:250,colspan:1,datas:[],"data-label":"text"});
+	testForm.add({id:"name11",name:"name11",text:"存放位置",type:'tree',required:false,placeholder:'请选择节点',
+		height:250,colspan:4,url:'test1.json',jsonFormatOut:true,treeSetting:{check:{enable:true},callback:{onClick:function(event, treeId, treeNode, clickFlag){}}}});
+	testForm.add({id:"name9",name:"name9",text:"性别",type:'radio',required:true,
+		datas:[{"value":"1","label":"男"},{"value":"2","label":"女"},{"value":"3","label":"未知"}]});
+	testForm.add({id:"name10",name:"name10",text:"主要的",type:'checkbox',required:true,colspan:3,url:'test.json',urlDataProp:["datas"],"data-label":"text"});
+	testForm.add({id:"name6",name:"name6",text:"备注",placeholder:'请输入',type:'textarea',required:true,height:120,width:"100%",colspan:4});
+	
+	//testForm.getFormItemByIndex(5).setWidth(250);
+	testForm.getFormItemByIndex(5).setValue("NBA 2K,PES");//普通设置表单控件值的函数
+	
+	//考虑到联动情况的设置控件值，因为我需要设置name8=PES，name13=PES2016这个时候需要用到select控件的setValue回调函数
+	//但是我们不清楚什么时候name13里面的下拉列表数据加载完成，所以只能在name8的change函数中增加变量来解决，
+	//一旦下列表的数据加载完成并被设置到控件name13中，变量window.name13Init变为true这个时候我们可以根据这个变量来判断是否可以给name13控件设置值
+	testForm.getFormItemByName("name8").setValue("PES", function(){
+		
+		function setName13Value(){
+			if(window.name13Init){
+				testForm.getFormItemByName("name13").setValue("PES2016");
+			}else{
+				setTimeout(function(){
+					setName13Value();
+				},500);
+			}
+		}
+		
+		setName13Value();
+	});
+	
+	testForm.getFormItemByIndex(9).setValue("FIFA");
+	
+	testForm.getFormItemByName("name11").setValue([{"id":"my computer","children":[{"id":"2","children":[{"id":"4","children":[]},{"id":"7","children":[]},{"id":"9","children":[]},{"id":"10","children":[]},{"id":"11","children":[]},{"id":"12","children":[]},{"id":"13","children":[]},{"id":"14","children":[]},{"id":"15","children":[]},{"id":"16","children":[]},{"id":"17","children":[]}]},{"id":"3","children":[{"id":"18","children":[]}]}]}]);
+	//testForm.getFormItemByName("name11").setValue("2");
+	//testForm.getFormItemByName("name11").setWidth(1075);
+	//var nameItem = new BootStrapFormItem.text({id:"name",name:"name",text:"测试",placeholder:'请输入'})
+	//nameItem.appendTo("nameItem");
+	//nameItem.setWidth(200)
+	//var tree = new BootStrapTree({container:'tree',url:'test1.json'});
+	//testForm.getFormItemByName("name3").setDisabled();
+})
+
+function submitFormData(){
+	if(window.testForm&&window.testForm.valid()){
+		//验证通过后可以调用window.testForm.submit()，具体请查看api文档
+	}else{
+		//FrontCommon.warning()
+	}
+}
+
+function testProgressBar(){
+	FrontCommon.showProgress();
+	FrontCommon.setProgress({progress:90,duration:5000,callback:function(){
+		FrontCommon.setProgress({progress:100, duration: 500, callback:function(){
+			FrontCommon.hideProgress();
+		}})
+	}});//产生一个进度条动画到90%停止
+}
+
+function testOpenDialog(){//常用的全屏弹窗
+	var width = top.document.documentElement.clientWidth - 30;
+	var height = top.document.documentElement.clientHeight - 60;
+	var dialog = top.FrontCommon.showDialog({
+		title:'新增用户',
+		width:width,
+		height:height,
+		content:FrontCommon.contextPath+"/test/test3.html",
+		success:function(){
+			this.getFrameWin().init();
+		},
+		buttons:[{icon:'check',text:"提交",click:function(){
+			alert(this.getFrameWin().testForm.getFormItemByName("name2").getValue());
+		}},{icon:'power-off',text:'关闭',type:'default',click:function(){
+			FrontCommon.closeDialog(dialog);
+		}}]
+	});
+}
+
+function testLeftRightList(){
+	var setting = {
+		leftTitle:'未分配数据',
+		rightTitle:'已分配数据',
+		height:380,
+		width:270,
+		buttonPadding: 100,
+		leftDatas: [{id:'1',name:'测试1'},{id:'2',name:'测试2'}],
+		rightDatas: [],
+		label: 'id',
+		multiple: false,
+		value: 'name'
+	}
+	var dialog = top.FrontCommon.showDialog({
+		title:'测试左右结构列表',
+		width:690,
+		height:550,
+		content:FrontCommon.contextPath+"/test/test8.html",
+		success:function(){
+			this.getFrameWin().init(setting);
+		},
+		buttons:[{icon:'check',text:"提交",click:function(){
+		}},{icon:'power-off',text:'关闭',type:'default',click:function(){
+			FrontCommon.closeDialog(dialog);
+		}}]
+	});
+}
+
+var websocket;
+function startConnect(){
+	FrontCommon.addCookie("username","fp_sys_user",0)
+	FrontCommon.startRealityWSConn(function(){
+		websocket = this;
+		websocket.onopen = function(event) {};
+		websocket.onmessage = function(event) {
+			var data=JSON.parse(event.data);
+			if(data["code"]&&data["code"]["code"]=="0-000"){//用户失效
+				websocket.close();
+			}else if(data["code"]&&data["code"]["code"]=="0-008"){//连接已建立
+				top.FrontCommon.success("websocket连接已建立!");
+			}else if(data["code"]&&data["code"]["code"]=="0"){//接收到消息
+				console.log(JSON.stringify(data["result"]));
+			}
+		};
+		websocket.onerror = function(event) {
+			top.FrontCommon.error("websocket连接出现错误!");
+		};
+		websocket.onclose = function(event) {
+			top.FrontCommon.warning("websocket连接已关闭!");
+		}
+	});
+}
+
+function sendMessage(){
+	var arr = [];
+	for(var idx = 0; idx < 10; idx++){
+		arr.push(389812622+idx+"");
+	}
+	if(websocket&&websocket.readyState==1){//可以通信才能发送消息
+		websocket.send(JSON.stringify({type:'1',requestEntity:{"msgType":"message","frequency":"5000",
+			"value":[{"protocol_type":"34",
+				"serialnums":['389812631'],"signalNames":["all"],"dev_type":"71"}]}}));
+	}
+}
+
+function startHisRemote(){
+	FrontCommon.request("../historyRemote.json",{"dev_type":"73","protocol_type":"34",
+		"dev_num":"389812631","start_time":"2018-09-01 00:00:00","end_time":"2018-11-01 00:00:00"},function(data){
+			if(data["code"]["code"]==0&&data["result"]["bodyData"]){
+				var dataObj = data["result"]["bodyData"];
+				var maxAttr = "";
+				for(var attr in dataObj){
+					maxAttr = Math.max(maxAttr, attr);
+				}
+				console.log(dataObj[maxAttr]);
+			}
+		});
+}
+
+function closeConnect(){
+	if(websocket&&websocket.readyState==1){//可以通信才能发送消息
+		websocket.close();
+	}
+}
+
+function startFrontPageConn(){
+	FrontCommon.request("../frontpage/state/monthstat.json",{/* device_no:'389812631' */"project_id":"78ac0d1d0fbe4bbdb42d631b457a3524"},function(data){
+		if(data["code"]["code"]==0){
+			console.log(data["result"])
+		}
+	});
+	FrontCommon.request("../frontpage/state/hourstat.json",{/* device_no:'389812631' */"project_id":"78ac0d1d0fbe4bbdb42d631b457a3524"},function(data){
+		if(data["code"]["code"]==0){
+			console.log(data["result"])
+		}
+	});
+	FrontCommon.request("../frontpage/state/monthenoughstat.json",{/* device_no:'389812631' */"project_id":"78ac0d1d0fbe4bbdb42d631b457a3524"},function(data){
+		if(data["code"]["code"]==0){
+			console.log(data["result"])
+		}
+	});
+}
+</script>
+</body>
+</html>

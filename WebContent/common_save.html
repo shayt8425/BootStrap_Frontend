@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<script type="text/javascript" src="resource/js/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="resource/plug/bootstrap-3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="resource/plug/zTree_v3/css/zTreeStyle/zTreeStyle.css" />
+<link rel="stylesheet" href="resource/plug/toastr/toastr.min.css" />
+<link rel="stylesheet" href="resource/css/frontcommon.css" />
+<script type="text/javascript" src="resource/plug/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="resource/plug/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="resource/plug/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="resource/plug/zTree_v3/js/jquery.ztree.all.min.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapTree.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapDialog.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapMessage.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapFormItem.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-BootStrapTooltip.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon-Parser.js"></script>
+<title>通用保存页面</title>
+</head>
+<body>
+<div style="margin:20px;" id="myFormDiv">
+	
+</div>
+<script type="text/javascript">
+	function initForm(formConfig,items,formData){
+		window.formObj = new FrontCommon.Form($.extend(formConfig,{container:'myFormDiv'}));
+		for(var idx in items){//添加表单项
+			formObj.add(items[idx]);
+		}
+		if(formData)formObj.formConfig.sourceData = formData;
+		formObj.initData();//初始化数据
+	}
+	
+	function save(callback){
+		if(formObj.valid()){
+			top.FrontCommon.confirm("您确定要保存吗？","确认保存",function(confirm){
+				if(confirm&&callback){
+					callback(true, formObj);
+				}
+			})
+		}
+	}
+	
+</script>
+</body>
+</html>

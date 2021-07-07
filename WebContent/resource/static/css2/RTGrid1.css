@@ -1,0 +1,321 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.containGridDiv
+{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+    border: 1px solid #E8E8E8;
+    overflow: hidden;
+    font-size: 12px;
+    color: #7d7d7d;
+}
+
+.containGridDiv table
+{
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
+}
+/*.containGridDiv table td
+{
+    text-align: center;
+    table-layout: fixed;
+    margin: 0;
+}*/
+.containGridDiv table td
+{
+    text-align: center;
+    table-layout: fixed;
+    margin: 0;
+    border-right: 1px solid rgb(232, 232, 232);
+}
+
+
+/******************************************/
+
+.RTGrid_Headdiv
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    float: left;
+    padding-right: 18px;
+    z-index: 9999;
+    width: 100%;
+}
+.RTTable_Head
+{
+    table-layout: fixed;
+    margin: 0;
+}
+.RTGrid_Headdiv .RTTable_Head thead
+{
+    /*background: url('../RTGrid/img/list_title_bg.png');*/
+    /*background-color: #e5fffc;*/
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.RTGrid_Headdiv .RTTable_Head thead tr
+{
+    height: 30px;
+    border: 1px solid #E8E8E8;
+    border-left: 0px;
+    border-top: 0px;
+}
+/*.RTGrid_Headdiv .RTTable_Head thead td
+{
+    cursor: pointer;
+}*/
+.RTGrid_Headdiv .RTTable_Head thead td
+{
+    cursor: pointer;
+	/*background: rgb(232, 232, 232);*/
+	background: url('../img/list_title_bg.png');
+	border: 1px solid rgb(182, 182, 182);
+	font-weight: bold;
+}
+/******************************************/
+.RTGrid_Bodydiv
+{
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+    float: left;
+    cursor: pointer;     //by glj
+}
+.RTTable-Body
+{
+    margin-top: -25px;
+}
+.RTTable-Body tr
+{
+    border-collapse: collapse;
+    height: 25px;
+    border: 1px solid #e8e8e8;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+.RTTable-Body tr:hover{
+	cursor:pointer;
+	background:#e3e3e3;
+}
+
+/****************************************/
+.RTGrid_moveTr
+{
+    background-color: #e3e3e3;
+}
+.RTGrid_clickTr
+{
+    background-color: rgb(255, 204, 51);
+}
+/*******************************/
+.RTGrid_Footdiv
+{
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+	width: 100%;
+	border-top: 1px solid #E8E8E8;
+	border-bottom: 1px solid #E8E8E8;
+}
+.Page_Foot
+{
+    width: 340px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+.Page_Foot div, .Page_Foot select
+{
+    display: block;
+    width: 40px;
+    height: 30px;
+    float: left;
+    margin-left: 3px;
+    text-align: center;
+}
+
+.Page_Foot .page_main
+{
+    width: 100px;
+    position: relative;
+}
+
+
+
+.Page_Foot .RTGrid_page_inputDiv
+{
+    position: absolute;
+    top: 5px;
+    left: 42px;
+    width: 30px;
+    height: 18px;
+    border: 1px solid #7D7D7D;
+}
+.Page_Foot .RTGrid_page_input
+{
+    display: block;
+    width: 30px;
+    height: 18px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.Page_Foot .pre_arrow, .Page_Foot .next_arrow
+{
+    width: 20px;
+    cursor: pointer;
+}
+
+.Page_Foot .page_showPage
+{
+    width: 43px;
+    text-align: center;
+    overflow: hidden;
+}
+.Page_Foot .RTGrid_selectPageSize
+{
+    height: 20px;
+    width: 50px;
+    margin-top: 5px;
+}
+
+.Page_Foot .RTGrid_Foot_Go
+{
+    position: absolute;
+    top: 0px;
+    left: 80px;
+    width: 15px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.Page_Foot .pre_Btn, .Page_Foot, .next_Btn
+{
+    cursor: pointer;
+}
+
+
+
+/*******************************/
+.hidden{
+	display:none;
+}
+
+
+.RTGrid_LoadImgDiv
+{
+	/*display: none;*/ 
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	z-index: 999;
+	/* background-color: rgb(197, 152, 152); */
+	bottom: 0px;
+	left: 10px;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	/* opacity: 0.5; */
+	line-height: 20px;
+}
+
+.RTGrid_LoadImgoutDiv
+{
+  	display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: White;
+    top: 0px;
+    left: 0px;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.RTGrid_LoadImg
+{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -22px;
+    width: 50px;
+    height: 45px;
+    font-size: 12px;
+}
+/*.RTGrid_sortDiv
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 3px;
+    font-size: 10px;
+    left: 0px;
+}*/
+.RTGrid_sortDiv
+{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	position: relative;
+	top: 1px;
+	font-size: 10px;
+	left: 1px;
+}
+.RTGrid_sort_1
+{
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    /*display: none;*/
+    top:3px;
+    left:0px;
+}
+.RTGrid_sort_1 img
+{
+	display: block;
+	position: absolute;
+	/*display: none;*/
+	bottom: 3px;
+	top: 0px;
+    left: 0px;
+}
+.RTGrid_sort_2
+{
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 3px;
+    /*display: none;*/
+    left:0px;
+}
+.RTGrid_sort_2 img
+{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

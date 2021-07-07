@@ -1,0 +1,942 @@
+﻿.failureWarnning-MainDiv{
+	width: 99.5%;
+	height: 99%;
+	margin-left: 3px;
+	margin-top: 0.2%;
+}
+.failureWarnning-top{
+	width: 100%;
+	height: 44px;
+	background-color: #0068B7;
+}
+.failureWarnning-left{
+	width: 188px;
+	height: 93%;
+	/* background-color: aqua; */
+	margin-top: 0.1%;
+	border: 1px solid rgb(200, 199, 199);
+	display: inline-block;
+	position: absolute;
+}
+.failureWarnning-right{
+	width: 97%;
+	height: 93%;
+	/*border: 1px solid rgb(200, 199, 199);*/
+	margin-top: 0.1%;
+	/* margin-left: 20%; */
+	/*background-color: aqua;*/
+	display: inline-block;
+	left: 197px;
+	position: absolute;
+}
+.failureWarnning-right-larger{
+	width: 100%;
+	left: 0%;
+	position:relative;
+}
+.failureWarnning-left-toggleDiv{
+	position: absolute;
+	background: url("../../../../static/img/app/failureWarnning-images/failureWarnning-toggle.png");
+	width: 9px;
+	height: 80px;
+	top: 42%;
+	left: 184px;
+	z-index: 999999999999999;
+}
+.failureWarnning-left-toggleDiv1{
+	left: 0%;
+	background: url("../../../../static/img/app/failureWarnning-images/failureWarnning-toggle1.png");
+}
+/**************************************/
+.failureWarnning-top1{
+	position: relative;
+	width: 15%;
+	height: 100%;
+	left: 15%;
+	display: inline-block;
+}
+.failureWarnning-top2{
+	position: relative;
+	display: inline-block;
+	left: 15%;
+	width: 18%;
+	height: 100%;
+}
+.failureWarnning-top3{
+	position: relative;
+	display: inline-block;
+	left: 15%;
+	width: 21%;
+	height: 100%;
+}
+.failureWarnning-top4{
+	position: relative;
+	display: inline-block;
+	left: 15%;
+	height: 100%;
+	width: 18%;
+}
+.failureWarnning-top-img{
+	
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 18%;
+	left: 12%;
+}
+.failureWarnning-top-label{
+	font-size: 14px;
+	position: relative;
+	top: 5%;
+	left: 14%;
+	color: white;
+}
+.failureWarnning-top-hr{
+	position: relative;
+	width: 1px;
+	height: 50%;
+	left: 15%;
+	background-color: white;
+	display: inline-block;
+	/* margin-top: 0.5%; */
+	top: 25%;
+}
+.failureWarnning-top-bg{
+	background-color: #005399;
+	cursor: pointer;
+}
+.failureWarnning-top-click-bg{
+	background-color: #005399;
+	cursor: pointer;
+}
+/*****************************************************/
+
+.failureWarnning-left-conditions{
+	position: relative;
+	width:100%;
+	height:220px;
+	
+}
+.failureWarnning-left-result{
+	position: relative;
+	width:100%;
+	height:60%;
+}
+.failureWarnning-left-img{
+	width: 16px;
+	height: 16px;
+	top: 15%;
+	position: relative;
+}
+.failureWarnning-left-result-title{
+	position: relative;
+	margin-left: 5%;
+	top: 5px;
+	height: 20px;
+	line-height: 20px;
+}
+.failureWarnning-left-result-div{
+	position: relative;
+	width: 96%;
+	height: 100%;
+	/* background-color: aquamarine; */
+	margin: 2%;
+	/*top: 10px;*/
+}
+
+.failureWarnning-left-toggleDiv:hover{
+	cursor: pointer;
+}
+.failureWarnning-Button1{
+	position: relative;
+	width: 50px;
+	height: 20px;
+	font-size: 13px;
+	float: left;
+	left: 30px;
+}
+.failureWarnning-Button2{
+	position: relative;
+	width: 50px;
+	height: 20px;
+	font-size: 13px;
+	float: right;
+	right: 30px;
+}
+.failureWarnning-lineSelect{
+	position: absolute;
+	width: 25%;
+	height: 25%;
+	display:none;
+	left: 8.5%;
+	top: 9%;
+	background-color: white;
+	z-index: 9999999999;
+}
+.failureWarnning-lineSelect-content{
+	position: absolute;
+	width: 98%;
+	height: 95%;
+	background-color: white;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin: 3px;
+	z-index: 9999999999;
+}
+.lineselect-table{
+	width:100%;
+	height:100%;
+}
+.lineselect-table tr{
+	background: rgb(221, 220, 220);
+}
+.lineselect-table tr td{
+	width:30.34%;
+	height:30.34%;
+	text-align: center;
+	border:1px solid rgb(200, 199, 199);
+}
+.failureWarnning-lineSelect-shadow-down{
+	width: 100%;
+	height: 8px;
+	background: url("../../../../static/img/map/shadow_down.png") repeat-x;
+	position: absolute;
+	bottom: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-lineSelect-shadow-down-left{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_down_left.png");
+	position: absolute;
+	bottom: -7px;
+	left: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-lineSelect-shadow-down-right{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_down_right.png");
+	position: absolute;
+	bottom: -7px;
+	right: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-lineSelect-shadow-top{
+	width: 100%;
+	height: 8px;
+	background: url("../../../../static/img/map/shadow_top.png") repeat-x;
+	position: absolute;
+	top: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-lineSelect-shadow-top-left{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_top_left.png");
+	position: absolute;
+	top: -7px;
+	left: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-lineSelect-shadow-top-right{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_top_right.png");
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-lineSelect-shadow-left{
+	width: 7px;
+	height: 100%;
+	background: url("../../../../static/img/map/shadow_left.png") repeat-y;
+	position: absolute;
+	left: -7px;
+	top: 0px;
+	z-index: 9999999999;
+}
+.failureWarnning-lineSelect-shadow-right{
+	width: 8px;
+	height: 100%;
+	background: url("../../../../static/img/map/shadow_right.png") repeat-y;
+	position: absolute;
+	right: -7px;
+	top: 0px;
+	z-index: 9999999999;
+}
+
+.failureWarnning-typeSelect{
+	position: absolute;
+	width: 25%;
+	height: 25%;
+	display:none;
+	left: 8.5%;
+	top: 12%;
+	background-color: white;
+	z-index: 9999999999;
+}
+.selectedTraintype{
+	height: 80%;
+	/*width: 77px;*/
+	/*bottom: 35%;*/
+	position: relative;
+	display: inline-block;
+	font-size: 13px;
+}
+.selectedLine{
+	height: 80%;
+	position: relative;
+	display: inline-block;
+	font-size: 13px;
+	/*width: 77px;*/
+	/*bottom: 35%;*/
+}
+.failureWarnning-left-select-bg{
+	background: #f3ae00;
+}
+.failureWarnning-typeSelect-content{
+	position: absolute;
+	width: 98%;
+	height: 95%;
+	background-color: white;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin: 3px;
+	z-index: 9999999999;
+}
+.typeselect-table{
+	width:100%;
+	height:100%;
+}
+.typeselect-table tr{
+	background: rgb(221, 220, 220);
+}
+.typeselect-table tr td{
+	width:30.34%;
+	height:30.34%;
+	text-align: center;
+	border:1px solid rgb(200, 199, 199);
+}
+.failureWarnning-typeSelect-shadow-down{
+	width: 100%;
+	height: 8px;
+	background: url("../../../../static/img/map/shadow_down.png") repeat-x;
+	position: absolute;
+	bottom: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-typeSelect-shadow-down-left{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_down_left.png");
+	position: absolute;
+	bottom: -7px;
+	left: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-typeSelect-shadow-down-right{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_down_right.png");
+	position: absolute;
+	bottom: -7px;
+	right: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-typeSelect-shadow-top{
+	width: 100%;
+	height: 8px;
+	background: url("../../../../static/img/map/shadow_top.png") repeat-x;
+	position: absolute;
+	top: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-typeSelect-shadow-top-left{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_top_left.png");
+	position: absolute;
+	top: -7px;
+	left: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-typeSelect-shadow-top-right{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_top_right.png");
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-typeSelect-shadow-left{
+	width: 7px;
+	height: 100%;
+	background: url("../../../../static/img/map/shadow_left.png") repeat-y;
+	position: absolute;
+	left: -7px;
+	top: 0px;
+	z-index: 9999999999;
+}
+.failureWarnning-typeSelect-shadow-right{
+	width: 8px;
+	height: 100%;
+	background: url("../../../../static/img/map/shadow_right.png") repeat-y;
+	position: absolute;
+	right: -7px;
+	top: 0px;
+	z-index: 9999999999;
+}
+.failureWarnning-deal-look{
+	position: absolute;
+	width: 350px;
+	height: 150px;
+	display: none;
+	left: 40%;
+	top: 30%;
+	background-color: white;
+	z-index: 9999999999;
+}
+.failureWarnning-deal-look-content{
+	width: 340px;
+	height: 140px;
+	position: relative;
+	top: 10px;
+	left: 5px;
+}
+.failureWarnning-deal-look-content-table{
+	width: 100%;
+	height: 70%;
+	border: 1px solid rgb(200, 199, 199);
+}
+.failureWarnning-deal-look-content-table tr th{
+	width: 40%;
+}
+.failureWarnning-deal-look-content-table tr td{
+	width: 60%;
+	
+}
+.failureWarnning-deal-look-sure{
+	position: relative;
+	top: 10px;
+	left: 100px;
+}
+.failureWarnning-deal-look-closediv{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background: url("../../../../static/img/map/graph_delete.png");
+	top: -10px;
+	right: -10px;
+	cursor: pointer;
+	z-index: 99999999999999;
+}
+.failureWarnning-deal-look-shadow-down{
+	width: 100%;
+	height: 8px;
+	background: url("../../../../static/img/map/shadow_down.png") repeat-x;
+	position: absolute;
+	bottom: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-deal-look-shadow-down-left{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_down_left.png");
+	position: absolute;
+	bottom: -7px;
+	left: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-deal-look-shadow-down-right{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_down_right.png");
+	position: absolute;
+	bottom: -7px;
+	right: -7px;
+	z-index: 99999;
+}
+.failureWarnning-deal-look-shadow-top{
+	width: 100%;
+	height: 8px;
+	background: url("../../../../static/img/map/shadow_top.png") repeat-x;
+	position: absolute;
+	top: -7px;
+	z-index: 9999;
+}
+.failureWarnning-deal-look-shadow-top-left{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_top_left.png");
+	position: absolute;
+	top: -7px;
+	left: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-deal-look-shadow-top-right{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_top_right.png");
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	z-index: 9999;
+}
+.failureWarnning-deal-look-shadow-left{
+	width: 7px;
+	height: 100%;
+	background: url("../../../../static/img/map/shadow_left.png") repeat-y;
+	position: absolute;
+	left: -7px;
+	top: 0px;
+	z-index: 9999999999;
+}
+.failureWarnning-deal-look-shadow-right{
+	width: 8px;
+	height: 100%;
+	background: url("../../../../static/img/map/shadow_right.png") repeat-y;
+	position: absolute;
+	right: -7px;
+	top: 0px;
+	z-index: 9999;
+}
+
+.failureWarnning-deal-do{
+	position: absolute;
+	width: 350px;
+	height: 150px;
+	display: none;
+	left: 40%;
+	top: 30%;
+	background-color: white;
+	z-index: 9999999999;
+}
+.failureWarnning-deal-do-content{
+	width: 340px;
+	height: 130px;
+	position: relative;
+	top: 10px;
+	left: 5px;
+}
+.failureWarnning-deal-do-content-title{
+	position: relative;
+	left: 145px;
+}
+.failureWarnning-deal-do-content-input{
+	position: relative;
+	height: 50px;
+	width: 300px;
+	left: 20px;
+	top: 10px;
+}
+.failureWarnning-deal-do-sure{
+	position: absolute;
+	top: 100px;
+	left: 80px;
+	display: inline-block;
+}
+.failureWarnning-deal-do-cencel{
+	position: absolute;
+	top: 100px;
+	right: 80px;
+	display: inline-block;
+}
+.failureWarnning-deal-do-closediv{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background: url("../../../../static/img/map/graph_delete.png");
+	top: -10px;
+	right: -10px;
+	cursor: pointer;
+	z-index: 99999999999999
+}
+.failureWarnning-deal-do-shadow-down{
+	width: 100%;
+	height: 8px;
+	background: url("../../../../static/img/map/shadow_down.png") repeat-x;
+	position: absolute;
+	bottom: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-deal-do-shadow-down-left{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_down_left.png");
+	position: absolute;
+	bottom: -7px;
+	left: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-deal-do-shadow-down-right{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_down_right.png");
+	position: absolute;
+	bottom: -7px;
+	right: -7px;
+	z-index: 9999;
+}
+.failureWarnning-deal-do-shadow-top{
+	width: 100%;
+	height: 8px;
+	background: url("../../../../static/img/map/shadow_top.png") repeat-x;
+	position: absolute;
+	top: -7px;
+	z-index: 9999;
+}
+.failureWarnning-deal-do-shadow-top-left{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_top_left.png");
+	position: absolute;
+	top: -7px;
+	left: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-deal-do-shadow-top-right{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_top_right.png");
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	z-index: 9999;
+}
+.failureWarnning-deal-do-shadow-left{
+	width: 7px;
+	height: 100%;
+	background: url("../../../../static/img/map/shadow_left.png") repeat-y;
+	position: absolute;
+	left: -7px;
+	top: 0px;
+	z-index: 9999999999;
+}
+.failureWarnning-deal-do-shadow-right{
+	width: 8px;
+	height: 100%;
+	background: url("../../../../static/img/map/shadow_right.png") repeat-y;
+	position: absolute;
+	right: -7px;
+	top: 0px;
+	z-index: 9999;
+}
+
+/****************************/
+.failureWarnning-right-Div1{
+	width:100%;
+	height:100%;
+	border: 1px solid rgb(200, 199, 199);
+}
+.failureWarnning-right-Div2{
+	width:100%;
+	height:100%;
+}
+.failureWarnning-right-Div2-top{
+	width:100.2%;
+	height:40px;
+}
+.failureWarnning-right-Div2-top-table{
+	width:100%;
+	height:100%;
+	
+}
+.failureWarnning-right-Div2-top-table tr{
+	background: rgb(221, 220, 220);
+}
+.failureWarnning-right-Div2-top-table tr td{
+	width:11%;
+	height:100%;
+	text-align: center;
+	border:1px solid rgb(200, 199, 199);
+	
+}
+.failureWarnning-right-Div2-top-hover{
+	background: #f3ae00;
+	cursor: pointer;
+}
+.failureWarnning-right-Div2-top-bg{
+	background: #f3ae00;
+}
+.failureWarnning-right-Div2-content{
+	width:100%;
+	height:100%;
+	border:1px solid rgb(200, 199, 199);
+}
+.failureWarnning-right-Div2-content-sub{
+	width:100%;
+	height:100%;
+	position: absolute;
+}
+.failureWarnning-right-Div2-result-grid{
+	width:100%;
+	height:100%;
+}
+
+.failureWarnning-right-Div4{
+	width:100%;
+	height:100%;
+	border: 1px solid rgb(200, 199, 199);
+}
+.failureWarnning-right-Div4-top{
+	width:100.2%;
+	height:40px;
+}
+
+.failureWarnning-right-Div4-top-table{
+	width:100%;
+	height:100%;
+	
+}
+.failureWarnning-right-Div4-top-table tr{
+	background: rgb(221, 220, 220);
+}
+.failureWarnning-right-Div4-top-table tr td{
+	width:14.29%;
+	height:100%;
+	text-align: center;
+	border:1px solid rgb(200, 199, 199);
+	
+}
+.failureWarnning-right-Div4-top-hover{
+	background: #f3ae00;
+	cursor: pointer;
+}
+.failureWarnning-right-Div4-top-bg{
+	background: #f3ae00;
+}
+.failureWarnning-right-Div4-content{
+	width:100%;
+	height:100%;
+	border:1px solid rgb(200, 199, 199);
+}
+.failureWarnning-right-Div4-content-sub{
+	width:100%;
+	height:100%;
+	position: absolute;
+}
+
+
+.failureWarnning-right-Div3{
+	width:100%;
+	height:100%;
+	border: 1px solid rgb(200, 199, 199);
+}
+.failureWarnning-right-Div3-top{
+	width:100.2%;
+	height:40px;
+}
+
+.failureWarnning-right-Div3-top-table{
+	width:100%;
+	height:100%;
+	
+}
+.failureWarnning-right-Div3-top-table tr{
+	background: rgb(221, 220, 220);
+}
+.failureWarnning-right-Div3-top-table tr td{
+	width:14.29%;
+	height:100%;
+	text-align: center;
+	border:1px solid rgb(200, 199, 199);
+	
+}
+.failureWarnning-right-Div3-top-hover{
+	background: #f3ae00;
+	cursor: pointer;
+}
+.failureWarnning-right-Div3-top-bg{
+	background: #f3ae00;
+}
+.failureWarnning-right-Div3-content{
+	width:100%;
+	height:100%;
+	border:1px solid rgb(200, 199, 199);
+}
+.failureWarnning-right-Div3-content-sub{
+	width:100%;
+	height:100%;
+	position: absolute;
+}
+#failureWarnning-right-Div3-content-sub{
+	width:100%;
+	height:100%;
+	position: absolute;
+}
+
+/*************************/
+.failureWarnning-content-container{
+	position: relative;
+    margin: 0px 2%;
+    height: 100%;
+}
+.failureWarnning-content-body
+{
+    position: relative;
+    width: 100%;   
+    border-bottom: 1px #bbbbbb solid;
+    height: 100%;
+}
+.failureWarnning-content-block-body
+{
+    width: 100%;
+}
+.failureWarnning-content-block
+{
+    width: 100%;
+	padding-bottom: 5px;
+	height: 100%;
+}
+.failureWarnning-content-block-body-row
+{
+	/* padding-left: 15px; */
+	width: 100%;
+	height: 10%;
+	line-height: 10%;
+	font-size: 15px;
+	position: relative;
+}
+.failureWarnning-content-block-label
+{
+    width: 110px;
+    display: inline-block;
+    font-size: 13px;
+}
+.width-40 {
+	width: 40px;
+}
+.width-45 {
+	width: 45px;
+}
+.width-55 {
+	width: 55px;
+}
+.width-75 {
+	width: 75px;
+}
+.width-78 {
+	width: 78px;
+}
+.width-85 {
+	width: 85px;
+}
+.width-95 {
+	width: 95px;
+}
+.hidden{
+	display:none;
+}
+.failureWarnning-right-Div1-rightClick{
+	width: 120px;
+	height: 100px;
+	/*height: 140px;*/
+	position:absolute;
+	z-index: 999999999;
+	background-color: white;
+}
+.failureWarnning-right-Div1-rightClick-content{
+	width:100%;
+	height:100%;
+}
+.failureWarnning-right-Div1-rightClick-content-table{
+	height:100%;
+	width:100%;
+
+}
+.failureWarnning-right-Div1-rightClick-content-table tr{
+	width: 200px;
+	height: 30px;
+	/* position: absolute; */
+	line-height: 30px;
+}
+.failureWarnning-right-Div1-rightClick-content-table tr td{
+	text-align: center;
+}
+.failureWarnning-right-Div1-rightClick-content-table-event{
+	background: #f3ae00;
+	cursor: pointer;
+}
+.failureWarnning-right-Div1-rightClick-content-table-click{
+	background: #f3ae00;
+}
+.failureWarnning-right-Div1-rightClick-content-table-border{
+	border-bottom:1px solid rgb(200, 199, 199);
+}
+.failureWarnning-right-Div1-rightClick-shadow-down{
+	width: 100%;
+	height: 8px;
+	background: url("../../../../static/img/map/shadow_down.png") repeat-x;
+	position: absolute;
+	bottom: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-right-Div1-rightClick-shadow-down-left{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_down_left.png");
+	position: absolute;
+	bottom: -7px;
+	left: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-right-Div1-rightClick-shadow-down-right{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_down_right.png");
+	position: absolute;
+	bottom: -7px;
+	right: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-right-Div1-rightClick-shadow-top{
+	width: 100%;
+	height: 8px;
+	background: url("../../../../static/img/map/shadow_top.png") repeat-x;
+	position: absolute;
+	top: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-right-Div1-rightClick-shadow-top-left{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_top_left.png");
+	position: absolute;
+	top: -7px;
+	left: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-right-Div1-rightClick-shadow-top-right{
+	width: 7px;
+	height: 7px;
+	background: url("../../../../static/img/map/shadow_top_right.png");
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	z-index: 9999999999;
+}
+.failureWarnning-right-Div1-rightClick-shadow-left{
+	width: 7px;
+	height: 100%;
+	background: url("../../../../static/img/map/shadow_left.png") repeat-y;
+	position: absolute;
+	left: -7px;
+	top: 0px;
+	z-index: 9999999999;
+}
+.failureWarnning-right-Div1-rightClick-shadow-right{
+	width: 8px;
+	height: 100%;
+	background: url("../../../../static/img/map/shadow_right.png") repeat-y;
+	position: absolute;
+	right: -7px;
+	top: 0px;
+	z-index: 9999999999;
+}
+.failureWarnning-right-position{
+	position: relative;
+}
+/*****************/

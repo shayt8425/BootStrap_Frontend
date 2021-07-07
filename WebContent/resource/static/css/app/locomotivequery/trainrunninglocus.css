@@ -1,0 +1,805 @@
+﻿#locus_contain2
+{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.locus_item
+{
+    width: 220px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+.locus_item_name
+{
+    width: 60px;
+    float: left;
+    text-align: right;
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+}
+.locus_item_search{
+	width: 260px;
+	height: 20px;
+	line-height: 20px;
+	top: 10px;
+	position: relative;
+}
+.locus_item_value
+{
+    width: 130px;
+    float: right;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 5px;
+    height: 20px;
+    line-height: 20px;
+}
+
+
+.locus_search
+{
+	/* display: block; */
+	width: 71px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	color: White;
+	background-image: url('../../../img/app/button_top.png');
+	text-decoration: none;
+	position: relative;
+	left: 40%;
+	/* top: 50%; */
+	/* margin-top: -81px; */
+	/* margin-left: -35px; */
+	cursor: pointer;
+}
+#locus_contain a:hover
+{
+    background-image: url('../../../img/app/button_down.png');
+}
+
+
+.locus_search
+{
+    float: left;
+}
+
+.locus_clear
+{
+    float: right;
+}
+
+
+#locus_contain hr
+{
+    width: 230px;
+    margin: 0 auto;
+    border: 0px;
+    border-top: 1px dashed #000;
+}
+#locus_contain2 .locus_table
+{
+	margin: 0 auto;
+	width: 260px;
+	top: 10px;
+	position: relative;
+	height: 300px;
+	overflow: hidden;
+}
+.locus_table table.locus_table_m
+{
+	margin: 0 auto;
+	width: 260px;
+	top: 165px;
+	position: absolute;
+	height: 270px;
+	overflow: hidden;
+}
+.locus_table table.locus_table_m thead
+{
+}
+.locus_table table.locus_table_m tr
+{
+    height: 30px;
+}
+.locus_table table.locus_table_m td
+{
+    border: 1px solid gray;
+    text-align: center;
+    width: 15px;
+}
+
+
+
+
+
+
+.locus_table table.locus_table_h
+{
+    position: absolute;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid gray;
+    top: 0px;
+    border-top: 0px;
+    z-index: 1;
+}
+.locus_table table.locus_table_h thead
+{
+}
+.locus_table table.locus_table_h tr
+{
+    height: 23px;
+}
+
+.locus_table table.locus_table_h td
+{
+    border: 1px solid gray;
+    text-align: center;
+}
+.locus_table table.locus_table_h tbody
+{
+    visibility: hidden;
+}
+
+.hiddenDiv
+{
+    display: none;
+}
+.playSchedule
+{
+    width: 310px;
+    height: 200px;
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+    z-index: 999;
+    background-color: White;
+    border: 1px solid #E9E9E9;
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 5px;
+}
+.playSchedule .btn_backward
+{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    cursor: pointer;
+}
+.playSchedule .btn_forward
+{
+    position: absolute;
+    top: 10px;
+    left: 240px;
+    cursor: pointer;
+}
+
+.playSchedule .btn_pause
+{
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    cursor: pointer;
+}
+.playSchedule .btn_play
+{
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    cursor: pointer;
+}
+.playSchedule .btn_stop
+{
+    position: absolute;
+    top: 10px;
+    left: 165px;
+    cursor: pointer;
+}
+.playSchedule .btn_beginTime_div
+{
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+.playSchedule .btn_endTime_div
+{
+    position: absolute;
+    top: 85px;
+    left: 40px;
+}
+.playSchedule .btn_bufferedTime_div
+{
+    position: absolute;
+    top: 110px;
+    left: 40px;
+}
+.playSchedule .timebase
+{
+    position: absolute;
+    top: 135px;
+    left: 40px;
+}
+.btn_beginTime
+{
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    width: 150px;
+}
+.btn_endTime
+{
+    position: absolute;
+    left: 100px;
+    width: 150px;
+    top: 0px;
+}
+.btn_bufferedTime
+{
+    position: absolute;
+    top: 0px;
+    width: 150px;
+    left: 100px;
+}
+.s_shudu_tip
+{
+    width: 60px;
+    height: 15px;
+    position: absolute;
+    top: 165px;
+    left: 40px;
+}
+.s_shudu
+{
+    display: block;
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    top: 160px;
+    left: 140px;
+}
+.hr_class
+{
+    position: absolute;
+    width: 290px;
+    color: #7d7d7d;
+    top: 42px;
+    left: 10px;
+}
+.timebase_outLine
+{
+    position: absolute;
+    top: 2px;
+    left: 80px;
+    width: 175px;
+    height: 7px;
+    background-color: rgb(229, 228, 234);
+    border-radius: 5px;
+}
+.timebase_dragLine
+{
+    height: 7px;
+    width: 0px;
+    background-color: #F9A805;
+    border-radius: 5px;
+}
+.timebase_dragLine
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.timebase_loadLine
+{
+    height: 7px;
+    width: 0px;
+    background-color: #8a8c8e;
+    border-radius: 5px;
+}
+.timebase_Img
+{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 0px;
+    margin-left: -10px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.locusShowData
+{
+    width: 310px;
+    height: 385px;
+    position: absolute;
+    bottom: 215px;
+    right: 10px;
+    z-index: 999;
+    background-color: white;
+    overflow: hidden;
+    border: 1px solid #E9E9E9;
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 5px;
+}
+
+.cusdiv
+{
+    width: 100%;
+    height: 100%;
+}
+.cus_item
+{
+    width: 220px;
+    float: left;
+    height: 25px;
+}
+
+.cus_itemName
+{
+    width: 70px;
+    height: 25px;
+    float: left;
+    line-height: 25px;
+    text-align: right;
+}
+
+.cus_itemValue
+{
+    width: 150px;
+    height: 25px;
+    float: left;
+    line-height: 25px;
+    text-align: center;
+    color: #1D4BB2;
+}
+/**
+ * 	-----------------------------------------------------------------------------------------------------
+ */
+.locusShowData .trainrunninglocus-tab-div
+{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 200px;
+    height: 30px;
+    background: #fff;
+}
+.locusShowData .trainrunninglocus-basic-tab-div
+{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.locusShowData .trainrunninglocus-version-tab-div
+{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 60px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.locusShowData .trainrunninglocus-qualityAlarm-tab-div
+{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 120px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.locusShowData .trainrunninglocus-etrainrunninglocus-quipmentStatus-tab-div
+{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 180px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.locusShowData .trainrunninglocus-content-basic-div
+{
+    width: 290px;
+    position: relative; /*border:1px solid #E8E8E8;*/
+    border-top: 0px;
+    margin-left: 10px;
+}
+.locusShowData .trainrunninglocus-content-version-div
+{
+    width: 360px;
+    height: 310px;
+    position: relative; /*border:1px solid #E8E8E8;*/
+    border-top: 0px;
+}
+.locusShowData .content-trainrunninglocus-div
+{
+    width: 100%;
+    height: 330px;
+    position: relative;
+    top: 0px;
+    border: 1px solid #E8E8E8;
+    border-top: 0px;
+}
+.locusShowData .trainrunninglocus-content-equipmentStatus-div
+{
+    width: 525px;
+    height: 330px;
+    position: relative;
+    top: 0px;
+    border: 1px solid #E8E8E8;
+    border-top: 0px;
+}
+.locusShowData .trainrunninglocus-border-bottom-type
+{
+    border-bottom: 0px;
+}
+.locusShowData .trainrunninglocus-tab-background
+{
+    background: #E9E9E9;
+}
+.locusShowData .trainrunninglocus-bundefined
+{
+    display: block;
+    width: 40px;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    color: #00EE00;
+    font-size: 20px;
+}
+
+
+
+.locusShowData .trainrunninglocus-time_div
+{
+    margin-top: 0px;
+}
+.locusShowData .trainrunninglocus-time_lab
+{
+    color: red;
+}
+
+.locusShowData .app_trainrunninglocus_divD
+{
+    width: 360px;
+    height: 37px;
+}
+.locusShowData .app_trainrunninglocus_div
+{
+    width: 360px;
+    color: #7d7d7d;
+    font-family: monospace;
+}
+.locusShowData .trainrunninglocus_details_tab
+{
+    background-color: #FFF;
+    width: 100%;
+    margin-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cellspacing: 0px;
+}
+
+
+.locusShowData .trainrunninglocus-locomotive_details_tab_qualityAlarm
+{
+    height: 330px;
+}
+.locusShowData .trainrunninglocus-locomotive_details_tab_version
+{
+    height: 370px;
+    padding-right: 50px;
+}
+.locusShowData .trainrunninglocus-locomotive_details_span
+{
+    background-color: black;
+    text-align: center;
+    width: 50px;
+    height: 35px;
+    line-height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.locusShowData .trainrunninglocus-distance_ico_span
+{
+    background-color: black;
+    text-align: center;
+    width: 65px;
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.locusShowData .trainrunninglocus-distance_ico
+{
+    width: 35px;
+    height: 35px;
+    vertical-align: bottom;
+}
+.locusShowData .trainrunninglocus-lab
+{
+    color: #1D4BB2;
+}
+.locusShowData .trainrunninglocus-td_height
+{
+    height: 22px;
+    width: 150px;
+}
+.locusShowData .trainrunninglocus-distance_td
+{
+    width: 0px;
+}
+.locusShowData .trainrunninglocus-portrait
+{
+    width: 16px;
+    display: block;
+}
+
+
+
+.locusShowData .trainrunninglocus-tab-left
+{
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    height: 31px;
+    margin: 0px;
+    width: 11px;
+    border: 0px; /*border-bottom:1px solid #ccc;*/
+    background: #fff;
+    z-index: -999;
+}
+.locusShowData .trainrunninglocus-tab-right
+{
+    position: relative;
+    top: 5px;
+    left: 251px;
+    height: 23px;
+    margin: 0px;
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    z-index: -999;
+}
+.locusShowData .trainrunninglocus-tab-border-radius-left
+{
+    border-radius: 8px 0px 0px 0px;
+}
+.locusShowData .trainrunninglocus-tab-border-radius-right
+{
+    border-radius: 0px 8px 0px 0px;
+}
+.locusShowData .trainrunninglocus-border-top-click
+{
+    border: 0px;
+    border-top: 1px solid #ccc;
+    background-color: #FFA900;
+    color: white;
+}
+.locusShowData .trainrunninglocus-border-left
+{
+    border-left: 1px solid #ccc;
+}
+.locusShowData .trainrunninglocus-border-right
+{
+    border-right: 1px solid #ccc;
+}
+.locusShowData .trainrunninglocus-border-bottom-split-td
+{
+    border-bottom: 1px solid white;
+}
+.locusShowData .trainrunninglocus-height-30px
+{
+    height: 30px;
+}
+.locusShowData .trainrunninglocus-noTextIn .trainrunninglocus-speed
+{
+    font-weight: 900;
+    font-family: arial;
+    color: #54cb00;
+    font-size: 20px;
+}
+.locusShowData .trainrunninglocus-noTextIn .trainrunninglocus-limitedSpeed
+{
+    font-weight: 900;
+    font-family: arial;
+    color: #e60012;
+    font-size: 20px;
+}
+.locusShowData .trainrunninglocus-noTextIn .trainrunninglocus-frontDistance
+{
+    font-weight: 900;
+    font-family: arial;
+    color: #f3ae00;
+    font-size: 20px;
+}
+.locusShowData .trainrunninglocus-locomotive_details_tab
+{
+    width: 290px;
+}
+.locusShowData .trainrunninglocus-receiveTime
+{
+    font-weight: bold;
+    color: red;
+}
+.locusShowData .trainrunninglocus-banbenA
+{
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    width: 140px;
+    height: 270px;
+    padding-left: 5px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding-top: 30px;
+}
+.locusShowData .trainrunninglocus-banbenA table tr, .trainrunninglocus-banbenB table tr
+{
+    height: 30px;
+}
+
+.locusShowData .trainrunninglocus-banbenB
+{
+    position: absolute;
+    top: 1px;
+    left: 155px;
+    padding-left: 5px;
+    width: 140px;
+    height: 270px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding-top: 30px;
+}
+.locusShowData .trainrunninglocus-color-blue
+{
+    color: #1D4BB2;
+}
+.locusShowData .trainrunninglocus-qualityAlarm-table tr
+{
+    height: 30px;
+}
+.locusShowData .trainrunninglocus--table-div
+{
+    width: 300px;
+    height: 260px;
+    padding-left: 120px;
+    padding-top: 80px;
+}
+.trainrunninglocus-height-30px td
+{
+    text-indent: 5px;
+}
+.trainrunninglocus-locomotive_details_tab td
+{
+    text-indent: 5px;
+}
+.trainrunninglocus-locomotive_details_tab td
+{
+    text-indent: 5px;
+}
+
+.trainrunninglocus-details_tab td
+{
+    text-indent: 5px;
+}
+.locusShowData .trainrunninglocus-noTextIn td
+{
+    text-indent: 0px;
+}
+.tlStarTime, .tlEndTime
+{
+    width: 75px;
+}
+.tlSure
+{
+    width: 40px;
+}
+.tlstartStation, .tlendStation
+{
+    width: 80px;
+    height: 20px;
+}
+.tlsureStation
+{
+    width: 40px;
+    cursor: pointer;
+}
+
+
+.tmoveDrawSpeed
+{
+    position: absolute;
+    top: 8px;
+    left: 78px;
+    width: 175px;
+    height: 7px;
+    background-color: White;
+    border-radius: 5px;
+}
+.tmoveDragLine
+{
+    height: 7px;
+    width: 0px;
+    background-color: #F9A805;
+    border-radius: 5px;
+}
+.tmoveDragLine
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.tmoveDrawImgDiv
+{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 0px;
+    margin-left: -10px;
+    cursor: pointer;
+    z-index: 99;
+}
+.xuanzheshijian
+{
+    position: absolute;
+    left: 0px;
+    width: 80px;
+    top: 5px;
+}
+.trainrunninglocus-closeImg-btn
+{
+    position: absolute; /* top: 20px; */
+    left: 290px;
+    cursor: pointer;
+}
+.isOnlineImg
+{
+    width: 17px;
+    height: 17px;
+}
+
+.locusShowDate
+{
+    position: absolute;
+    top: -20px;
+    left: -62px;
+    width: 124px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    display: none;
+}
+.locusShowDate .TimeTest
+{
+    width: 124px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}

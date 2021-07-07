@@ -1,0 +1,403 @@
+﻿.locospread-main
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.locospread-conditions
+{
+    position: absolute;
+    width: 100%;
+    height: 27%;
+}
+.locospread-conditionsTabtop
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*top: 10px;*/
+    left: 40px;
+}
+.locospread-lineSelect, .locospread-bureauSelect, .locospread-depotSelect
+{
+    width: 140px;
+}
+
+.locospread-conditionsTabbottom
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -2px;
+}
+.locospread-conditionsTabbottom tr td, .locospread-conditionsTabbottom tr th
+{
+    border-top: #EAEAEA solid 1px;
+    line-height: 24px;
+}
+.tabTd_bottom
+{
+    border-bottom: #EAEAEA solid 1px;
+}
+.app_locospread_commit_div
+{
+	position: relative;
+	width: 73px;
+	/* text-align: right; */
+	left: 35%;
+	/* top: 10px; */
+	display: inline-block;
+}
+.app_locospread_reset_div
+{
+	position: relative;
+	width: 73px;
+	/* top: -12px; */
+	right: 35%;
+	display: inline-block;
+	float: right;
+}
+.app_locospread_checkbox
+{
+    vertical-align: middle;
+}
+/*--------------------------------------*/
+.locospread-list
+{
+    position: absolute; /*background-color: rgb(231, 232, 237);*/
+    width: 100%;
+    height: 43%;
+    top: 27%;
+}
+.locospread-list-count-div
+{
+    position: absolute;
+    left: 30px;
+}
+.locospread-list-tab
+{
+    position: absolute;
+    width: 97%;
+    height: 90%; /*background-color: rgb(236, 234, 231);*/
+    top: 25px;
+    left: 12px;
+}
+
+/*--------------------------------------*/
+.locospread-countResult
+{
+    position: absolute;
+    height: 30%;
+    width: 100%; /*background-color: aliceblue;*/
+    top: 70%;
+}
+.locospread-countResult-title
+{
+    position: absolute; /*background-color: pink;*/
+    top: 20px;
+    left: 40px;
+    font-weight: bold;
+    font-size: 10pt;
+}
+.locospread-countResult-position
+{
+    position: absolute; /*background-color: pink;*/
+    top: 50px;
+    left: 70px;
+    width: 100px;
+    height: 150px;
+}
+.locospread-countResult-isonline
+{
+    position: absolute; /*background-color: pink;*/
+    top: 50px;
+    left: 210px;
+    width: 100px;
+    height: 150px;
+}
+.locospread-countResult-use
+{
+    position: absolute; /*background-color: pink;*/
+    top: 50px;
+    left: 350px;
+    width: 100px;
+    height: 150px;
+}
+.locospread-countResult-kind
+{
+    position: absolute; /*background-color: pink;*/
+    top: 50px;
+    left: 490px;
+    width: 100px;
+    height: 150px;
+}
+.locospread-countResult-updown
+{
+    position: absolute; /*background-color: pink;*/
+    top: 50px;
+    left: 630px;
+    width: 100px;
+    height: 150px;
+}
+/*=========================*/
+.countResult-position-title
+{
+    position: relative;
+    text-align: center;
+    height: 25px;
+}
+.countResult-position-inway-title, .countResult-position-instation-title, .countResult-position-inwarehouse-title
+{
+    position: relative;
+    left: 10px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.countResult-position-inway, .countResult-position-instation, .countResult-position-inwarehouse
+{
+    position: relative;
+    height: 20px;
+    vertical-align: middle;
+    text-align: initial;
+    border: 1px solid rgb(224, 223, 223);
+    cursor: pointer;
+}
+.countResult-position-inway
+{
+    top: 2px;
+}
+.countResult-position-instation
+{
+    top: 6px;
+}
+.countResult-position-inwarehouse
+{
+    top: 10px;
+}
+.countResult-position-inway-count, .countResult-position-instation-count, .countResult-position-inwarehouse-count
+{
+    position: relative; /* background-color: red; */
+    width: 50px;
+    height: 20px;
+    left: 40px;
+    top: -20px;
+    font-size: 13.8pt;
+    font-weight: bold;
+    text-align: center;
+}
+/*-------*/
+.countResult-isonline-title
+{
+    position: relative;
+    text-align: center;
+    height: 25px;
+}
+.countResult-isonline-online-title, .countResult-isonline-unonline-title
+{
+    position: relative;
+    left: 10px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.countResult-isonline-online, .countResult-isonline-unonline
+{
+    position: relative;
+    height: 20px;
+    vertical-align: middle;
+    text-align: initial;
+    border: 1px solid rgb(224, 223, 223);
+    cursor: pointer;
+}
+.countResult-isonline-online
+{
+    top: 2px;
+}
+.countResult-isonline-unonline
+{
+    top: 6px;
+}
+.countResult-isonline-online-count, .countResult-isonline-unonline-count
+{
+    position: relative; /* background-color: red; */
+    width: 50px;
+    height: 20px;
+    left: 40px;
+    top: -20px;
+    font-size: 13.8pt;
+    font-weight: bold;
+    text-align: center;
+}
+/*-------*/
+.countResult-use-title
+{
+    position: relative;
+    text-align: center;
+    height: 25px;
+}
+.countResult-use-passenger-title, .countResult-use-goods-title, .countResult-use-motor-title, .countResult-use-high-title
+{
+    position: relative;
+    left: 10px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+.countResult-use-passenger, .countResult-use-goods, .countResult-use-motor, .countResult-use-high
+{
+    position: relative;
+    height: 20px;
+    vertical-align: middle;
+    text-align: initial;
+    border: 1px solid rgb(224, 223, 223);
+    cursor: pointer;
+}
+.countResult-use-passenger
+{
+    top: 2px;
+}
+.countResult-use-goods
+{
+    top: 6px;
+}
+.countResult-use-motor
+{
+    top: 10px;
+}
+.countResult-use-high
+{
+    top: 14px;
+}
+.countResult-use-passenger-count, .countResult-use-goods-count, .countResult-use-motor-count, .countResult-use-high-count
+{
+    position: relative; /* background-color: red; */
+    width: 50px;
+    height: 20px;
+    left: 40px;
+    top: -20px;
+    font-size: 13.8pt;
+    font-weight: bold;
+    text-align: center;
+}
+/*-------*/
+.countResult-kind-title
+{
+    position: relative;
+    text-align: center;
+    height: 25px;
+}
+.countResult-kind-IC-title, .countResult-kind-electric-title
+{
+    position: relative;
+    left: 10px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.countResult-kind-IC, .countResult-kind-electric
+{
+    position: relative;
+    height: 20px;
+    vertical-align: middle;
+    text-align: initial;
+    border: 1px solid rgb(224, 223, 223);
+    cursor: pointer;
+}
+.countResult-kind-IC
+{
+    top: 2px;
+}
+.countResult-kind-electric
+{
+    top: 6px;
+}
+
+.countResult-kind-IC-count, .countResult-kind-electric-count
+{
+    position: relative; /* background-color: red; */
+    width: 50px;
+    height: 20px;
+    left: 40px;
+    top: -20px;
+    font-size: 13.8pt;
+    font-weight: bold;
+    text-align: center;
+}
+/*-------*/
+.countResult-updown-title
+{
+    position: relative;
+    text-align: center;
+    height: 25px;
+}
+.countResult-updown-up-title, .countResult-updown-down-title
+{
+    position: relative;
+    left: 10px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.countResult-updown-up, .countResult-updown-down
+{
+    position: relative;
+    height: 20px;
+    vertical-align: middle;
+    text-align: initial;
+    border: 1px solid rgb(224, 223, 223);
+    cursor: pointer;
+}
+.countResult-updown-up
+{
+    top: 2px;
+}
+.countResult-updown-down
+{
+    top: 6px;
+}
+.countResult-updown-up-count, .countResult-updown-down-count
+{
+    position: relative; /* background-color: red; */
+    width: 50px;
+    height: 20px;
+    left: 40px;
+    top: -20px;
+    font-size: 13.8pt;
+    font-weight: bold;
+    text-align: center;
+}
+.countResult-position-inway-count, .countResult-isonline-online-count, .countResult-use-passenger-count, .countResult-kind-IC-count, .countResult-updown-up-count
+{
+    color: rgb(150, 215, 54);
+}
+.countResult-position-instation-count, .countResult-isonline-unonline-count, .countResult-use-goods-count, .countResult-kind-electric-count, .countResult-updown-down-count
+{
+    color: rgb(71, 208, 219);
+}
+.countResult-position-inwarehouse-count, .countResult-use-motor-count
+{
+    color: rgb(237, 167, 39);
+}
+.countResult-use-high-count
+{
+    color: #F74829;
+}
+.font-class
+{
+    font-size: 11pt;
+}
+.hiddenDiv
+{
+    display: none;
+}
+.hiddenSubDiv
+{
+    display: none;
+}

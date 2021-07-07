@@ -1,0 +1,121 @@
+html,body{
+    background: #e1e6e9;
+}
+
+.dropwnd {
+	position: absolute;
+	top:200px;
+	left:200px;
+	width: 300px;
+	height: 300px;
+}
+
+.dropwnd-container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.dropwnd .dropwnd-main {
+	position: absolute;
+	background: #ffffff;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+	border-radius: 5px;
+}
+.dropwnd .dropwnd-del-btn {
+	position: absolute;
+    top: -11px;
+    right: -10px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background: url("../img/app/dropwnd_delete.png");
+}
+.dropwnd .dropwnd-dir {
+	position: absolute;
+    bottom: -25px;
+    right: 100px;
+    height: 32px;
+    width: 36px;
+    cursor: pointer;
+    background: url("../img/app/dropwnd_dir.png");
+}
+.dropwnd .box_shadow{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+}
+
+/* 阴影 */
+.box_shadow_top{
+	position: absolute;
+	top: -7px;
+	height:7px;
+	width: 100%;
+	background: url("../img/app/shadow_top.png");
+}
+
+.box_shadow_bottom{
+	position: absolute;
+	bottom: -7px;
+	width: 100%;
+	height:7px;
+	background: url("../img/app/shadow_down.png");
+}
+
+.box_shadow_left{
+	position: absolute;
+	left: -7px;
+	height: 100%;
+	width:7px;
+	background: url("../img/app/shadow_left.png");
+}
+
+.box_shadow_right{
+	position: absolute;
+	right:-7px;
+	height: 100%;
+	width:7px;
+	background: url("../img/app/shadow_right.png");
+}
+
+.box_shadow_top_left{
+	position: absolute;
+    left:-7px;
+    top:-7px;
+    height: 7px;
+    width:7px;
+    background: url("../img/app/shadow_top_left.png");
+}
+
+.box_shadow_top_right{
+	position: absolute;
+    right:-7px;
+    top:-7px;
+    height: 7px;
+    width:7px;
+    background: url("../img/app/shadow_top_right.png");
+}
+
+.box_shadow_bottom_right{
+	position: absolute;
+    right:-7px;
+    bottom:-7px;
+    height: 7px;
+    width:7px;
+    background: url("../img/app/shadow_down_right.png");
+}
+
+.box_shadow_bottom_left{
+	position: absolute;
+    left:-7px;
+    bottom:-7px;
+    height: 7px;
+    width:7px;
+    background: url("../img/app/shadow_down_left.png");
+}

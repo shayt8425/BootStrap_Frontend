@@ -1,0 +1,157 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>工业传动高保真</title>
+	
+	<!-- jQuery -->
+    <script src="resource/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="resource/plug/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+	
+	<!-- bootstrap-3.3.7 -->
+	<link rel="stylesheet" href="resource/plug/bootstrap-3.3.7/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="resource/plug/bootstrap-3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="resource/plug/bootstrap-table/bootstrap-table.css" />
+    
+    <script type="text/javascript" src="resource/plug/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="resource/plug/bootstrap-table/bootstrap-table.js"></script>
+    <script type="text/javascript" src="resource/plug/bootstrap-table/bootstrap-table-zh-CN.js"></script>
+    
+    <!-- zTree -->
+    <link rel="stylesheet" href="resource/plug/zTree_v3/css/zTreeStyle/zTreeStyle.css"/>
+    <script type="text/javascript" src="resource/plug/zTree_v3/js/jquery.ztree.all.min.js"></script>
+    
+    <!-- echars -->
+    <script type="text/javascript" src="resource/plug/echarts-3.7.2/echarts.min.js"></script>
+    
+    <!-- 图标字体 -->
+    <link rel="stylesheet" href="resource/plug/lmd-iconfont/demo.css"/>
+    <link rel="stylesheet" href="resource/plug/lmd-iconfont/iconfont.css"/>
+    <link rel="stylesheet" href="resource/css/icon_demo/demo.css"/>
+	<link rel="stylesheet" href="resource/css/icon_demo/iconfont.css"/>
+    
+    <!-- 系统框架 -->
+    <link rel="stylesheet" href="resource/plug/toastr/toastr.min.css" />
+    <link href="resource/css/frontcommon.css" rel="stylesheet">
+    <link rel="stylesheet" href="resource/css/zzlkj.css" />
+    
+    <script src="resource/js/FrontCommon.js"></script>
+    <script type="text/javascript" src="resource/plug/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="resource/js/FrontCommon-BootStrapDialog.js"></script>
+    <script type="text/javascript" src="resource/js/FrontCommon-BootStrapTable.js"></script>
+    <script type="text/javascript" src="resource/js/FrontCommon-BootStrapMessage.js"></script>
+    <script type="text/javascript" src="resource/js/FrontCommon-BootStrapFormItem.js"></script>
+    <script type="text/javascript" src="resource/js/FrontCommon-BootStrapTab.js"></script>
+    <script type="text/javascript" src="resource/js/FrontCommon-Parser.js"></script>
+    
+    <script type="text/javascript" src="resource/js/js_CG/index.js"></script>
+    
+    <!-- 其他 -->
+    <link rel="stylesheet" href="resource/plug/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="resource/plug/My97DatePicker/WdatePicker.js"></script>
+    
+    <!-- 自定义 -->
+    <link href="resource/css/appendStyle.css" rel="stylesheet" />
+	<link href="resource/css/index.css" rel="stylesheet" />
+	<link rel="stylesheet" href="resource/css/css_CG/menu.css"> 
+    
+    <style type="text/css">
+    .tab-content > .tab-pane{padding:0px 0px 1px 0px;}
+        .nav-tabs>li{border-right:1px solid #ccc;margin: 0px;height: 30px}
+        .nav-tabs > li.active{}
+        .nav{min-height: 30px; font-size: 8px; background: #777777;color: #fff;line-height: 30px}
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+            color: #fff;
+            background: #0086f7;
+            border: 0px;
+            text-align: center;
+        }
+        .nav > li > a{padding-bottom: 9px;background: #777777;border: 0px;color: #fff; width: 105px;
+            height: 30px;text-align: center;margin: 0px;border-radius: 0px;font-size: 12px}
+        .nav > li > a:hover{border: 0px;background: #0086f7;color:#fff;}
+        .nav > li:hover{}
+		html, body {
+			min-width: 1024px;
+			height: 100%;
+		}
+		 html,body{overflow: auto;height:100%;}
+		.tab_00107{
+			width: 345px;
+    		left:  310px;
+    		min-height: 55px;
+		}
+		a>span{
+			display: block;
+			font-size: 11px !important;
+		}
+		.tab>a{
+			float: left;
+			text-decoration: none;
+			padding:20px 10px 10px 10px;
+			color: white;
+		}
+		.tab>a>i{
+			font-size: 30px;line-height: 30px;color:white; 
+		}
+		.tab>a:hover{
+    		transform: scale(0.9);
+		}		
+    	.menuDiv>a{
+    		text-decoration: none;
+    	}
+    </style>
+</head>
+<body style="height:100%;overflow-y: hidden">
+	<!--头部-->
+	<header style="background: url('resource/images/top/bg.png');height: 57px;">
+		<!--导航栏-->
+		<nav style="">
+			<ul id="navIcon" class="navicon">
+			</ul>
+		</nav>
+	
+		<!--管理员按钮-->
+		<admin> 
+			<div class="icon_lists" style="position: absolute;left:25%;">
+				<div class="menuDiv menu_hover" url="" style="padding-top: 0x;padding-right:10px;float: left;">
+					<a href="javascript:void(0)" ><i class="icon iconfont icon-shouji" style="color: white;font-size: 28px;"></i></a>
+				</div>
+				<div class="menuDiv menu_hover" url="" style="padding-top: 0px;">
+					<a href="javascript:void(0)" onclick="logout()"><i title="注销登录" class="icon iconfont icon-guanbi" style="color: white;font-size: 28px;"></i></a>
+				</div>
+			</div>
+		</admin>
+	</header>	
+	<div id="content_main" style="height:calc(100% - 57px)">
+		<iframe id="iframe0" name="iframe0" width="100%" height="100%" src=""
+			frameborder="0" data-id="inner.html" seamless></iframe>
+	</div>
+	<!-- 应用js-->
+</body>
+<script type="text/javascript"> 
+$(function(){
+	//FrontCommon.showProgress();
+	nowMenu();
+})
+//当前菜单高亮
+function nowMenu(){
+	$(".navico").eq(0).click();
+}
+function logout(){
+	$.ajax({
+		url:'logout.json',
+		data:{},
+		dataType:'json',
+		type:'post',
+		success:function(data){
+			if(data["code"]["code"]==0){
+				top.location.href = FrontCommon.contextPath+"/login/login.html";
+			}else{
+				top.FrontCommon.error("退出失败！");
+			}
+		}
+	})
+}
+</script>
+</html>

@@ -1,0 +1,182 @@
+.electronrail-MainDiv{
+	background-color: #e9eef0;
+	width: 100%;
+	height: 100%;
+}
+.app_electronrail_tab_div{
+	width: 346px;
+	height: 37px;
+	border-bottom: 1px #ccc solid;
+	margin-left: 6px;
+}
+.electronrail-tab-div1-new {
+	left: 0px;
+	position: absolute;
+	top: 5px;
+	width: 346px;
+	height: 30px;
+	/* background: #fff; */
+}
+
+.electronrail-tab-start {
+	position: relative;
+	width: 10px;
+	height: 30px;
+	left: 0px;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	top: 1px;
+	display: inline-block;
+}
+
+.electronrail-tab-start-head {
+	left: 10px;
+	position: absolute;
+	width: 60px;
+	height: 31.5px;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	display: inline-block;
+	border-bottom: 0px;
+}
+
+.electronrail-tab-middle {
+	left: 70px;
+	position: absolute;
+	width: 70px;
+	height: 31.5px;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	display: inline-block;
+	border-bottom: 0px;
+}
+.electronrail-tab-end-div {
+	left: 70px;/*left: 140px;*/
+	position: absolute;
+	width: 70px;
+	height: 31.5px;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	display: inline-block;
+	border-bottom: 0px;
+}
+/**************************************/
+.electronrail-bodyDiv{
+	width: 345px;
+	height: 350px;
+	top: 50px;
+	margin-left: 6px;
+	border: 1px #ccc solid;
+	border-top: 0px;
+	margin-right: 6px;
+	background-color: #fff;
+	
+}
+.conditions-item{
+	width: 100%;
+	height: 35px;
+	position: relative;
+	text-align: center;
+}
+.conditions-item-name{
+/* 	width: 40px; */
+	height: 35px;
+	line-height: 35px;
+	text-align: right;
+	display: inline-block;
+	position: relative;
+	font-weight: bold;
+	float: left;
+	margin-left: 10px;
+	
+}
+.conditions-item-input{
+	/* width: 70%; */
+	height: 35px;
+	line-height: 35px;
+	text-align: left;
+	display: inline-block;
+	position: relative;
+	float: left;
+}
+/**********************************/
+.sub1-conditions-height{
+	margin-top:10px;
+	height:30px;
+	line-height: 30px;
+}
+.electronrail-bodyDiv-sub1{
+	width:100%;
+	height:100%;
+}
+.electronrail-sub1-button1{
+	right:10px;
+	position: absolute;
+	top: 5px;
+}
+.electronrail-bodyDiv-sub1-conditions{
+	/* height: 80px; */
+	width: 345px;
+	position: absolute;
+	border-bottom: 1px #ccc solid;
+}
+.electronrail-bodyDiv-sub1-body{
+	width: 100%;
+	height: 275px;
+	position: relative;
+	top: 50px;
+}
+.electronrail-bodyDiv-sub1-body-grid{
+	width: 100%;
+	height: 245px;
+}
+.electronrail-sub1-button2{
+	right: 90px;
+	position: absolute;
+	top: 6px;
+}
+.electronrail-sub1-button3{
+	right:10px;
+	position: absolute;
+	top: 6px;
+}
+.electronrail-bodyDiv-sub1-btnDiv{
+	height: 30px;
+	position: relative;
+	top: 260px;
+}
+/**************************************/
+.electronrail-bodyDiv-sub2{
+	width:100%;
+	height:100%;	
+}
+.electronrail-sub2-button1{
+	right: 40%;
+	position: absolute;
+	top: 12px;
+}
+/**************************************/
+
+.electronrail-bodyDiv-sub2-conditions{
+	width: 345px;
+	height: 163px;
+	position: absolute;
+	border-bottom: 1px #ccc solid;
+}
+
+.electronrail-bodyDiv-sub2-body{
+	width: 100%;
+	height: 290px;
+	position: relative;
+	top: 150px;
+}

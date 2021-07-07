@@ -1,0 +1,47 @@
+﻿.line
+{
+    position: absolute;
+    z-index: 99999999999;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    background-color: green;
+    overflow: hidden;
+}
+
+
+
+.lineRed, .lineGreen, .lineYellow, .lineBlue, .lineOrange
+{
+    position: absolute;
+    z-index: 99999999999;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    overflow: hidden;
+}
+.lineRed
+{
+    background-color: red;
+}
+.lineGreen
+{
+    background-color: green;
+}
+.lineYellow
+{
+    background-color: Yellow;
+}
+
+.lineBlue
+{
+    background-color:Blue;
+}
+.lineOrange
+{
+    background-color: Orange;
+}
+.lineGreen1
+{
+    background-color: green;
+}

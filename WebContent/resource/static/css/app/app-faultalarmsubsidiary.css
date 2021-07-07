@@ -1,0 +1,135 @@
+.app_search_div
+{
+    margin-top: 1%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 0;
+    font-size: 12px;
+    color: #333333;
+    font-family: monospace;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 96%;
+    height: 95%;
+    overflow: hidden;
+    text-align: left;
+}
+div.list-content-table-div
+{
+    overflow-y: auto;
+    height: 190px;
+}
+.app_faultalarmsubsidiary_date
+{
+    width: 80px;
+}
+.list-content-table-div
+{
+    margin: 3px 10px 0px 10px;
+    height: 35%;
+}
+.app_faultalarmsubsidiary_body_div
+{
+    height: 98%;
+    position: relative;
+}
+
+.app_faultalarmsubsidiary_header_tab
+{
+    width: 98%;
+    margin: 3px 10px 0px 10px;
+}
+.app-list-div-btn0
+{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.app_faultalarmsubsidiary_header_tab th
+{
+    margin: 0px 0px 0px 1%;
+    text-align: right;
+    font-size: 12px;
+    color: #333333;
+    font-family: monospace;
+    font-weight: normal;
+}
+
+.app_faultalarmsubsidiary_header_item
+{
+    width: 130px;
+}
+.tab_date_p
+{
+    text-align: left;
+}
+.app-list-div-btn0
+{
+    position: relative;
+    width: 97%;
+}
+.app_search_button
+{
+    cursor: pointer;
+    width: 71px;
+    height: 22px;
+    color: white;
+    margin-left: 5px;
+    border-style: initial;
+    background-image: url('../../img/app/button_top.png');
+    border: 0px;
+}
+
+.app_search_button:hover
+{
+    cursor: pointer;
+    background-image: url('../../img/app/button_down.png');
+}
+
+.app_search_button1
+{
+    cursor: pointer;
+    width: 110px;
+    height: 22px;
+    color: white;
+    margin-left: 5px;
+    border-style: initial;
+    background-image: url('../../img/app/button_top1.png');
+}
+
+.app_search_button1:hover
+{
+    cursor: pointer;
+    background-image: url('../../img/app/button_down1.png');
+}
+
+.app_search_table_btn
+{
+    float: right;
+}
+.app_search_faultalarmsubsidiary_export
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.page
+{
+    top: 0px;
+    left: 0px;
+    margin-top: 0px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+select
+{
+    width: 100px;
+}
+#electronrail-detail-editDiv-timeType{
+	width:117px;
+	height:21px
+}

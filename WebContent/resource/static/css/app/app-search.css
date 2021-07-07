@@ -1,0 +1,191 @@
+.rt_div
+{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    overflow: hidden;
+    text-align: left;
+}
+
+select
+{
+    font-size: 12px;
+    color: #333333;
+    font-family: monospace;
+    width: 132px;
+}
+.app_rt_table
+{
+    margin: auto;
+    height: 180px;
+    text-align: center;
+}
+.app_rt_table th
+{
+    text-align: right;
+    font-weight: normal;
+}
+.app_rt_button
+{
+    display: block;
+    text-align: center;
+    line-height: 22px;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 71px;
+    height: 22px;
+    color: white;
+    border-style: initial;
+    border: 0px;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -moz-border-image: url(./btn.png) 0;
+    background-repeat: no-repeat\9;
+    background-image: none\9;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/app/button_top.png', sizingMethod='scale')\9;
+    background-image: url('../../img/app/button_top.png');
+}
+.app_rt_buttontd
+{
+    text-align: center;
+    height: 25px;
+}
+
+.app_rt_button:hover
+{
+    cursor: pointer;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -moz-border-image: url(./btn.png) 0;
+    background-repeat: no-repeat\9;
+    background-image: none\9;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/app/button_down.png', sizingMethod='scale')\9;
+    background-image: url('../../img/app/button_down.png');
+}
+
+.dashed
+{
+    border-bottom: 1px dashed rgb(151,151,151);
+}
+
+.hidden
+{
+    display: none;
+}
+.rt_tab_div
+{
+    position: relative;
+    margin: 1%;
+    height: 300px;
+    width: 98%;
+}
+.rt_result_tab
+{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #E8E8E8;
+    table-layout: fixed;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.mytab_body
+{
+    border-top: 0;
+}
+.rt_button_div
+{
+    text-align: right;
+    margin: 1% 5% 1% 1%;
+    position: relative;
+}
+.rt_result_tab thead
+{
+    background-color: rgb(226,254,254);
+    border: 1px solid #E8E8E8;
+    width: 99%;
+}
+.rt_result_tab thead tr
+{
+    width: 100%;
+}
+
+.rt_result_tab tbody tr
+{
+    border-bottom: 1px solid #BBBBBB;
+    height: 30px;
+    background: #fff;
+}
+.rtgreen
+{
+    background-color: rgb(226,254,254);
+}
+.rt_result_tab tbody tr:hover
+{
+    cursor: pointer;
+    background-color: rgb(255, 204, 51);
+}
+
+.div_loading
+{
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.tab_loading
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -22px;
+}
+.tab_loading img
+{
+}
+.my_tab
+{
+}
+.myTable_head
+{
+    margin: 1% 0.5% 0% 0.5%;
+}
+.myTable_body
+{
+    width: 99%;
+    margin: 0% 0.5% 1% 0.5%;
+    overflow-y: auto;
+    height: 260px;
+}
+.app_rt_button_01
+{
+    text-align: center;
+    line-height: 22px;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 71px;
+    height: 22px;
+    color: white;
+    border-style: initial;
+    border: 0px;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -moz-border-image: url(./btn.png) 0;
+    background-repeat: no-repeat\9;
+    background-image: none\9;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/app/button_top.png', sizingMethod='scale')\9;
+    background-image: url('../../img/app/button_top.png');
+}

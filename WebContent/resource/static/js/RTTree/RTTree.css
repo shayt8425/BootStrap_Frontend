@@ -1,0 +1,76 @@
+.RTTree
+{
+    font-size: 12px;
+    color: #7d7d7d;
+    font-family: monospace;
+    background-color: White;
+    border: 1px solid #E8E8E8;
+    cursor:pointer;     //by glj
+}
+.RTTree_head
+{
+	background: url('../RTGrid/img/list_title_bg.png');
+	height: 30px;
+	border: 1px solid rgb(182, 182, 182);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.RTTree_head_table
+{
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.RTTree_body
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+}
+.RTTree_Item_parent
+{
+}
+.RTTree_ConImg
+{
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+.RTTree_parentName
+{
+    vertical-align: middle;
+}
+.RTTree_Item_childrens
+{
+    height: 16px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+.RTTree_Item_table
+{
+    width: 100%;
+    text-align: right;
+    border-collapse: collapse;
+}
+.RTTree_Item_table tr
+{
+    height: 22px;
+}
+.RTTree_None
+{
+    display: none;
+}
+.RTTree_moveTr
+{
+    background-color: #e3e3e3;
+}
+.RTTree_clickTr
+{
+    background-color: rgb(255, 204, 51);
+}
+.rtTree_radio{
+
+     vertical-align: top;
+}

@@ -1,0 +1,309 @@
+@CHARSET "UTF-8";
+
+html,body,td,div,span,p{
+	font-family: "microsoft yahei";
+	font-size: 14px;
+}
+a:focus{border:0px;}
+textarea{
+	resize:none;
+}
+
+.common_form{
+	width: 100%;
+	margin:0px;
+}
+
+.common_form table{
+	
+}
+
+.common_form table>tbody>tr{
+	height: 40px;
+}
+
+.common_form table>tbody>tr>td.fc_label{
+	padding-left: 15px;
+	text-align:right;
+	white-space: nowrap;
+	font-size:14px;
+}
+
+.common_form table>tbody>tr>td{
+	position: relative;
+	white-space: nowrap;
+}
+
+/**
+ * 以下代码自定义bootstrap样式
+ */
+/*列表样式自定义*/
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{background-color: #ddd;padding:10px;border-color:#ccc;color:#000}
+.panel-body > .list-group-item{border:0px;border-radius:0px;border-bottom:1px solid #ccc;margin-bottom:0px;}
+.list-group-item-heading{font-size:14px;margin-bottom:0px;}
+.frontCommonListDiv > a.selected{background-color: rgb(219,238,248)!important}
+ /*tab样式自定义*/
+.tab-content{
+	border:1px solid #ccc;
+	border-top:0px;
+	border-radius:0px 0px 5px 5px;
+}
+
+.tab-content > .tab-pane{
+	padding:5px;
+}
+.nav>li>a{padding:7px 15px;background-color: rgb(221,221,221);border-color: rgb(221,221,221);color:#000;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+   background: url("../images/tab_active.png") repeat-x transparent;
+   color:#000;
+   border-color: #ccc;
+   border-bottom-color: #fff;
+}/*tab样式结束*/
+.tab_back_none > li.active > a, .tab_back_none > li.active > a:focus, .tab_back_none > li.active > a:hover{background: none;}
+/*面板样式自定义*/
+.panel-default{
+	border: 0px solid #444c60;
+	box-shadow: 0px 3px 7px #ddd;
+}
+.panel-default > span.hiddenTitle{
+	color: #fff;
+	cursor: pointer;
+}
+.panel-default > span.hiddenTitle:hover{
+	color: #ccc;
+}
+.panel-body{
+	border: 1px solid #ccc;
+	border-top: 0px;
+	border-radius: 0px 0px 4px 4px;
+	
+}
+.panelEmpty{
+	border: 1px solid #444c60;
+	background-color: #444c60;
+	padding-left: 5px;
+	padding-top:2px;
+}
+.panel-default > .panel-heading {
+    background-image: linear-gradient(#444c60 0px, #444c60 100%);
+    background-repeat: repeat-x;
+    border: 1px solid #444c60;
+    color:#FFF;
+    border-radius:4px 4px 0px 0px;
+    padding:7px 15px;
+}
+
+.panel-default > .panel-heading2{
+	background-image: linear-gradient(#ddd 0px, #ddd 100%);
+    background-repeat: repeat-x;
+    border: 1px solid #ddd;
+    color:#000;
+    border-radius:4px 4px 0px 0px;
+    padding:7px 15px;
+}
+/*面板样式自定义结束*/
+
+/*表单样式自定义*/
+.btn{
+	font-size:14px;
+	padding:4px 10px;
+	border-radius: 2px;
+}
+.btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.3;
+    border-radius: 3px;
+}
+.advance_search_div{
+	display: none;
+	padding:5px 20px 5px 0px;
+	top:32px;
+	position:absolute;
+	border:1px solid #ccc;
+	width:auto;
+	border-radius:4px;
+	left:0px;
+	background-color: #fff;
+	z-index:100000;
+	box-shadow: 0px 3px 7px #ddd;
+}
+.advance_search_div table{margin-left:-5px}
+.advance_search_div table>tbody>tr>td{position:relative;}
+.form-control {
+  background-color: #fff ;
+  padding: 0px 5px;
+  padding-left:10px;
+  height: 30px;
+}
+textarea.form-control{
+	padding-top:3px;
+}
+.ztree *{
+	font-size:12px;
+}
+.ztree li span.button.device_ico_close,.ztree li span.button.device_ico_open,.ztree li span.button.device_ico_docu{background-position: 0px -82px}
+.ztree li span.button.accessory_ico_close,.ztree li span.button.accessory_ico_open,.ztree li span.button.accessory_ico_docu{background-position: -17px -82px}
+.ztree li span.button.otherdevice_ico_close,.ztree li span.button.otherdevice_ico_open,.ztree li span.button.otherdevice_ico_docu{background-position: -32px -82px}
+.ztree li span.button.toplevel_ico_close,.ztree li span.button.toplevel_ico_open,.ztree li span.button.toplevel_ico_docu{background-position: -48px -82px}
+.input-group-btn button{
+	height:30px;
+}
+.tree-menu{
+  position: absolute;
+  top: 100%;
+  left: auto;
+  z-index: 1000;
+  display: none; 
+  float: left;
+  min-width: 160px;
+  padding: 5px 5px;
+  margin: 2px 0 0; 
+  list-style: none;
+  font-size: 14px;
+  text-align: left; 
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  box-shadow : 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+}
+.open>.tree-menu{
+	display: block;
+}
+.panel-default > .panel-heading{
+	position: relative;
+}
+.panel-default > .panel-heading > .headBtnGrp .btn{
+	padding:2px 10px;
+}
+.panel-default > .panel-heading > span.fa{cursor:pointer;}
+.panel-default > .panel-heading > span.fa:hover{color:#ccc}
+.panel-default > .panel-heading > .headBtnGrp > span.fa{cursor:pointer;margin-right:5px;}
+.panel-default > .panel-heading > .headBtnGrp > span.fa:hover{color:#ccc}
+.panel-default > .panel-heading > .headBtnGrp{
+	position: absolute;
+	top:5px;
+	right:10px;
+}
+/*表单样式自定义结束*/
+/*下面是弹窗样式自定义*/
+.modal-backdrop.in{opacity:0.5}
+.modal-header{background-color: #444c60;color:#fff;padding:10px 15px;border-bottom-color: #444c60;}
+.modal-footer{padding:10px 15px;}
+.modal-content{border-color: #444c60}
+.modal-header .modal-title{font-size:14px;}
+.close{color:#fff;opacity: 1;text-shadow: none;}
+.close:hover{color:orange;opacity: 1}
+.confirmDialog .modal-content{border-color: rgb(58, 117, 215);}
+.confirmDialog .modal-header{background-color: rgb(58, 117, 215);border-bottom-color: rgb(58, 117, 215);}
+/*下面是表格样式的自定义，重写*/
+.panel-body .fixed-table-container{border-radius:0px;border-left:0px;border-right:0px;border-bottom:0px;}
+.fixed-table-container{border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;}
+.container{padding:0px;margin:0px;width:auto}
+.fixed-table-container{border-color: #ccc}
+.fixed-table-container thead th .th-inner, .fixed-table-container tbody td .th-inner, .fixed-table-container .bs-checkbox .th-inner{
+	padding:4px 8px;
+}
+.fixed-table-container thead th{
+	font-weight: 400;
+    background: url(../images/bootstrap-table/default/bg.gif) repeat-x #f4f4f4;
+	padding:4px 8px;
+}
+.fixed-table-container thead th[rowspan='2']{
+    background: url(../images/bootstrap-table/default/bg.gif) center 10px repeat-x #f4f4f4;
+}
+.fixed-table-container thead th{border-left: 1px solid #ccc}
+.fixed-table-container tbody td{
+	border-left: 1px solid #ccc
+}
+.fixed-table-container tbody .selected td{background-color: rgb(219,238,248)!important}
+.fixed-table-container tbody>tr:hover{background-color: rgb(219,238,248)!important}
+.fixed-table-container .no-records-found{border-bottom: 1px solid #ccc}
+.fixed-table-container a{margin-right:10px;font-size:14px;}
+.fixed-table-container .btn-xs{margin-right:10px;}
+.fixed-table-container a:last-child{margin-right:0px;}
+.fixed-table-container a>.glyphicon {top:2px;display:none}
+.fixed-table-toolbar{width:100%;height:43px;background: #eee;border:0px;display:none;}
+.fixed-table-toolbar .bs-bars, .fixed-table-toolbar .search, .fixed-table-toolbar .columns{line-height:31px;margin:5px 10px;}
+.fixed-table-toolbar .columns{margin-top:7px;}
+.fixed-table-pagination > .pagination td{border:0px;}
+.fixed-table-pagination > .pagination tbody>tr:hover{background-color: transparent!important;}
+.fixed-table-pagination div.pagination, .fixed-table-pagination .pagination-detail{margin:2px 10px;}
+.fixed-table-pagination div.pagination{height:25px;}
+.fixed-table-pagination .pagination-info{line-height:25px;}
+.panel-body .fixed-table-pagination{border:0px;border-top:1px solid #ccc;width:100%;margin:0px;}
+.fixed-table-pagination{width:calc(100% + 2px);height:30px;background: #fff;margin-left:-1px;border:1px solid #ccc;border-radius:0px 0px 4px 4px}
+.bootstrap-table .table:not(.table-condensed), .bootstrap-table .table:not(.table-condensed) > tbody > tr > th, .bootstrap-table .table:not(.table-condensed) > tfoot > tr > th, .bootstrap-table .table:not(.table-condensed) > thead > tr > td, .bootstrap-table .table:not(.table-condensed) > tbody > tr > td, .bootstrap-table .table:not(.table-condensed) > tfoot > tr > td{padding:5px 8px;}
+.bootstrap-table .table>tbody>tr>td, .bootstrap-table .table>tbody>tr>th, .bootstrap-table .table>tfoot>tr>td, .bootstrap-table .table>tfoot>tr>th, .bootstrap-table .table>thead>tr>td, .bootstrap-table .table>thead>tr>th{
+	border-top: 1px solid #ccc;
+}
+.bootstrap-table .table > thead > tr > th{border-bottom: 1px solid #ccc}
+.bootstrap-table .table > thead > tr > th:last-child{border-right: 1px solid #ccc}
+.bootstrap-table .table > tbody > tr > td:last-child{border-right: 1px solid #ccc}
+.bootstrap-table .table > tbody > tr > td.no-right-b{border-right: none}
+.bootstrap-table .table > thead > tr > th.no-right-b{border-right: none}
+.bootstrap-table .table-striped>tbody>tr:nth-of-type(odd){background-color: rgb(246,246,246)}
+.fixed-table-container .no-records-found{border-bottom:0px;}
+.bsgridPaging{font-size:13px;font-family:'微软雅黑',Verdana,sans-serif,'宋体',serif;width:770px;border-collapse:collapse}
+.bsgridPaging.pagingLittleToolbar{width:auto;margin-top:1px;}
+.bsgridPaging.pagingLittleToolbar td{padding:0px 10px;}
+.bsgridPaging.noPageSizeSelect{width:650px}
+.bsgridPaging.pagingLittleToolbar.noPageSizeSelect{width:430px}
+.bsgridPaging td{text-align:center}
+.bsgridPaging select{font-size:inherit;width:auto;height:auto;padding:1px;margin:1px}
+.bsgridPaging .pagingBtn{cursor:pointer;border:solid 1px #ccc;background:url(../images/bootstrap-table/default/bg.gif) repeat-x #f4f4f4;font-size:inherit;font-family:inherit;color:inherit;padding:1px 3px;margin:1px}
+.bsgridPaging.pagingLittleToolbar 
+.pagingBtn{width:16px;border-width:0;background:transparent no-repeat;padding:0;margin:3px}
+.bsgridPaging .pagingBtn.disabledCls{color:#999;filter:alpha(opacity=50);opacity:.5;-moz-opacity:.5}
+.bsgridPaging.pagingLittleToolbar .pagingBtn.firstPage{background-image:url(../images/bootstrap-table/paging/go-first-view.png)}
+.bsgridPaging.pagingLittleToolbar .pagingBtn.prevPage{background-image:url(../images/bootstrap-table/paging/go-previous-view.png)}
+.bsgridPaging.pagingLittleToolbar .pagingBtn.nextPage{background-image:url(../images/bootstrap-table/paging/go-next-view.png)}
+.bsgridPaging.pagingLittleToolbar .pagingBtn.lastPage{background-image:url(../images/bootstrap-table/paging/go-last-view.png)}
+.bsgridPaging .gotoPageInputTd{width:44px}
+.bsgridPaging.pagingLittleToolbar .pt_curPage_container{margin-bottom:3px;}
+.bsgridPaging .gotoPageInput{width:40px;height:auto;font-size:inherit;line-height:1em;color:inherit;border:solid 1px #ccc;padding:1px;margin:1px;margin-top:-3px;}
+.bsgridPaging .gotoPageButtonTd{text-align:left;}
+.bsgridPaging > tbody > tr > td.gotoPageInputTd{padding-bottom:2px;}
+.bsgridPaging .refreshPageTd{text-align:right;padding-right:4px}
+.bsgridPaging.pagingLittleToolbar .pagingBtn.gotoPage{background-image:url(../images/bootstrap-table/paging/go-jump-2.png)}
+.bsgridPaging.pagingLittleToolbar .pagingBtn.refreshPage{background-image:url(../images/bootstrap-table/paging/view-refresh-3.png)}
+/*表格样式自定义结束*/
+.count{
+	position:absolute;
+	top: 5px;
+	right: 5px;
+	color: white;
+    border-radius: 20px;
+    width: 18px;
+    height: 18px;
+    background: #e74c3c;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+}
+/*菜单样式自定义*/
+.dropdown-menu .divider{margin:5px 0px;}
+.dropdown-menu>li>a{overflow:hidden;text-overflow: ellipsis;overflow:hidden;}
+/*菜单样式自定义结束*/
+/*end*/
+
+::-webkit-scrollbar {width: 6px;height:6px;}
+
+::-webkit-scrollbar-track-piece{background-color: #efefef;margin:2px;}
+
+::-webkit-scrollbar-thumb{background: #aaa;min-height: 40px;min-width: 150px;border-radius: 6px;}
+
+::-webkit-scrollbar-thumb:vertical:hover{background: #555555}
+
+::-webkit-scrollbar-thumb:horizontal:hover{background: #555555}
+
+.mt100{
+	margin-top: 100px;
+}
+
+body{
+  margin:0px;
+  overflow:hidden;
+}  

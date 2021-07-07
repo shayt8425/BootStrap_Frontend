@@ -1,0 +1,130 @@
+// Width variables (appears count calculates by raw css)
+@width200: 200px; // Appears 2 times @width200 
+@width210: 210px; // Appears 6 times @width210
+@width40: 40px; // Appears 2 times @width40
+@width_100percent: 100%; // Appears 3 times @width_100percent
+
+// Height variables (appears count calculates by raw css)
+@header_height:50px;
+@height40: 40px; // Appears 10 times @height40
+
+body {font-size: 14px;margin: 0;overflow-y:hidden;padding: 0;
+	&.framebody{padding: 15px 0px !important; .bg-snow;}
+	a { blr:~"expression(this.onFocus=this.blur())"; outline:none;} //blr:~"expression(this.onFocus=this.blur())"; 当按下鼠标时周边不显示虚线。
+	}
+
+#base-header {float:left;height: @header_height;margin-top:0px;min-width:1000px;width:@width_100percent; border-bottom-width: 3px; border-bottom-style: solid;
+	#base-logo {float:left;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size: 18px;font-weight: bold;line-height:@header_height;margin-left:5px;width: auto;  height: @header_height;
+		img[name="logo"]{height: @header_height - 10px; vertical-align: middle;}
+	}
+	#base-top{ float: right;
+		ul{ list-style: none;padding: 0px 20px 0px 0px;margin: 0px; 
+			li { border: none; height: @header_height - 5px; line-height: @header_height - 5px;text-align: center; margin-right: 0px; display: inline-block;
+				a {font-size: 14px; background: none; display: block; padding: 0px 10px;
+					img{ height: 36px;}
+					&:hover{ background: center bottom no-repeat; background-color: none;text-decoration: none;}
+				}
+			}
+		}
+	}
+	#base-toolbar {float: right;margin-right: 5px;width: auto; position: relative;
+		.dropdown-toggle{padding: 5px 10px;display: block;
+				&:hover{ text-decoration: none;}
+				&:focus{ text-decoration: none;}
+			}
+		.dropdown-menu{right: 0px;left: auto;min-width: 130px;
+			li{
+				i{width:24px; text-align: center;}
+			}
+		}
+		.base-toolbar-item {float: left;height:@height40;line-height:@height40;padding:0 10px;width: auto;
+			&:hover {cursor: pointer;}
+			}
+		}
+	}
+#base-left {float:left;margin: 0;
+#base_left_top {height: @height40;padding: 6px 0;width:204px;
+	.base-top-menu {height: 100%;margin-left: 10px;overflow: hidden;vertical-align:middle;width: 60px;
+		&:hover {cursor:pointer;}
+		}
+		}
+	}
+#base-right {min-width:800px;position:absolute;}
+
+.base-top-menu-current {}
+
+#base-left-ul {list-style: none;overflow-x: hidden;overflow-y: auto;padding-left:0;width: @width210;
+	li {font-size: 14px;height: auto;margin-left:0;overflow: hidden;width: @width210;
+			div {cursor: pointer;height: @height40;line-height: @height40;padding-left:10px;
+					&:hover {}
+				}
+		ul {display:none;height: auto;list-style: none;padding-left: 0;width: @width_100percent;
+			li {border:none;cursor: pointer;font-size: 14px;height: @height40;line-height:@height40;margin-left:0;overflow: hidden;padding-left:20px;width: @width210;
+				&:hover {}
+				}
+			}
+		}
+}
+#base-left-ul-cache {font-size: 14px;height: auto;list-style: none;margin-left:0;overflow-x: hidden;overflow-y: auto;overflow: hidden;padding-left:0;width: @width210;
+	div {cursor: pointer;height: @height40;line-height: @height40;padding-left:10px;
+		&:hover {}
+		}
+	ul {display:none;height: auto;list-style: none;padding-left: 0;width: @width200;
+		li {border:none;cursor: pointer;font-size: 14px;height: @height40;line-height:@height40;margin-left:0;overflow: hidden;padding-left:20px;width: @width210;
+			&:hover {}
+			}
+		}
+	}
+.base-second-menu-current {}
+.base-third-menu-current {}
+.colse-tab-btn {height: 10px;width: 10px;
+	&:hover {cursor: pointer;}
+	}
+
+#base-tabs-ul { padding-left: 10px;
+	a {padding: 5px 15px;
+		&:focus {outline: none;}
+	}
+}
+//loading
+.base-loading {height: @height40;line-height:@height40;min-width:50px;padding:0 5px;position: absolute;right: 0;top: 5px;width: auto;z-index:9999;}
+
+//按钮工具栏 
+.base-navbar {opacity:0.9;padding-left: 15px;z-index: 1;}
+
+//搜索表单栏
+.base-search {height: auto;margin-bottom: 10px;margin-top: 10px;width: @width_100percent;}
+
+//隐藏的搜索表单栏
+.base-search-hide {display:none;height: auto;width: @width_100percent;}
+
+//列表的toolbar
+.base-datatable-toolbar {float: left;width: auto;
+	button {margin-right:3px;}
+}
+
+// pin
+.base-pin {bottom: 15px;font-size: 20px;height: @height40;left: 15px;line-height: @height40;opacity:0.7;padding:0;position: absolute;width: @width40;
+	span {display:block;float: left;height: @height40;line-height: @height40;opacity:0.7;text-align: center;width: @width40;
+		&:hover {cursor: pointer;opacity:0.9;}
+		}
+	&:hover {cursor: pointer;opacity:0.9;}
+}
+
+//收缩菜单后，缓存三级菜单的div class
+.base-cache-third-menu {display: none;height: auto;position: absolute;width: auto;
+	ul {margin: 0;	padding: 0;}
+}
+
+//panel css
+.base-panel {margin-top: 10px;padding: 0;}
+
+//附件列表样式
+.attach_btn {display: block;float:right;margin-left: 20px;}
+.attach_img {cursor: pointer;height: 25px;width: 25px;}
+
+//校验表单样式 
+/*(jquery.validationEngine.js) 这里的样式留空，并没实际意义 只是为了校验表单做的div样式，方便js找到此div然后加上has-error样式*/
+.validate-group {}
+
+@import "skin1.less";

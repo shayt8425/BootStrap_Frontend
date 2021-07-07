@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<script type="text/javascript" src="../resource/js/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="../resource/plug/bootstrap-3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../resource/plug/zTree_v3/css/zTreeStyle/zTreeStyle.css" />
+<link rel="stylesheet" href="../resource/plug/toastr/toastr.min.css" />
+<link rel="stylesheet" href="../resource/css/frontcommon.css" />
+<script type="text/javascript" src="../resource/plug/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="../resource/plug/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../resource/plug/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="../resource/plug/zTree_v3/js/jquery.ztree.all.min.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapTree.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapDialog.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapMessage.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapFormItem.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapTooltip.js"></script>
+<script type="text/javascript" src="../resource/js/FrontCommon-Parser.js"></script>
+<title>测试页面</title>
+<style>
+.common_form table{
+	width:100%;
+}
+</style>
+</head>
+<body>
+<div style="margin:20px;" id="myFormDiv">
+	<form name="testForm" method="post" class="common_form" sourceData=":formData" sourceUrlDataProp=":['data']">
+		<table>
+			<tr>
+				<td class="fc_label">&nbsp;&nbsp;<font style="color:red">*</font>测试：</td>
+				<td>
+					<FormItem id="name1" name="name1" messagePattern="email格式错误" validateType="pattern" pattern="^[\w_-]{1,}@[\w]{1,}\.[\w]{1,4}$" type="text" required="true" change=":changePwd"></FormItem>
+				</td>
+				<td class="fc_label">&nbsp;&nbsp;<font style="color:red">*</font>测试2：</td>
+				<td>
+					<FormItem id="name2" name="name2" type="password"></FormItem>
+				</td>
+				<td class="fc_label">&nbsp;&nbsp;<font style="color:red">*</font>测试3：</td>
+				<td>
+					<FormItem id="name3" name="name3" type="select" readonly="true" datas=":[{value:'1',label:'街霸IV'}]"></FormItem>
+				</td>
+				<td class="fc_label">&nbsp;&nbsp;<font style="color:red">*</font>测试4：</td>
+				<td>
+					<FormItem id="name4" name="name4" type="date" readonly="true" dateFmt="yyyy-MM-dd HH:mm"></FormItem>
+				</td>
+			</tr>
+			<tr>
+				<td class="fc_label">&nbsp;&nbsp;<font style="color:red">*</font>测试5：</td>
+				<td>
+					<FormItem id="name5" name="name5" type="tree" jsonFormatOut="true" treeSetting=":name5TreeSetting"
+					 nodes=":name5Nodes"></FormItem>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+<script type="text/javascript">
+	function init(){
+		window.name5TreeSetting = {check:{enable:true}};
+		window.name5Nodes = [{id:'1',name:'我的电脑',children:[{id:'2',name:'本地磁盘C'},{id:'3',name:'本地磁盘D'}]}];
+		window.formData = {
+				"name1": "376661146@qq.com",
+				"name2": "shayt8425",
+				"name3": "1",
+				"name4": "2017-06-12 12:50",
+				"name5": "[{id:'1',children:[{id:'2',children:[]}]}]"
+			}
+		window.testForm = $(document.forms["testForm"]).formParser()[0];
+		window.testForm.initData();
+	}
+	
+	function save(){
+		if(testForm.valid()){
+			top.FrontCommon.confirm("您确定要保存数据吗？","保存确认",function(confirm){
+				if(confirm)FrontCommon.success("保存成功");
+			})
+		}
+	}
+	
+	function changePwd(oldValue,newValue){
+		window.testForm.getFormItemByName("name2").setValue(newValue);
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>故障详情</title>
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet"
+	href="resource/plug/bootstrap-3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="resource/plug/bootstrap-table/bootstrap-table.css" />
+<link rel="stylesheet"
+	href="resource/plug/zTree_v3/css/zTreeStyle/zTreeStyle.css" />
+<link rel="stylesheet" href="resource/plug/toastr/toastr.min.css" />
+<link rel="stylesheet" href="resource/css/frontcommon.css" />
+<script type="text/javascript"
+	src="resource/plug/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript"
+	src="resource/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript"
+	src="resource/plug/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="resource/plug/bootstrap-table/bootstrap-table.js"></script>
+<script type="text/javascript"
+	src="resource/plug/bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script type="text/javascript"
+	src="resource/plug/zTree_v3/js/jquery.ztree.all.min.js"></script>
+<script type="text/javascript"
+	src="resource/plug/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="resource/js/FrontCommon.js"></script>
+<script type="text/javascript"
+	src="resource/js/FrontCommon-BootStrapTree.js"></script>
+<script type="text/javascript"
+	src="resource/js/FrontCommon-BootStrapMessage.js"></script>
+<script type="text/javascript"
+	src="resource/js/FrontCommon-BootStrapFormItem.js"></script>
+<script type="text/javascript"
+	src="resource/js/FrontCommon-BootStrapTable.js"></script>
+<script type="text/javascript"
+	src="resource/js/FrontCommon-BootStrapDialog.js"></script>
+<script type="text/javascript"
+	src="resource/js/FrontCommon-BootStrapTooltip.js"></script>
+<script type="text/javascript"
+	src="resource/js/FrontCommon-BootStrapMenu.js"></script>
+<script type="text/javascript"
+	src="resource/js/FrontCommon-Parser.js"></script>
+<script src="resource/plug/echarts-3.7.2/echarts.min.js"
+	charset="utf-8" type="text/javascript"></script>
+<style type="text/css">
+.fixed-table-container table {
+	width: 100%;
+}
+.bootstrap-table .table {
+	table-layout: fixed;
+}
+ .xinxi {
+    padding-left: 10px;
+    border-top: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    height: 31%;
+    width: 50%;
+    font-size: 14px;
+    float: left;
+    overflow:hidden;
+    text-overflow:ellipsis; 
+    white-space:nowrap;
+    vertical-align:middle;
+        cursor: pointer;
+}
+ @media screen and (min-width: 1501px) { .xinxi {line-height:49px;}  
+         } /* css注释：设置了浏览器宽度不小于1501px时 abc 显示300px高度 */ 
+  
+ @media screen and (max-width: 1500px) { .xinxi {line-height:25px;}  
+        } /* 设置了浏览器宽度不大于1500px时 abc 显示200px高度 */ 
+.xinxi1{
+    width: 50%;
+    float: right;
+    border-top: 1px solid #eeeeee;
+        cursor: pointer;
+    height: 31%;
+    padding-left: 10px;
+    font-size: 14px;
+    overflow:hidden;
+    text-overflow:ellipsis; 
+    white-space:nowrap; 
+    }
+    @media screen and (min-width: 1501px) { .xinxi1 {line-height:49px;}  
+         } /* css注释：设置了浏览器宽度不小于1501px时 abc 显示300px高度 */ 
+  
+ @media screen and (max-width: 1500px) { .xinxi1 {line-height:25px;}  
+        } /* 设置了浏览器宽度不大于1500px时 abc 显示200px高度 */ 
+    .wenxi{font-size: 12px;color:#919598;}
+.xiangqing>tbody>tr:nth-of-type(odd) {
+    background-color: rgb(248,249,251);
+}
+  .clickOne{background-color: rgba(255,127,0,0.6)!important;}
+  
+  tr,tr>td{cursor: pointer;}
+.one{width: 98%;
+    color: #666666;
+    border: 1px solid #eee;
+    margin: 1% 1% 0 1%; }
+     @media screen and (min-width: 1501px) { .one {  height: 22%;}  
+         } /* css注释：设置了浏览器宽度不小于1501px时 abc 显示300px高度 */ 
+ @media screen and (max-width: 1500px) { .one {height: 23%;}  
+        } /* 设置了浏览器宽度不大于1500px时 abc 显示200px高度 */ 
+.title{}
+ @media screen and (min-width: 1501px) { .title { height:40px;line-height:40px;}  
+         } /* css注释：设置了浏览器宽度不小于1501px时 abc 显示300px高度 */ 
+ @media screen and (max-width: 1500px) { .title {}  
+        } /* 设置了浏览器宽度不大于1500px时 abc 显示200px高度 */ 
+.xiangqing{ 
+	height: 95%;
+    width: 100%;
+    }
+  
+</style>
+</head>
+<body>
+<div id="content" style="overflow: auto;">
+<div class="one">
+			  	<div  class="title" style="font-size:16px;margin: 10px;width: 100%;margin-bottom: 5px;margin-top: 5px;">
+			  		故障信息
+			    </div>
+<div id="outer" style="height:auto;float: left;width: 100%">
+			<div  style="width: 100%;float: left;height: 100%;">
+			<div class="xinxi">设备编号：<span class="wenxi" id="devicename"></span></div>
+			<div class="xinxi1">故障时间：<span class="wenxi" id="starttime"></span></div> 
+			<div class="xinxi" style="background: rgba(238,238,238,0.3);">故障等级：<span class="wenxi" id="dev"></span></div>
+			<div class="xinxi1" style="background: rgba(238,238,238,0.3);">结束时间：<span class="wenxi" id="endtime"></span></div> 
+			<div class="xinxi">故障名称：<span class="wenxi" id="faultname"></span></div>
+			<div class="xinxi1">推送记录：<span class="wenxi" id="jilu"></span></div> 
+				<!-- <table style="height: 98%;width: 100%;">
+				<tr><td class="xinxi">设备名称：<span id="devicename"></span></td><td class="xinxi">故障时间：<span id="starttime"></span></td></tr>
+                <tr><td class="xinxi">故障等级：<span id="dev"></span></td><td class="xinxi">结束时间：<span id="endtime"></span></td></tr>
+                <tr><td class="xinxi">故障名称：<span id="faultname"></span></td><td class="xinxi">推送记录：<span id="jilu"></span></td></tr></table> -->
+			</div>
+			</div></div>
+
+    <div style="border: 1px solid #eee;width: 98%; margin-top: 10px;margin-left: 1%;float:left;    border-bottom: 0;">
+			   	<div class="title" style="font-size:16px;margin: 10px;width: 100%;margin-top: 5px;    margin-bottom: 5px;    color: #666666;">
+			  		故障码详情
+			    </div>
+			</div>
+    <div id="outer1" style="float: left;width: 100%">
+			<div class="container"  id="tableContainer" style="width: 98%;float: left;margin-left:1%;">
+				<table id="testTable" detailView="false" onClickRow=":openDetail" sidePagination="client" pagination="false"   data=":[]" ></table>
+			</div>
+			</div>
+			
+			 <div style="float: left;width: 98%;margin-top: 10px;border: 1px solid #EEE;margin-left: 1%;    border-bottom: 0;">
+			  	<div  class="title" style="font-size:16px;margin: 10px;width: 100%;margin-bottom: 5px;margin-top: 5px;    color: #666666;">
+			  		故障解决方案
+			    </div>
+			</div>
+			 <div id="fangan" style="color: #999999;height:30%;float: left;width: 98%;padding-left: 20px;padding-top: 20px;border: 1px solid #EEE;margin-left:1%;">
+			</div>
+			
+			 <div style="float: left;width: 98%;margin-top: 10px;border: 1px solid #EEE;margin-left: 1%;    border-bottom: 0;">
+			  	<div class="title"  style="font-size:16px;margin: 10px;width: 100%;margin-bottom: 5px;margin-top: 5px;    color: #666666;">
+			  		故障码下载
+			    </div>
+			</div>
+			
+			    <div id="outer2" style="height:auto;float: left;width: 100%;margin-bottom: 10px;">
+			    <div class="container1" id="tableContainer1" style="width: 98%;float: left;margin-left:1%;">
+				<table id="testTable2" data=":[]"  sidePagination="client" pagination="false" detailView="false"  columns=":systemControlConfig.columns1"></table>
+			</div>
+			</div>
+</div>
+	<script type="text/javascript">
+	var type;
+function initModify(data){
+	    type=data.industryType;
+	    console.log(type);
+		$("#content").height(document.documentElement.clientHeight)
+		/* window.tableHeight = $('#tableContainer').height();
+		window.tableHeight1 = $('#tableContainer1').height(); */
+		window.myTable2 = $("#testTable2").tableParser()[0];//使用解析器解析，初始化表格
+		//设置表格行点击事件
+		var end_time='';
+		var t = new Date(data.startTime);//你已知的时间
+		var t_s=t.getTime();//转化为时间戳毫秒数
+		var nt=new Date();//定义一个新时间
+		    nt.setTime(t_s+5000*60);//设置新时间比旧时间多一分钟
+		    end_time=  getendtime(nt);
+		       document.getElementById('devicename').innerHTML=data.deviceNo;
+			   document.getElementById('devicename').setAttribute("title",data.deviceNo);
+			   document.getElementById('starttime').innerHTML=data.startTime;
+			   document.getElementById('starttime').setAttribute("title",data.startTime);
+			   document.getElementById('endtime').innerHTML=end_time;
+			   document.getElementById('endtime').setAttribute("title",end_time);
+			   document.getElementById('dev').innerHTML=data.faultLev+"级";
+			   document.getElementById('dev').setAttribute("title",data.faultLev+"级");
+			   document.getElementById('faultname').innerHTML=data.faultContent;
+			   document.getElementById('faultname').setAttribute("title",data.faultContent);
+			   document.getElementById('jilu').innerHTML=data.faultContent;
+			   document.getElementById('jilu').setAttribute("title",data.faultContent);
+		if(data.industryType==3){
+			console.log(data);
+			$('#testTable').attr("columns",":systemControlConfig.columns");
+			window.myTable1 = $("#testTable").tableParser()[0];//使用解析器解析，初始化表格
+		FrontCommon.request("frontpage/windpower/fault/faulthislist.json",{device_id:data.deviceNo,start_time:data.startTime,end_time:end_time,protocol_type:'34'},function(data){
+			var locos = data["result"];
+			var tableData = [];
+			for(var idx in locos){
+				if(locos[idx].fault_value){//有故障的数据
+					var flag = false;//是否故障码已出现过
+					for(var idx2 in tableData){
+						if(tableData[idx2].fault_value==locos[idx].fault_value){
+							flag = true;
+							break;
+						}
+					}
+					if(!flag)tableData.push(locos[idx]);
+				}
+			}
+			console.log(tableData);
+			$(myTable1.tableObj).bootstrapTable("load",tableData);
+		
+		});
+		}else if(data.industryType==2){
+			console.log(data);
+				$('#testTable').attr("columns",":systemControlConfig.columns1");
+				window.myTable1 = $("#testTable").tableParser()[0];//使用解析器解析，初始化表格
+				FrontCommon.request("airDevMonitor/faultHisList.json",{dev_type:'54',dev_num:data.deviceNo,start_time:data.startTime,end_time:end_time,protocol_type:'34'},function(data){
+					var locos = data["result"];
+					console.log(locos);
+					var tableData = [];
+					for(var idx in locos){
+						if(locos[idx].faultTypeBean){//有故障的数据
+							for(var idx2 in locos[idx].faultTypeBean){//这里faultTypeBean是一个数组
+								var flag = false;//是否故障码已出现过
+								for(var idx3 in tableData){
+									if(tableData[idx3].faultTypeBean.faultCode==locos[idx].faultTypeBean[idx2].faultCode){
+										flag = true;
+										break;
+									}
+								}
+								if(!flag)tableData.push(copyData(locos[idx], locos[idx].faultTypeBean[idx2]));
+							}
+						}
+					}
+					$(myTable1.tableObj).bootstrapTable("load",tableData);
+				});
+			}
+		else if(data.industryType==8){
+			console.log(data);
+			$('#testTable').attr("columns",":systemControlConfig.columns1");
+			window.myTable1 = $("#testTable").tableParser()[0];//使用解析器解析，初始化表格
+			FrontCommon.request("frontpage/overphase/fault/faultHisList.json",{dev_type:'98',dev_num:data.deviceNo,start_time:data.startTime,end_time:end_time,protocol_type:'34'},function(data){
+				var locos = data["result"];
+				console.log(locos);
+				var tableData = [];
+				for(var idx in locos){
+					if(locos[idx].faultTypeBean){//有故障的数据
+						for(var idx2 in locos[idx].faultTypeBean){//这里faultTypeBean是一个数组
+							var flag = false;//是否故障码已出现过
+							for(var idx3 in tableData){
+								if(tableData[idx3].faultTypeBean.faultCode==locos[idx].faultTypeBean[idx2].faultCode){
+									flag = true;
+									break;
+								}
+							}
+							if(!flag)tableData.push(copyData(locos[idx], locos[idx].faultTypeBean[idx2]));
+						}
+					}
+				}
+				$(myTable1.tableObj).bootstrapTable("load",tableData);
+			});
+		}
+		
+		
+		
+	    $(window).bind('resize',function () {
+	    	//自动调整几个动态变化的高度及宽度
+	    	window.tableHeight = $('#tableContainer').height();
+			//自动调整表格的高度
+	    	myTable1.setHeight(tableHeight);
+	    	myTable2.setHeight(tableHeight);
+	    });
+}
+
+
+function copyData(originalData,faultTypeBean){
+	 var data = {};
+	 for(var attr in originalData){
+		 if(attr!='faultTypeBean')data[attr] = originalData[attr];
+	 }
+	 data["faultTypeBean"] = faultTypeBean;
+	 return data;
+}
+	//点击查看解决方案
+	function openDetail(row, $element){
+		console.log(row);
+		 if(type==3){
+			FrontCommon.request("frontpage/windpower/fault/reasonlist.json",{industry_type:row.industry_type,fault_code:row.fault_value},function(data){
+			       if(data["result"][0]==null){
+			     $('#fangan').html("");}
+			       else{
+				 $('#fangan').html(data["result"][0].content)} 
+				});
+		 	
+			 $('tr').removeClass('clickOne');
+			  $element.addClass("clickOne");
+		}
+		 else if(type==2){
+			FrontCommon.request("airDevMonitor/reasonlist.json",{industry_type:row.faultTypeBean.industryType,fault_code:row.faultTypeBean.faultCode},function(data){
+			       if(data["result"][0]==null){
+			     $('#fangan').html("");}
+			       else{
+				 $('#fangan').html(data["result"][0].content)} 
+				});
+		 	
+			 $('tr').removeClass('clickOne');
+			  $element.addClass("clickOne");
+		}else if(type==8){
+			FrontCommon.request("frontpage/overphase/fault/reasonlist.json",{industry_type:row.faultTypeBean.industryType,fault_code:row.faultTypeBean.faultCode},function(data){
+			       if(data["result"][0]==null){
+			     $('#fangan').html("");}
+			       else{
+				 $('#fangan').html(data["result"][0].content)} 
+				});
+		 	
+			 $('tr').removeClass('clickOne');
+			  $element.addClass("clickOne");
+		}else{
+			$('tr').removeClass('clickOne');
+			  $element.addClass("clickOne");
+		}
+
+	}
+	/**
+ * 表格操作栏按钮配置
+ */
+var operatorObj = {
+/* 	stateOperator:function(value, row, index){
+		//return value=="1"?"已通过":"未通过"
+	}, */
+	operateFormatter:function(value, row, index) {
+		    return [
+		            '<a class="edit"  href="javascript:void(0)" title="下载">',
+		            '下载',
+		            '</a>'
+		        ].join('');
+		},operateEvents:{
+		    'click .edit': function (e, value, row, index) {
+		        e.stopPropagation();
+		        downDialog(row);
+		    }
+		}
+	
+}
+	/**
+ * 系统控件配置对象
+ */
+var systemControlConfig = {
+	//表格
+	columns:[{
+		field : '',
+		title : '序号',
+		align : 'center',
+		width: 50,
+		formatter : function(value, row, index) {
+			return  index + 1
+		}
+	}, {
+	    title: '故障时间',
+	    field: 'time',
+	    align: 'center',
+	}, 
+	 {
+	    field: 'fault_code',
+	    title: '故障码',
+	    align: 'center',
+	    width: '100'
+	},{
+	    title: '故障名称',
+	    field: 'fault_content',
+	    align: 'center',
+	},{
+	    field: 'fault_lev',
+	    title: '故障等级',
+	    align: 'center',
+	    formatter : function(value, row, index) {
+			if(value == '1'){
+				return '1级';
+			}else if(value == '2'){
+				return '2级';
+			}else if(value == '3'){
+				return '3级';
+			}
+			
+		}
+	},{
+	    field: 'faulttype',
+	    title: '故障类别',
+	    align: 'center',
+	}],
+	columns1:[{
+		field : '',
+		title : '序号',
+		align : 'center',
+		width: 50,
+		formatter : function(value, row, index) {
+			return  index + 1
+		}
+	}, {
+	    title: '故障时间',
+	    field: 'realTime',
+	    align: 'center',
+	}, 
+	 {
+	    field: 'faultTypeBean.faultCode',
+	    title: '故障码',
+	    align: 'center',
+	    width: '100'
+	},{
+	    title: '故障名称',
+	    field: 'faultTypeBean.faultContent',
+	    align: 'center',
+	},{
+	    field: 'faultTypeBean.faultLev',
+	    title: '故障等级',
+	    align: 'center',
+	    formatter : function(value, row, index) {
+			if(value == '1'){
+				return '1级';
+			}else if(value == '2'){
+				return '2级';
+			}else if(value == '3'){
+				return '3级';
+			}
+			
+		}
+	},{
+	    field: 'faultTypeBean.faulttype',
+	    title: '故障类别',
+	    align: 'center',
+	}],
+	columns2:[{
+		field : '',
+		title : '序号',
+		align : 'center',
+		width: 50,
+		formatter : function(value, row, index) {
+			return  index + 1
+		}
+	}, {
+	    field: 'filename',
+	    title: '文件名称',
+	    align: 'center'
+	}, {
+	    field: 'actual_time',
+	    title: '文件时间',
+	    align: 'center'
+	},
+	{
+		width: "150px",
+	    field: 'operate',
+	    title: '相关操作',
+	    align: 'center',
+	    events: operatorObj.operateEvents,
+	    formatter: operatorObj.operateFormatter
+	}]
+}
+	/**
+	 *按条件初始化表格
+	 */
+	function queryData(){
+		myTable.searchByParams();
+	}
+
+	/**
+	 *初始化条件查询数据
+	*/
+	function resetForm(){
+		queryData();
+	}
+
+	/**
+	 *获取表单数据，即表格初始化参数，查询条件
+	*/
+	function getTableParams(params){
+		return params; 
+	}
+	function getendtime(nt){
+		var end_time='';
+		var year=nt.getFullYear(); 
+		var m = nt.getMonth() + 1; 
+		var d = nt.getDate(); 
+		var h = nt.getHours(); 
+		var minute = nt.getMinutes();
+		var second= nt.getSeconds(); 
+		 if(m<10){
+             m = "0" + m;
+         }
+         if(d<10){
+             d = "0" + d;
+         }
+         if(h<10){
+             h = "0" + h;
+         }
+         if(minute<10){
+        	 minute = "0" + minute;
+         }
+         if(second<10){
+        	 second = "0" + second;
+         }
+		end_time=year + '-' + m + '-' + d+' '+h+':'+minute+':'+ second;
+		return end_time;
+	}
+    
+    
+	</script>
+</body>

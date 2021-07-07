@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>tab演示</title>
+    <meta http-equiv="Cache-Control" content="no-cache">
+	<script type="text/javascript" src="../resource/js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="../resource/plug/bootstrap-3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../resource/plug/bootstrap-table/bootstrap-table.css" />
+	<link rel="stylesheet" href="../resource/plug/zTree_v3/css/zTreeStyle/zTreeStyle.css" />
+	<link rel="stylesheet" href="../resource/plug/toastr/toastr.min.css" />
+	<link rel="stylesheet" href="../resource/css/frontcommon.css" />
+	<script type="text/javascript" src="../resource/plug/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../resource/plug/bootstrap-table/bootstrap-table.js"></script>
+	<script type="text/javascript" src="../resource/plug/bootstrap-table/bootstrap-table-zh-CN.js"></script>
+	<script type="text/javascript" src="../resource/plug/My97DatePicker/WdatePicker.js"></script>
+	<script type="text/javascript" src="../resource/plug/zTree_v3/js/jquery.ztree.all.min.js"></script>
+	<script type="text/javascript" src="../resource/plug/toastr/toastr.min.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapTree.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapMessage.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapFormItem.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapTable.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapDialog.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapTooltip.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-BootStrapTab.js"></script>
+	<script type="text/javascript" src="../resource/js/FrontCommon-Parser.js"></script>
+	<style type="text/css">
+		.fixed-table-container table {
+		    width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="panel panel-default" style="margin:5px;float:left;width:250px;" id="firstDiv">
+	  <div class="panel-heading">机构树</div>
+	  <div class="panel-body" style="padding:0px;">
+	  	<ul class="ztree" style="width:100%;overflow:auto">
+	  		<tree url="test1.json" treeSetting=":myTreeSetting"></tree>
+	  	</ul>
+	  </div>
+	</div>
+	<div style="float:left;margin:5px 0px 5px 0px;position: relative;" id="secondDiv">
+		<button class="btn btn-xs btn-default" style="position: absolute;top: 5px;left: 5px;" onclick="hideLeft(this)">
+			<span class="fa fa-angle-double-left" style="font-size: 16px;"></span>
+		</button>
+		<tab id="myTab" cls="nav-tabs tab_back_none" height=":getHeight()" tabs=":tabConfigs" style="padding-left:40px;"></tab>
+	</div>
+	<script type="text/javascript">
+		function getHeight(){
+			return document.documentElement.clientHeight-48;
+		}	
+		
+		function hideLeft(btn){
+			$("#firstDiv").animate({width:'0px'},{duration:0,step:function(width){
+				if(width==0)$(window).resize();
+				$("#secondDiv").width(document.documentElement.clientWidth-width-11);
+			},complete:function(){
+				$("#firstDiv").css({"opacity":0,"margin-right":"0px"})
+				$(btn).find(".fa").removeClass("fa-angle-double-left").addClass("fa-angle-double-right");
+				btn.onclick = function(){
+					$("#firstDiv").animate({width:'300px'},{duration:0,step:function(width){
+						$("#secondDiv").width(document.documentElement.clientWidth-width-16);
+					},complete:function(){
+						$(window).resize();
+						$(btn).find(".fa").removeClass("fa-angle-double-right").addClass("fa-angle-double-left");
+						btn.onclick = function(){
+							hideLeft(this);
+						}
+					}})
+					$("#firstDiv").css({"opacity":1,"margin-right":"5px"});
+				}
+			}})
+		}
+		
+		$(function(){
+			$("#secondDiv").width(document.documentElement.clientWidth-$("#firstDiv").outerWidth()-16);
+			$("#firstDiv").find(".ztree").height(document.documentElement.clientHeight-57)
+			window.myTreeSetting = {callback:{onClick:function(event, treeId, treeNode, clickFlag){
+				alert(treeNode.id)
+			}}}
+			window.myTree = $("tree").treeParser()[0];//初始化树
+			window.tabConfigs = [{id:'bbwarn',title:'BootStrap教程',click:function(){
+				if($(obj.tabLinkObj).children("li[tabindex='1']").find("div").length==0){
+					obj.setCount(1,55);
+				}else{
+					obj.removeCount(1);
+				}
+			},content:'https://www.runoob.com/bootstrap/bootstrap-tab-plugin.html'},
+						      {id:'device',title:'zTree API',content:'../resource/plug/zTree_v3/api/API_cn.html'},
+						      /*{id:'cirwarn',title:'BootStrap Table API',content:'http://bootstrap-table.wenzhixin.net.cn/zh-cn/documentation/'},*/
+						      {id:'baidu',title:'百度搜索',content:'http://www.baidu.com'},
+						      {id:'formShow',title:'表单演示',content:'http://www.talkweb.com.cn'}];
+			var obj = $("#myTab").tabParser()[0];
+			obj.addTab({id:'other',title:'其他',content:'http://www.sina.com.cn'});
+			obj.setCount(0,20);
+// 			var obj = new BootStrapTab({
+// 				id:"myTab",
+// 				height:getHeight(),
+// 				tabs:[{id:'bbwarn',title:'BootStrap教程',content:'https://www.runoob.com/bootstrap/bootstrap-tab-plugin.html'},
+// 				      {id:'device',title:'LKJ报警',content:'<div style="margin:5px">测试内容2</div>'},
+// 				      {id:'cirwarn',title:'CIR报警',content:'<div style="margin:5px">测试内容3</div>'},
+// 				      {id:'baidu',title:'百度搜索',content:'http://www.baidu.com'}],
+// 				container:$("div:first")[0]
+// 			})
+			
+			$(window).bind("resize",function(){
+				$("#secondDiv").width(document.documentElement.clientWidth-$("#firstDiv").outerWidth()-16);
+		    	$("#firstDiv").find(".ztree").height(document.documentElement.clientHeight-57)
+				obj.setHeight(getHeight());
+			})
+		})
+	</script>
+</body>

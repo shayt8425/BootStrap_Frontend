@@ -1,0 +1,21 @@
+{
+	"datas":[ {
+		"value" : "PES",
+		"text" : "PES"
+	}, {
+		"value" : "神秘海域",
+		"text" : "神秘海域"
+	}, {
+		"value" : "拳皇",
+		"text" : "拳皇"
+	}, {
+		"value" : "街霸",
+		"text" : "街霸"
+	}, {
+		"value" : "NBA 2K",
+		"text" : "NBA 2K"
+	}, {
+		"value" : "FIFA",
+		"text" : "FIFA"
+	}]
+}

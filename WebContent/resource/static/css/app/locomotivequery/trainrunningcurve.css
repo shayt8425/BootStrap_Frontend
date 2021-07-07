@@ -1,0 +1,155 @@
+﻿#curve_contain
+{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.curve_item
+{
+    width: 220px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+.curve_item_name
+{
+    width: 60px;
+    float: left;
+    text-align: right;
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+}
+
+.curve_item_value
+{
+    width: 130px;
+    float: right;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 5px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.curve_btndiv
+{
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.curve_btndiv a
+{
+    display: block;
+    width: 71px;
+    height: 22px;
+    line-height: 20px;
+    text-align: center;
+    color: White;
+    background-image: url('../../../img/app/button_top.png');
+    text-decoration: none;
+}
+#curve_contain a:hover
+{
+    background-image: url('../../../img/app/button_down.png');
+}
+
+
+.curve_search
+{
+    float: left;
+}
+
+.curve_clear
+{
+    float: right;
+}
+
+
+#curve_contain hr
+{
+    width: 230px;
+    margin: 0 auto;
+    border: 0px;
+    border-top: 1px dashed #000;
+}
+.curve_table
+{
+    margin: 0 auto;
+    width: 220px;
+    margin-top: 10px;
+    position: relative;
+    height: 290px;
+    overflow: auto;
+}
+.curve_table table.curve_table_m
+{
+    position: absolute;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid gray;
+    top: 0px;
+    border-top: 0px;
+    z-index: 2;
+}
+.curve_table table.curve_table_m thead
+{
+    background-color: #E2FEFE;
+}
+.curve_table table.curve_table_m tr
+{
+    height: 23px;
+}
+.curve_table_m tbody tr
+{
+    height: 30px !important;
+}
+.curve_table table.curve_table_m tbody tr:hover
+{
+    cursor: pointer;
+    background-color: rgb(255, 204, 51);
+}
+.curve_table table.curve_table_m td
+{
+    border: 1px solid gray;
+    text-align: center;
+}
+
+
+
+
+
+
+.curve_table table.curve_table_h
+{
+    position: absolute;
+    width: 100%;
+    border: 1px solid gray;
+    border-bottom: 0px;
+    top: 0px;
+    border-top: 0px;
+    z-index: 1;
+}
+.curve_table table.curve_table_h thead
+{
+    background-color: #E2FEFE;
+}
+.curve_table table.curve_table_h tr
+{
+    height: 0px;
+}
+
+.curve_table table.curve_table_h td
+{
+    border: 1px solid gray;
+    text-align: center;
+}
+.curve_table table.curve_table_h tbody
+{
+    visibility: hidden;
+}
+
+
